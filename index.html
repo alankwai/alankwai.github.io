@@ -271,17 +271,15 @@
                 <!-- Project 2 (Interactive) -->
                 <div class="project-grid-item group" onclick="openModal('metaverse')">
                     <div class="aspect-video bg-slate-100 overflow-hidden relative">
-                        <!-- Placeholder Image for Project 2 -->
-                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E7%A0%94%E7%A9%B6%E7%94%9F%20%E8%A7%86%E4%BC%A0%20%E4%B8%81%E5%85%B0_09.jpg" alt="NPR Research" class="w-full h-full object-cover transition duration-700 grayscale-[30%] group-hover:grayscale-0 group-hover:scale-110">
-                        <!-- Updated Year based on CV -->
-                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm italic">2023</div>
+                        <!-- Updated Cover Image: '对比图2.jpg' with object-bottom alignment -->
+                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%AF%B9%E6%AF%94%E5%9B%BE2.jpg" alt="Metaverse Research" class="w-full h-full object-cover object-bottom transition duration-700 grayscale-[30%] group-hover:grayscale-0 group-hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm italic">2022</div>
                          <!-- View Project Overlay -->
                          <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition flex items-center justify-center">
                             <span class="bg-white text-blue-900 px-4 py-2 rounded-full text-sm font-bold opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 shadow-lg">View Details</span>
                         </div>
                     </div>
                     <div class="p-8">
-                        <!-- Updated Title for Project 2 -->
                         <h4 class="text-lg font-bold mb-3 group-hover:text-blue-700 transition">Perceptual Cognition in NPR-based Virtual Environments</h4>
                         <p class="text-sm text-slate-500 mb-6 italic">An Empirical Study on Visual Perception & Spatial Cognition</p>
                         <p class="text-sm text-slate-600 mb-6 leading-relaxed">
@@ -396,7 +394,8 @@
 
             <!-- Image Header -->
             <div class="h-96 w-full bg-slate-100 relative">
-                <img id="modal-img" src="" alt="Project Image" class="w-full h-full object-cover">
+                <!-- Updated Modal Banner: Changed to 'object-top' for NPR project consistency -->
+                <img id="modal-img" src="" alt="Project Image" class="w-full h-full object-cover object-top">
                 <div class="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent"></div>
             </div>
 
@@ -519,7 +518,7 @@
                 title: "Perceptual Cognition in NPR-based Virtual Environments",
                 subtitle: "An Empirical Study on Visual Perception & Spatial Cognition in Immersive Spaces",
                 // Updated Image Link (Retained the one you set)
-                img: "https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E7%A0%94%E7%A9%B6%E7%94%9F%20%E8%A7%86%E4%BC%A0%20%E4%B8%81%E5%85%B0_09.jpg",
+                img: "https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%AF%B9%E6%AF%94%E5%9B%BE2.jpg",
                 description: `
                     <!-- Section 1 -->
                     <div class="mb-8">
@@ -532,6 +531,20 @@
                     <!-- Section 2 -->
                     <div class="mb-8">
                         <h5 class="text-lg font-bold text-slate-900 mb-4 border-l-4 border-blue-600 pl-3">Methodology & Technical Approach</h5>
+                        
+                        <!-- VR Setup Images (Updated Layout: Fixed Height + Object Contain) -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                            <!-- Image 1 -->
+                            <div class="rounded-xl border border-slate-100 bg-slate-50 h-64 flex items-center justify-center p-2 overflow-hidden shadow-sm">
+                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/VR%E8%AE%BE%E5%A4%871.png" class="max-w-full max-h-full object-contain rounded">
+                            </div>
+                            <!-- Image 2 -->
+                            <div class="rounded-xl border border-slate-100 bg-slate-50 h-64 flex items-center justify-center p-2 overflow-hidden shadow-sm">
+                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/VR%E8%AE%BE%E5%A4%872.png" class="max-w-full max-h-full object-contain rounded">
+                            </div>
+                        </div>
+                        <p class="text-center text-xs text-slate-400 -mt-4 mb-6">Experimental Setup: HTC VIVE Pro & Environment Calibration</p>
+
                         <ul class="space-y-4 text-sm text-slate-600">
                             <li class="bg-slate-50 p-4 rounded-xl">
                                 <strong class="block text-slate-800 mb-1">Parametric NPR Pipeline</strong>
@@ -551,6 +564,26 @@
                     <!-- Section 3 -->
                     <div>
                         <h5 class="text-lg font-bold text-slate-900 mb-4 border-l-4 border-blue-600 pl-3">Key Findings & Contributions</h5>
+                        
+                        <!-- Updated Comparison Images (Fixed Height & Alignment) -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                            <!-- Image 1 Container -->
+                            <div class="rounded-xl border border-slate-200 shadow-sm bg-slate-50 h-64 flex items-center justify-center p-2 overflow-hidden">
+                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%AF%B9%E6%AF%94%E5%9B%BE2.jpg" class="max-w-full max-h-full object-contain rounded-lg" alt="Comparison 2">
+                            </div>
+                            <!-- Image 2 Container -->
+                            <div class="rounded-xl border border-slate-200 shadow-sm bg-slate-50 h-64 flex items-center justify-center p-2 overflow-hidden">
+                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%AF%B9%E6%AF%94%E5%9B%BE1.jpg" class="max-w-full max-h-full object-contain rounded-lg" alt="Comparison 1">
+                            </div>
+                        </div>
+                        <p class="text-center text-xs text-slate-400 -mt-4 mb-6">Visual Analysis: Stylized vs. Realistic Environment Comparison</p>
+
+                        <!-- NEW SPSS IMAGE HERE (Inserted as requested) -->
+                        <div class="mb-6 rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-white p-1 mt-8">
+                             <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/spss%E5%85%A8%E5%88%86%E6%9E%90.jpg" class="w-full h-auto rounded-lg" alt="SPSS Analysis">
+                        </div>
+                        <p class="text-center text-xs text-slate-400 -mt-4 mb-6">Quantitative Validation: Full SPSS Analysis Data</p>
+
                         <ul class="space-y-4 text-sm text-slate-600">
                             <li class="bg-blue-50 p-4 rounded-xl border border-blue-100">
                                 <strong class="block text-blue-900 mb-1">Enhanced Engagement</strong>
