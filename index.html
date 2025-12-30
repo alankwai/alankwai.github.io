@@ -513,6 +513,36 @@
                         </p>
                     </div>
 
+                    <!-- 
+                        =============== Bilibili Video Section (Thesis) =============== 
+                        Inserted BV: BV1RwvvBrET4
+                    -->
+                    <div class="mb-8">
+                        <h5 class="text-sm font-bold text-slate-900 mb-2 flex items-center gap-2">
+                            <i class="fas fa-play-circle text-pink-500"></i> Project Demo Video
+                        </h5>
+                        
+                        <div class="aspect-video w-full rounded-xl overflow-hidden shadow-lg bg-slate-100 relative group border border-slate-200">
+                            <iframe 
+                                class="w-full h-full" 
+                                src="//player.bilibili.com/player.html?bvid=BV1RwvvBrET4&page=1&high_quality=1&danmaku=0" 
+                                scrolling="no" 
+                                border="0" 
+                                frameborder="0" 
+                                framespacing="0" 
+                                allowfullscreen="true">
+                            </iframe>
+                        </div>
+
+                        <div class="text-center mt-3">
+                            <a href="https://www.bilibili.com/video/BV1RwvvBrET4" target="_blank" class="inline-flex items-center gap-2 text-xs font-bold text-slate-400 hover:text-pink-500 transition border-b border-transparent hover:border-pink-500 pb-0.5">
+                                <i class="fas fa-external-link-alt"></i> 
+                                <span>Video not loading? Watch on Bilibili</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- ======================================================== -->
+
                     <div class="mb-8">
                          <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">2. Methodology & Design Execution</h5>
                          <ul class="space-y-4 text-sm text-slate-600 mb-4">
@@ -554,13 +584,39 @@
                         </p>
                     </div>
                     
-                    <!-- Video Insertion Point -->
-                    <!-- Paste your <iframe> or <video> tag here -->
-                    <!-- Example: 
-                    <div class="my-6 rounded-xl overflow-hidden shadow-lg">
-                        <iframe class="w-full aspect-video" src="YOUR_VIDEO_URL" frameborder="0" allowfullscreen></iframe>
-                    </div>
+                    <!-- 
+                        =============== Bilibili 视频区域 (已优化) =============== 
+                        新增功能：
+                        在视频下方增加了一个 "Watch on Bilibili" 的跳转链接。
+                        作用：防止嵌入播放器卡顿或被拦截时，用户无法观看。
                     -->
+                    <div class="mb-8">
+                        <h5 class="text-sm font-bold text-slate-900 mb-2 flex items-center gap-2">
+                            <i class="fas fa-play-circle text-pink-500"></i> Project Demo Video
+                        </h5>
+                        
+                        <!-- 视频容器 -->
+                        <div class="aspect-video w-full rounded-xl overflow-hidden shadow-lg bg-slate-100 relative group border border-slate-200">
+                            <iframe 
+                                class="w-full h-full" 
+                                src="//player.bilibili.com/player.html?bvid=BV1kx411c7Xh&page=1&high_quality=1&danmaku=0" 
+                                scrolling="no" 
+                                border="0" 
+                                frameborder="0" 
+                                framespacing="0" 
+                                allowfullscreen="true">
+                            </iframe>
+                        </div>
+
+                        <!-- 新增：备用跳转链接 (安全措施) -->
+                        <div class="text-center mt-3">
+                            <a href="https://www.bilibili.com/video/BV1kx411c7Xh" target="_blank" class="inline-flex items-center gap-2 text-xs font-bold text-slate-400 hover:text-pink-500 transition border-b border-transparent hover:border-pink-500 pb-0.5">
+                                <i class="fas fa-external-link-alt"></i> 
+                                <span>Video not loading? Watch on Bilibili</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- ============================================= -->
 
                     <!-- Section 2 -->
                     <div class="mb-8">
