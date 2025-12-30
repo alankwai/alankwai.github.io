@@ -82,6 +82,8 @@
             overflow: hidden;
             transition: all 0.3s ease;
             cursor: pointer; 
+            display: flex;
+            flex-direction: column;
         }
 
         .project-grid-item:hover {
@@ -136,7 +138,7 @@
 
     <!-- Navigation -->
     <nav class="sticky top-0 bg-white/80 backdrop-blur-xl border-b border-slate-100 z-50">
-        <div class="max-w-5xl mx-auto px-8 h-20 flex items-center justify-between">
+        <div class="max-w-6xl mx-auto px-8 h-20 flex items-center justify-between">
             <a href="#" class="font-bold tracking-tight text-xl text-blue-900">LAN DING.</a>
             <div class="hidden md:flex space-x-10 text-xs uppercase tracking-[0.2em] text-slate-500 font-bold">
                 <a href="#about" class="hover:text-blue-900 transition">About</a>
@@ -148,7 +150,7 @@
         </div>
     </nav>
 
-    <main class="max-w-5xl mx-auto px-8 py-20">
+    <main class="max-w-6xl mx-auto px-8 py-20">
         
         <!-- Hero Section -->
         <section id="about" class="mb-40">
@@ -171,7 +173,7 @@
                     </div>
                 </div>
                 
-                <!-- Avatar Section -->
+                <!-- Avatar Section: Updated with your GitHub Link -->
                 <div class="w-64 h-64 shrink-0 avatar-box rounded-[2.5rem] overflow-hidden shadow-2xl shadow-blue-100 rotate-3 hover:rotate-0 transition-transform duration-500">
                     <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/ef98cb011e97c97cf87c114cc795ded00c89ac4d/gewoonkarano2718_lat_illustration_geometric_shapes_minimalism_s_8d01dc07-d499-4059-80a7-0eb696186ba1.png" alt="Lan Ding Avatar" class="w-full h-full object-cover">
                 </div>
@@ -243,12 +245,13 @@
         <!-- Conference Presentations & Projects Section -->
         <section id="presentations" class="mb-40">
             <h2 class="section-title">Conference Presentations and Projects</h2>
-            <div class="grid md:grid-cols-2 gap-12">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
                 <!-- Project 1 (Interactive) -->
                 <div class="project-grid-item group" onclick="openModal('npr')">
+                    <!-- CHANGED: Aspect Ratio to aspect-video (16:9) -->
                     <div class="aspect-video bg-slate-100 overflow-hidden relative">
-                        <!-- Project Image: Converted to stable raw.githubusercontent format -->
+                        <!-- Project Image -->
                         <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E6%B8%B2%E6%9F%93%E5%9B%BE1.jpg" alt="Taikonaut Panda Project" class="w-full h-full object-cover transition duration-700 grayscale-[30%] group-hover:grayscale-0 group-hover:scale-110">
                         <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm italic">2022</div>
                         <!-- View Project Overlay -->
@@ -256,13 +259,11 @@
                             <span class="bg-white text-blue-900 px-4 py-2 rounded-full text-sm font-bold opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 shadow-lg">View Details</span>
                         </div>
                     </div>
-                    <div class="p-8">
-                        <h4 class="text-lg font-bold mb-3 group-hover:text-blue-700 transition">Taikonaut Panda: Project Tiangong</h4>
-                        <p class="text-sm text-slate-500 mb-6 italic">A 3D Interactive Sand Table for Aerospace Science Popularization</p>
-                        <p class="text-sm text-slate-600 mb-6 leading-relaxed">
-                            This project transforms complex concepts of the <strong>China Space Station</strong> into a tangible, immersive gaming experience through multi-dimensional spatial interaction and <strong>IP narratives</strong>.
-                        </p>
-                        <div class="flex gap-2">
+                    <div class="p-6 flex flex-col">
+                        <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">Taikonaut Panda: Project Tiangong</h4>
+                        <p class="text-xs text-slate-500 mb-0 italic">A 3D Interactive Sand Table for Aerospace Science Popularization</p>
+                        <!-- Spacing set to mt-4 -->
+                        <div class="mt-4 flex gap-2 flex-wrap">
                             <span class="tag">Gamification</span> <span class="tag">IP Design</span>
                         </div>
                     </div>
@@ -270,23 +271,43 @@
 
                 <!-- Project 2 (Interactive) -->
                 <div class="project-grid-item group" onclick="openModal('metaverse')">
+                    <!-- CHANGED: Aspect Ratio to aspect-video (16:9) -->
                     <div class="aspect-video bg-slate-100 overflow-hidden relative">
-                        <!-- Updated Cover Image: '对比图2.jpg' with object-bottom alignment -->
-                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%AF%B9%E6%AF%94%E5%9B%BE2.jpg" alt="Metaverse Research" class="w-full h-full object-cover object-bottom transition duration-700 grayscale-[30%] group-hover:grayscale-0 group-hover:scale-110">
-                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm italic">2022</div>
+                        <!-- Updated Cover Image: No Watermark version, Object Bottom -->
+                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%AF%B9%E6%AF%94%E5%9B%BE2%E6%97%A0%E6%B0%B4%E5%8D%B0.jpg" alt="Metaverse Research" class="w-full h-full object-cover object-bottom transition duration-700 grayscale-[30%] group-hover:grayscale-0 group-hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm italic">2023</div>
                          <!-- View Project Overlay -->
                          <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition flex items-center justify-center">
                             <span class="bg-white text-blue-900 px-4 py-2 rounded-full text-sm font-bold opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 shadow-lg">View Details</span>
                         </div>
                     </div>
-                    <div class="p-8">
-                        <h4 class="text-lg font-bold mb-3 group-hover:text-blue-700 transition">Perceptual Cognition in NPR-based Virtual Environments</h4>
-                        <p class="text-sm text-slate-500 mb-6 italic">An Empirical Study on Visual Perception & Spatial Cognition</p>
-                        <p class="text-sm text-slate-600 mb-6 leading-relaxed">
-                            An empirical research project investigating the cognitive shifts and <strong>spatial perception variances</strong> induced by <strong>Non-Photorealistic Rendering (NPR)</strong> in immersive virtual reality.
-                        </p>
-                        <div class="flex gap-2">
+                    <div class="p-6 flex flex-col">
+                        <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">Perceptual Cognition in NPR-based Virtual Environments</h4>
+                        <p class="text-xs text-slate-500 mb-0 italic">An Empirical Study on Visual Perception & Spatial Cognition</p>
+                        <!-- Spacing set to mt-4 -->
+                        <div class="mt-4 flex gap-2 flex-wrap">
                             <span class="tag">Blender</span> <span class="tag">HCI Research</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 (Interactive) -->
+                <div class="project-grid-item group" onclick="openModal('social_adaptation')">
+                    <!-- CHANGED: Aspect Ratio to aspect-video (16:9) -->
+                    <div class="aspect-video bg-slate-100 overflow-hidden relative">
+                        <!-- Placeholder Image for Project 3 -->
+                        <img src="https://images.unsplash.com/photo-1617802690992-15d93263d3a9?q=80&w=800" alt="Social Adaptation Research" class="w-full h-full object-cover transition duration-700 grayscale-[30%] group-hover:grayscale-0 group-hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm italic">2022</div>
+                        <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition flex items-center justify-center">
+                            <span class="bg-white text-blue-900 px-4 py-2 rounded-full text-sm font-bold opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 shadow-lg">View Details</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col">
+                        <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">Social Adaptation in the Metaverse</h4>
+                        <p class="text-xs text-slate-500 mb-0 italic">High-Fidelity Digital Twins & Identity Construction via Unreal Engine</p>
+                        <!-- Spacing set to mt-4 -->
+                        <div class="mt-4 flex gap-2 flex-wrap">
+                            <span class="tag">Unreal Engine</span> <span class="tag">Digital Twins</span>
                         </div>
                     </div>
                 </div>
@@ -394,7 +415,7 @@
 
             <!-- Image Header -->
             <div class="h-96 w-full bg-slate-100 relative">
-                <!-- Updated Modal Banner: Changed to 'object-top' for NPR project consistency -->
+                <!-- Updated Modal Banner: Changed to 'object-top' as requested -->
                 <img id="modal-img" src="" alt="Project Image" class="w-full h-full object-cover object-top">
                 <div class="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent"></div>
             </div>
@@ -517,8 +538,8 @@
                 // Updated Title and Subtitle for NPR Project
                 title: "Perceptual Cognition in NPR-based Virtual Environments",
                 subtitle: "An Empirical Study on Visual Perception & Spatial Cognition in Immersive Spaces",
-                // Updated Image Link (Retained the one you set)
-                img: "https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%AF%B9%E6%AF%94%E5%9B%BE2.jpg",
+                // Updated Image Link to the new 'No Watermark' version
+                img: "https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%AF%B9%E6%AF%94%E5%9B%BE2%E6%97%A0%E6%B0%B4%E5%8D%B0.jpg",
                 description: `
                     <!-- Section 1 -->
                     <div class="mb-8">
@@ -532,7 +553,7 @@
                     <div class="mb-8">
                         <h5 class="text-lg font-bold text-slate-900 mb-4 border-l-4 border-blue-600 pl-3">Methodology & Technical Approach</h5>
                         
-                        <!-- VR Setup Images (Updated Layout: Fixed Height + Object Contain) -->
+                        <!-- VR Setup Images (Fixed Height + Object Contain) -->
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                             <!-- Image 1 -->
                             <div class="rounded-xl border border-slate-100 bg-slate-50 h-64 flex items-center justify-center p-2 overflow-hidden shadow-sm">
@@ -565,7 +586,7 @@
                     <div>
                         <h5 class="text-lg font-bold text-slate-900 mb-4 border-l-4 border-blue-600 pl-3">Key Findings & Contributions</h5>
                         
-                        <!-- Updated Comparison Images (Fixed Height & Alignment) -->
+                        <!-- Comparison Images (Fixed Height & Alignment) -->
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                             <!-- Image 1 Container -->
                             <div class="rounded-xl border border-slate-200 shadow-sm bg-slate-50 h-64 flex items-center justify-center p-2 overflow-hidden">
@@ -578,7 +599,7 @@
                         </div>
                         <p class="text-center text-xs text-slate-400 -mt-4 mb-6">Visual Analysis: Stylized vs. Realistic Environment Comparison</p>
 
-                        <!-- NEW SPSS IMAGE HERE (Inserted as requested) -->
+                        <!-- SPSS IMAGE HERE -->
                         <div class="mb-6 rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-white p-1 mt-8">
                              <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/spss%E5%85%A8%E5%88%86%E6%9E%90.jpg" class="w-full h-auto rounded-lg" alt="SPSS Analysis">
                         </div>
@@ -601,6 +622,46 @@
                     </div>
                 `,
                 tags: ["Blender", "XR Experiment", "HCI", "Quantitative Analysis"]
+            },
+            "social_adaptation": {
+                title: "Social Adaptation in the Metaverse",
+                subtitle: "High-Fidelity Digital Twins & Identity Construction via Unreal Engine",
+                // Placeholder image for now
+                img: "https://images.unsplash.com/photo-1617802690992-15d93263d3a9?q=80&w=800",
+                description: `
+                    <!-- Section 1 -->
+                    <div class="mb-8">
+                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">Research Context & Objective</h5>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            From text messaging to VR interaction, the evolution of communication mediums constantly reshapes human psychological patterns. Conducted at the Beijing Institute for General Artificial Intelligence (BIGAI), this project explores the "adaptive threshold" of future social interaction in the Metaverse. The study posits that <strong>High-Fidelity Environmental Mapping</strong> and <strong>Customized Virtual Identities</strong> are prerequisites for achieving psychological immersion and social adaptability in virtual spaces.
+                        </p>
+                    </div>
+
+                    <!-- Section 2 -->
+                    <div class="mb-8">
+                        <h5 class="text-lg font-bold text-slate-900 mb-4 border-l-4 border-blue-600 pl-3">Technical Framework</h5>
+                        <p class="text-sm text-slate-600 mb-4">The project implements a "Dual-Dimension Adaptive Strategy" using Unreal Engine (UE):</p>
+                        <ul class="space-y-4 text-sm text-slate-600">
+                            <li class="bg-slate-50 p-4 rounded-xl">
+                                <strong class="block text-slate-800 mb-1">Hyper-Realistic Environmental Mapping</strong>
+                                Executed a 1:1 digital twin reconstruction of a living environment. The pipeline integrated advanced PBR (Physically Based Rendering) workflows, involving complex UV mapping, texture baking (Normal/Roughness/AO maps), and dynamic lighting simulation to achieve photorealistic cognitive grounding.
+                            </li>
+                            <li class="bg-slate-50 p-4 rounded-xl">
+                                <strong class="block text-slate-800 mb-1">Virtualized Character Customization</strong>
+                                Developed a high-precision humanoid avatar system. The technical process covered topology optimization, facial blendshape creation (51 morph targets), and skeletal rigging. This establishes a robust foundation for real-time motion capture and emotional expression in virtual social interactions.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Section 3 -->
+                    <div>
+                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">Impact & Future Implications</h5>
+                        <p class="bg-blue-50 p-5 rounded-2xl text-blue-900 text-sm border border-blue-100">
+                            This project serves as a technical testbed for "Digital Twin Sociology." By establishing a seamless visual standard for both environments and avatars, it provides a validated platform for further research into how users perceive reality, identity, and social norms when transitioning from physical to hyper-realistic virtual domains.
+                        </p>
+                    </div>
+                `,
+                tags: ["Unreal Engine", "Digital Twins", "Identity Construction", "PBR"]
             }
         };
 
