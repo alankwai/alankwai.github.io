@@ -144,7 +144,7 @@
                 <a href="#about" class="hover:text-blue-900 transition">About</a>
                 <a href="#education" class="hover:text-blue-900 transition">Education</a>
                 <a href="#research" class="hover:text-blue-900 transition">Research</a>
-                <a href="#presentations" class="hover:text-blue-900 transition">Presentations</a>
+                <a href="#presentations" class="hover:text-blue-900 transition">Projects</a>
                 <a href="#cv" class="hover:text-blue-900 transition">Contact</a>
             </div>
         </div>
@@ -167,13 +167,26 @@
                         <span class="tag"># Human-Computer Interaction</span>
                         <span class="tag"># VR Perception</span>
                     </div>
-                    <div class="flex justify-center md:justify-start gap-8">
-                        <a href="mailto:lana_ding@foxmail.com" class="text-sm font-bold border-b-2 border-blue-700 pb-1 hover:text-blue-500 transition">Email Inquiry</a>
-                        <a href="#" class="text-sm font-bold border-b-2 border-slate-900 pb-1 hover:text-blue-700 transition">Academic CV</a>
+                    
+                    <!-- Buttons Area -->
+                    <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-6 items-center">
+                        
+                        <!-- 1. View Research Portfolio (First, Black Button) -->
+                        <a href="#presentations" class="px-6 py-3 bg-slate-900 text-white rounded-full text-sm font-bold hover:bg-blue-900 transition shadow-lg flex items-center justify-center">
+                            <span>View Research Portfolio</span>
+                            <i class="fas fa-arrow-down ml-2"></i>
+                        </a>
+
+                        <!-- 2. Email Inquiry (Blue Underline) -->
+                        <a href="mailto:lana_ding@foxmail.com" class="text-sm font-bold border-b-2 border-blue-700 pb-1 hover:text-blue-500 transition self-center">Email Inquiry</a>
+                        
+                        <!-- 3. Academic CV (Blue Underline) -->
+                        <a href="#" class="text-sm font-bold border-b-2 border-blue-700 pb-1 hover:text-blue-500 transition self-center">Academic CV</a>
+
                     </div>
                 </div>
                 
-                <!-- Avatar Section: Updated with your GitHub Link -->
+                <!-- Avatar Section -->
                 <div class="w-64 h-64 shrink-0 avatar-box rounded-[2.5rem] overflow-hidden shadow-2xl shadow-blue-100 rotate-3 hover:rotate-0 transition-transform duration-500">
                     <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/ef98cb011e97c97cf87c114cc795ded00c89ac4d/gewoonkarano2718_lat_illustration_geometric_shapes_minimalism_s_8d01dc07-d499-4059-80a7-0eb696186ba1.png" alt="Lan Ding Avatar" class="w-full h-full object-cover">
                 </div>
@@ -230,14 +243,17 @@
                     </div>
                 </div>
 
-                <!-- Master Thesis -->
-                <div class="bg-slate-50 p-10 rounded-[2rem] border border-slate-100">
-                    <h3 class="text-xl font-bold mb-4">Master's Thesis Research</h3>
-                    <p class="italic text-blue-900 font-medium mb-4">The Application of Retro-Futurism in Virtual Anchor Character Design</p>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                        Developed a design prototype featuring three distinct personas (music, gaming, education) to address stylistic homogenization. Applied multi-method analysis including audience surveys and visual deconstruction to assess cultural resonance.
-                    </p>
-                    <p class="text-xs text-slate-400 font-bold uppercase tracking-widest">Supervisor: Prof. Zhe Yang</p>
+                <!-- Simplified Master Thesis Entry -->
+                <div class="academic-card border-l-blue-200">
+                    <div class="flex justify-between items-baseline mb-2">
+                        <h3 class="text-xl font-bold text-slate-800">Master's Thesis Research</h3>
+                        <span class="text-slate-400 text-sm italic">2023 - 2024</span>
+                    </div>
+                    <p class="text-slate-600 mb-2"><strong>Topic:</strong> Research on the Application of Retro-Futurism in Virtual Anchor Design</p>
+                    <p class="text-sm text-slate-500 mb-4">Supervisor: Prof. Zhe Yang</p>
+                    <a href="#presentations" class="text-sm font-bold text-blue-700 hover:underline">
+                        <i class="fas fa-arrow-down mr-1"></i> See Detailed Project in Portfolio Section
+                    </a>
                 </div>
             </div>
         </section>
@@ -247,56 +263,34 @@
             <h2 class="section-title">Conference Presentations and Projects</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- Project 1 (Interactive) -->
-                <div class="project-grid-item group" onclick="openModal('npr')">
-                    <!-- CHANGED: Aspect Ratio to aspect-video (16:9) -->
+                <!-- 1. Master's Thesis (Top Featured) -->
+                <div class="project-grid-item group" onclick="openModal('thesis')">
+                    <!-- Aspect Ratio 16:9 -->
                     <div class="aspect-video bg-slate-100 overflow-hidden relative">
-                        <!-- Project Image -->
-                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E6%B8%B2%E6%9F%93%E5%9B%BE1.jpg" alt="Taikonaut Panda Project" class="w-full h-full object-cover transition duration-700 grayscale-[30%] group-hover:grayscale-0 group-hover:scale-110">
-                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm italic">2022</div>
-                        <!-- View Project Overlay -->
+                        <!-- Thesis Image: object-[50%_0%] (Top) + scale 120% -->
+                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E4%B8%89%E5%BC%A0%E5%AF%B9%E6%AF%94.jpg" 
+                             alt="Thesis Character Design" 
+                             class="w-full h-full object-cover object-[50%_0%] origin-top scale-[1.2] transition duration-700 grayscale-[30%] group-hover:grayscale-0 group-hover:scale-[1.3]">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm italic">Master Thesis</div>
                         <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition flex items-center justify-center">
                             <span class="bg-white text-blue-900 px-4 py-2 rounded-full text-sm font-bold opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 shadow-lg">View Details</span>
                         </div>
                     </div>
                     <div class="p-6 flex flex-col">
-                        <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">Taikonaut Panda: Project Tiangong</h4>
-                        <p class="text-xs text-slate-500 mb-0 italic">A 3D Interactive Sand Table for Aerospace Science Popularization</p>
-                        <!-- Spacing set to mt-4 -->
+                        <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">Research on the Application of Retro-Futurism in Virtual Anchor Design</h4>
+                        <p class="text-xs text-slate-500 mb-0 italic">A Theoretical & Practical Exploration of Digital Identity Aesthetics</p>
                         <div class="mt-4 flex gap-2 flex-wrap">
-                            <span class="tag">Gamification</span> <span class="tag">IP Design</span>
+                            <span class="tag">Character Design</span> <span class="tag">Mixed Methods</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 2 (Interactive) -->
-                <div class="project-grid-item group" onclick="openModal('metaverse')">
-                    <!-- CHANGED: Aspect Ratio to aspect-video (16:9) -->
-                    <div class="aspect-video bg-slate-100 overflow-hidden relative">
-                        <!-- Updated Cover Image: No Watermark version, Object Bottom -->
-                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%AF%B9%E6%AF%94%E5%9B%BE2%E6%97%A0%E6%B0%B4%E5%8D%B0.jpg" alt="Metaverse Research" class="w-full h-full object-cover object-bottom transition duration-700 grayscale-[30%] group-hover:grayscale-0 group-hover:scale-110">
-                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm italic">2023</div>
-                         <!-- View Project Overlay -->
-                         <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition flex items-center justify-center">
-                            <span class="bg-white text-blue-900 px-4 py-2 rounded-full text-sm font-bold opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 shadow-lg">View Details</span>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col">
-                        <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">Perceptual Cognition in NPR-based Virtual Environments</h4>
-                        <p class="text-xs text-slate-500 mb-0 italic">An Empirical Study on Visual Perception & Spatial Cognition</p>
-                        <!-- Spacing set to mt-4 -->
-                        <div class="mt-4 flex gap-2 flex-wrap">
-                            <span class="tag">Blender</span> <span class="tag">HCI Research</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 (Interactive) -->
+                <!-- 2. Social Adaptation (Metaverse) -->
                 <div class="project-grid-item group" onclick="openModal('social_adaptation')">
-                    <!-- CHANGED: Aspect Ratio to aspect-video (16:9) -->
+                    <!-- Aspect Ratio 16:9 -->
                     <div class="aspect-video bg-slate-100 overflow-hidden relative">
-                        <!-- Placeholder Image for Project 3 -->
-                        <img src="https://images.unsplash.com/photo-1617802690992-15d93263d3a9?q=80&w=800" alt="Social Adaptation Research" class="w-full h-full object-cover transition duration-700 grayscale-[30%] group-hover:grayscale-0 group-hover:scale-110">
+                        <!-- Placeholder for Social Adaptation -->
+                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/%E7%A0%94%E7%A9%B6%E7%94%9F%20%E8%A7%86%E4%BC%A0%20%E4%B8%81%E5%85%B0_09.jpg" alt="Social Adaptation Research" class="w-full h-full object-cover transition duration-700 grayscale-[30%] group-hover:grayscale-0 group-hover:scale-110">
                         <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm italic">2022</div>
                         <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition flex items-center justify-center">
                             <span class="bg-white text-blue-900 px-4 py-2 rounded-full text-sm font-bold opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 shadow-lg">View Details</span>
@@ -304,10 +298,69 @@
                     </div>
                     <div class="p-6 flex flex-col">
                         <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">Social Adaptation in the Metaverse</h4>
-                        <p class="text-xs text-slate-500 mb-0 italic">High-Fidelity Digital Twins & Identity Construction via Unreal Engine</p>
-                        <!-- Spacing set to mt-4 -->
+                        <p class="text-xs text-slate-500 mb-0 italic">High-Fidelity Digital Twins & Identity Construction</p>
                         <div class="mt-4 flex gap-2 flex-wrap">
                             <span class="tag">Unreal Engine</span> <span class="tag">Digital Twins</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. NPR Research -->
+                <div class="project-grid-item group" onclick="openModal('npr_research')">
+                    <!-- Aspect Ratio 16:9 -->
+                    <div class="aspect-video bg-slate-100 overflow-hidden relative">
+                        <!-- Updated NPR Image: Correct Link + Bottom Alignment + 140% Scale -->
+                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%AF%B9%E6%AF%94%E5%9B%BE2%E6%97%A0%E6%B0%B4%E5%8D%B0.jpg" 
+                             alt="NPR Research" 
+                             class="w-full h-full object-cover object-bottom origin-bottom scale-[1.4] transition duration-700 grayscale-[30%] group-hover:grayscale-0 group-hover:scale-[1.5]">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm italic">2023</div>
+                         <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition flex items-center justify-center">
+                            <span class="bg-white text-blue-900 px-4 py-2 rounded-full text-sm font-bold opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 shadow-lg">View Details</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col">
+                        <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">Perceptual Cognition in NPR-based Virtual Environments</h4>
+                        <p class="text-xs text-slate-500 mb-0 italic">An Empirical Study on Visual Perception</p>
+                        <div class="mt-4 flex gap-2 flex-wrap">
+                            <span class="tag">Blender</span> <span class="tag">HCI Research</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Taikonaut Panda -->
+                <div class="project-grid-item group" onclick="openModal('taikonaut')">
+                    <!-- Aspect Ratio 16:9 -->
+                    <div class="aspect-video bg-slate-100 overflow-hidden relative">
+                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E6%B8%B2%E6%9F%93%E5%9B%BE1.jpg" alt="Taikonaut Panda Project" class="w-full h-full object-cover transition duration-700 grayscale-[30%] group-hover:grayscale-0 group-hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm italic">2022</div>
+                        <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition flex items-center justify-center">
+                            <span class="bg-white text-blue-900 px-4 py-2 rounded-full text-sm font-bold opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 shadow-lg">View Details</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col">
+                        <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">Taikonaut Panda: Project Tiangong</h4>
+                        <p class="text-xs text-slate-500 mb-0 italic">A 3D Interactive Sand Table for Aerospace Science</p>
+                        <div class="mt-4 flex gap-2 flex-wrap">
+                            <span class="tag">Gamification</span> <span class="tag">IP Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. NFT Project -->
+                <div class="project-grid-item group" onclick="openModal('nft')">
+                    <!-- Aspect Ratio 16:9 -->
+                    <div class="aspect-video bg-slate-100 overflow-hidden relative">
+                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/ef98cb011e97c97cf87c114cc795ded00c89ac4d/61315918ae052492eaa7cf1a5fbe70c8.jpg" alt="StarArk NFT" class="w-full h-full object-cover transition duration-700 grayscale-[30%] group-hover:grayscale-0 group-hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm italic">Commercial</div>
+                        <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition flex items-center justify-center">
+                            <span class="bg-white text-blue-900 px-4 py-2 rounded-full text-sm font-bold opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 shadow-lg">View Details</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col">
+                        <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">Web3 Digital Collectibles: StarArkNFT</h4>
+                        <p class="text-xs text-slate-500 mb-0 italic">Commercial Art Practice & Digital Creator Economy</p>
+                        <div class="mt-4 flex gap-2 flex-wrap">
+                            <span class="tag">Web3</span> <span class="tag">Commercial</span>
                         </div>
                     </div>
                 </div>
@@ -446,7 +499,185 @@
     <script>
         // --- 1. Project Detail Data ---
         const projectData = {
-            "npr": {
+            "thesis": {
+                // Updated Title and content
+                title: "Research on the Application of Retro-Futurism in Virtual Anchor Design",
+                subtitle: "Master's Thesis | A Theoretical & Practical Exploration of Digital Identity Aesthetics",
+                // Updated Thesis Modal Image
+                img: "https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E4%B8%89%E5%BC%A0%E5%AF%B9%E6%AF%94.jpg",
+                description: `
+                    <div class="mb-8">
+                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">1. Research Context</h5>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            In the rapidly evolving landscape of the Metaverse and Virtual Streaming, the design of Virtual Anchors (VTubers) faces a crisis of visual homogeneity. This Master of Fine Arts (MFA) thesis project explores Retro-Futurism—a distinctive aesthetic visualizing "the future as seen from the past"—as a strategic solution to enhance stylistic differentiation and cultural depth in digital avatars.
+                        </p>
+                    </div>
+
+                    <div class="mb-8">
+                         <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">2. Methodology & Design Execution</h5>
+                         <ul class="space-y-4 text-sm text-slate-600 mb-4">
+                            <li class="bg-slate-50 p-4 rounded-xl">
+                                <strong class="block text-slate-800 mb-1">Aesthetic Deconstruction</strong>
+                                Systematically analyzed core Retro-Futurist sub-genres (e.g., Atomic Age, Cyberpunk, Vaporwave) to extract visual codes that evoke both nostalgia and technological curiosity.
+                            </li>
+                            <li class="bg-slate-50 p-4 rounded-xl">
+                                <strong class="block text-slate-800 mb-1">Avatar Creation Pipeline</strong>
+                                Translated theoretical findings into a high-fidelity Virtual Anchor character system. The design process integrated aesthetic theory with technical implementation (Live2D/3D modeling and rigging), ensuring the character possesses both artistic texture and functional interactivity.
+                            </li>
+                            <li class="bg-slate-50 p-4 rounded-xl">
+                                <strong class="block text-slate-800 mb-1">User Research & Validation</strong>
+                                Conducted extensive quantitative research using questionnaires to evaluate audience reception across demographics. The study measured key metrics such as willingness to interact, aesthetic preference, and consumption intent, verifying the market viability of this niche style.
+                            </li>
+                         </ul>
+                    </div>
+
+                    <div class="mb-8">
+                         <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">3. Significance</h5>
+                         <p class="bg-blue-50 p-5 rounded-2xl text-blue-900 text-sm border border-blue-100">
+                             This research bridges the gap between Design Aesthetics and HCI (Human-Computer Interaction). It empirically proves that "Avatar Embodiment" and "Self-presence" can be significantly amplified through distinct stylistic narratives, providing a data-backed framework for the next generation of Virtual IP creation.
+                         </p>
+                    </div>
+                `,
+                tags: ["Mixed-Methods", "Character Design", "HCI"]
+            },
+            "social_adaptation": {
+                title: "Social Adaptation in the Metaverse",
+                subtitle: "High-Fidelity Digital Twins & Identity Construction via Unreal Engine",
+                // Placeholder image for now
+                img: "https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/%E7%A0%94%E7%A9%B6%E7%94%9F%20%E8%A7%86%E4%BC%A0%20%E4%B8%81%E5%85%B0_09.jpg",
+                description: `
+                    <!-- Section 1 -->
+                    <div class="mb-8">
+                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">Research Context & Objective</h5>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            From text messaging to VR interaction, the evolution of communication mediums constantly reshapes human psychological patterns. Conducted at the Beijing Institute for General Artificial Intelligence (BIGAI), this project explores the "adaptive threshold" of future social interaction in the Metaverse. The study posits that <strong>High-Fidelity Environmental Mapping</strong> and <strong>Customized Virtual Identities</strong> are prerequisites for achieving psychological immersion and social adaptability in virtual spaces.
+                        </p>
+                    </div>
+                    
+                    <!-- Video Insertion Point -->
+                    <!-- Paste your <iframe> or <video> tag here -->
+                    <!-- Example: 
+                    <div class="my-6 rounded-xl overflow-hidden shadow-lg">
+                        <iframe class="w-full aspect-video" src="YOUR_VIDEO_URL" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    -->
+
+                    <!-- Section 2 -->
+                    <div class="mb-8">
+                        <h5 class="text-lg font-bold text-slate-900 mb-4 border-l-4 border-blue-600 pl-3">Technical Framework</h5>
+                        <p class="text-sm text-slate-600 mb-4">The project implements a "Dual-Dimension Adaptive Strategy" using Unreal Engine (UE):</p>
+                        <ul class="space-y-4 text-sm text-slate-600">
+                            <li class="bg-slate-50 p-4 rounded-xl">
+                                <strong class="block text-slate-800 mb-1">Hyper-Realistic Environmental Mapping</strong>
+                                Executed a 1:1 digital twin reconstruction of a living environment. The pipeline integrated advanced PBR (Physically Based Rendering) workflows, involving complex UV mapping, texture baking (Normal/Roughness/AO maps), and dynamic lighting simulation to achieve photorealistic cognitive grounding.
+                            </li>
+                            <li class="bg-slate-50 p-4 rounded-xl">
+                                <strong class="block text-slate-800 mb-1">Virtualized Character Customization</strong>
+                                Developed a high-precision humanoid avatar system. The technical process covered topology optimization, facial blendshape creation (51 morph targets), and skeletal rigging. This establishes a robust foundation for real-time motion capture and emotional expression in virtual social interactions.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Section 3 -->
+                    <div>
+                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">Impact & Future Implications</h5>
+                        <p class="bg-blue-50 p-5 rounded-2xl text-blue-900 text-sm border border-blue-100">
+                            This project serves as a technical testbed for "Digital Twin Sociology." By establishing a seamless visual standard for both environments and avatars, it provides a validated platform for further research into how users perceive reality, identity, and social norms when transitioning from physical to hyper-realistic virtual domains.
+                        </p>
+                    </div>
+                `,
+                tags: ["Unreal Engine", "Digital Twins", "Identity Construction", "PBR"]
+            },
+            "npr_research": {
+                // Updated Title and Subtitle for NPR Project
+                title: "Perceptual Cognition in NPR-based Virtual Environments",
+                subtitle: "An Empirical Study on Visual Perception & Spatial Cognition in Immersive Spaces",
+                // Updated Image Link to the new 'No Watermark' version
+                img: "https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%AF%B9%E6%AF%94%E5%9B%BE2%E6%97%A0%E6%B0%B4%E5%8D%B0.jpg",
+                description: `
+                    <!-- Section 1 -->
+                    <div class="mb-8">
+                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">Research Context</h5>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            While photorealism dominates current Virtual Reality (VR) development, the cognitive impact of Non-Photorealistic Rendering (NPR) in immersive environments remains underexplored. Conducted at the AI Research Institute, this project investigates whether stylized NPR environments can serve as viable alternatives to realistic scenes and how they influence human visual perception and spatial cognition.
+                        </p>
+                    </div>
+
+                    <!-- Section 2 -->
+                    <div class="mb-8">
+                        <h5 class="text-lg font-bold text-slate-900 mb-4 border-l-4 border-blue-600 pl-3">Methodology & Technical Approach</h5>
+                        
+                        <!-- VR Setup Images (Fixed Height + Object Contain) -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                            <!-- Image 1 -->
+                            <div class="rounded-xl border border-slate-100 bg-slate-50 h-64 flex items-center justify-center p-2 overflow-hidden shadow-sm">
+                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/VR%E8%AE%BE%E5%A4%871.png" class="max-w-full max-h-full object-contain rounded">
+                            </div>
+                            <!-- Image 2 -->
+                            <div class="rounded-xl border border-slate-100 bg-slate-50 h-64 flex items-center justify-center p-2 overflow-hidden shadow-sm">
+                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/VR%E8%AE%BE%E5%A4%872.png" class="max-w-full max-h-full object-contain rounded">
+                            </div>
+                        </div>
+                        <p class="text-center text-xs text-slate-400 -mt-4 mb-6">Experimental Setup: HTC VIVE Pro & Environment Calibration</p>
+
+                        <ul class="space-y-4 text-sm text-slate-600">
+                            <li class="bg-slate-50 p-4 rounded-xl">
+                                <strong class="block text-slate-800 mb-1">Parametric NPR Pipeline</strong>
+                                Developed a customized rendering workflow using Blender's node-based system. This enabled precise control over edge detection and shading styles, ensuring consistent variables between realistic and stylized experimental conditions.
+                            </li>
+                            <li class="bg-slate-50 p-4 rounded-xl">
+                                <strong class="block text-slate-800 mb-1">Immersive Interaction Setup</strong>
+                                Utilized HTC VIVE Pro and Steam VR to create a high-fidelity experimental environment. The study employed a comparative A/B testing framework, allowing subjects to freely navigate and interact within both realistic and NPR-stylized scenes.
+                            </li>
+                            <li class="bg-slate-50 p-4 rounded-xl">
+                                <strong class="block text-slate-800 mb-1">Quantitative Analysis</strong>
+                                Adopted a mixed-methods approach, combining subjective psychometric questionnaires (measuring interest, relaxation, spatial comfort) with statistical analysis (Independent Samples T-Test) to evaluate user feedback rigorously.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Section 3 -->
+                    <div>
+                        <h5 class="text-lg font-bold text-slate-900 mb-4 border-l-4 border-blue-600 pl-3">Key Findings & Contributions</h5>
+                        
+                        <!-- Comparison Images (Fixed Height & Alignment) -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                            <!-- Image 1 Container -->
+                            <div class="rounded-xl border border-slate-200 shadow-sm bg-slate-50 h-64 flex items-center justify-center p-2 overflow-hidden">
+                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%AF%B9%E6%AF%94%E5%9B%BE2%E6%97%A0%E6%B0%B4%E5%8D%B0.jpg" class="max-w-full max-h-full object-contain rounded-lg" alt="Comparison 2">
+                            </div>
+                            <!-- Image 2 Container -->
+                            <div class="rounded-xl border border-slate-200 shadow-sm bg-slate-50 h-64 flex items-center justify-center p-2 overflow-hidden">
+                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%AF%B9%E6%AF%94%E5%9B%BE1.jpg" class="max-w-full max-h-full object-contain rounded-lg" alt="Comparison 1">
+                            </div>
+                        </div>
+                        <p class="text-center text-xs text-slate-400 -mt-4 mb-6">Visual Analysis: Stylized vs. Realistic Environment Comparison</p>
+
+                        <!-- SPSS IMAGE HERE -->
+                        <div class="mb-6 rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-white p-1 mt-8">
+                             <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/spss%E5%85%A8%E5%88%86%E6%9E%90.jpg" class="w-full h-auto rounded-lg" alt="SPSS Analysis">
+                        </div>
+                        <p class="text-center text-xs text-slate-400 -mt-4 mb-6">Quantitative Validation: Full SPSS Analysis Data</p>
+
+                        <ul class="space-y-4 text-sm text-slate-600">
+                            <li class="bg-blue-50 p-4 rounded-xl border border-blue-100">
+                                <strong class="block text-blue-900 mb-1">Enhanced Engagement</strong>
+                                Results indicate that NPR environments generated significantly higher scores in "Interest" and "Novelty" compared to photorealistic scenes, suggesting NPR's potential to enhance user engagement in virtual social platforms.
+                            </li>
+                            <li class="bg-blue-50 p-4 rounded-xl border border-blue-100">
+                                <strong class="block text-blue-900 mb-1">Spatial Perception Variance</strong>
+                                The study identified specific deviations in how users perceive space and scale within NPR environments. This finding provides critical guidelines for spatial calibration in future non-realistic VR content creation.
+                            </li>
+                            <li class="bg-blue-50 p-4 rounded-xl border border-blue-100">
+                                <strong class="block text-blue-900 mb-1">Feasibility Verification</strong>
+                                Validated the technical feasibility of using NPR assets for large-scale virtual scene construction, aiming to balance visual aesthetics with computational efficiency for future Metaverse applications.
+                            </li>
+                        </ul>
+                    </div>
+                `,
+                tags: ["Blender", "XR Experiment", "HCI", "Quantitative Analysis"]
+            },
+            "taikonaut": {
                 // Updated Title and Subtitle as per your request
                 title: "Taikonaut Panda: Project Tiangong",
                 subtitle: "A 3D Interactive Sand Table for Aerospace Science Popularization",
@@ -534,134 +765,19 @@
                 `,
                 tags: ["Gamification", "EdTech", "3D Interaction", "IP Design"]
             },
-            "metaverse": {
-                // Updated Title and Subtitle for NPR Project
-                title: "Perceptual Cognition in NPR-based Virtual Environments",
-                subtitle: "An Empirical Study on Visual Perception & Spatial Cognition in Immersive Spaces",
-                // Updated Image Link to the new 'No Watermark' version
-                img: "https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%AF%B9%E6%AF%94%E5%9B%BE2%E6%97%A0%E6%B0%B4%E5%8D%B0.jpg",
+            "nft": {
+                title: "Web3 Digital Collectibles: StarArkNFT",
+                subtitle: "Commercial Art Practice & Digital Creator Economy Validation",
+                img: "https://raw.githubusercontent.com/alankwai/portfolio-library/ef98cb011e97c97cf87c114cc795ded00c89ac4d/61315918ae052492eaa7cf1a5fbe70c8.jpg", 
                 description: `
-                    <!-- Section 1 -->
                     <div class="mb-8">
-                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">Research Context</h5>
+                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">Market Validation</h5>
                         <p class="text-slate-600 text-sm leading-relaxed">
-                            While photorealism dominates current Virtual Reality (VR) development, the cognitive impact of Non-Photorealistic Rendering (NPR) in immersive environments remains underexplored. Conducted at the AI Research Institute, this project investigates whether stylized NPR environments can serve as viable alternatives to realistic scenes and how they influence human visual perception and spatial cognition.
-                        </p>
-                    </div>
-
-                    <!-- Section 2 -->
-                    <div class="mb-8">
-                        <h5 class="text-lg font-bold text-slate-900 mb-4 border-l-4 border-blue-600 pl-3">Methodology & Technical Approach</h5>
-                        
-                        <!-- VR Setup Images (Fixed Height + Object Contain) -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                            <!-- Image 1 -->
-                            <div class="rounded-xl border border-slate-100 bg-slate-50 h-64 flex items-center justify-center p-2 overflow-hidden shadow-sm">
-                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/VR%E8%AE%BE%E5%A4%871.png" class="max-w-full max-h-full object-contain rounded">
-                            </div>
-                            <!-- Image 2 -->
-                            <div class="rounded-xl border border-slate-100 bg-slate-50 h-64 flex items-center justify-center p-2 overflow-hidden shadow-sm">
-                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/VR%E8%AE%BE%E5%A4%872.png" class="max-w-full max-h-full object-contain rounded">
-                            </div>
-                        </div>
-                        <p class="text-center text-xs text-slate-400 -mt-4 mb-6">Experimental Setup: HTC VIVE Pro & Environment Calibration</p>
-
-                        <ul class="space-y-4 text-sm text-slate-600">
-                            <li class="bg-slate-50 p-4 rounded-xl">
-                                <strong class="block text-slate-800 mb-1">Parametric NPR Pipeline</strong>
-                                Developed a customized rendering workflow using Blender's node-based system. This enabled precise control over edge detection and shading styles, ensuring consistent variables between realistic and stylized experimental conditions.
-                            </li>
-                            <li class="bg-slate-50 p-4 rounded-xl">
-                                <strong class="block text-slate-800 mb-1">Immersive Interaction Setup</strong>
-                                Utilized HTC VIVE Pro and Steam VR to create a high-fidelity experimental environment. The study employed a comparative A/B testing framework, allowing subjects to freely navigate and interact within both realistic and NPR-stylized scenes.
-                            </li>
-                            <li class="bg-slate-50 p-4 rounded-xl">
-                                <strong class="block text-slate-800 mb-1">Quantitative Analysis</strong>
-                                Adopted a mixed-methods approach, combining subjective psychometric questionnaires (measuring interest, relaxation, spatial comfort) with statistical analysis (Independent Samples T-Test) to evaluate user feedback rigorously.
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Section 3 -->
-                    <div>
-                        <h5 class="text-lg font-bold text-slate-900 mb-4 border-l-4 border-blue-600 pl-3">Key Findings & Contributions</h5>
-                        
-                        <!-- Comparison Images (Fixed Height & Alignment) -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                            <!-- Image 1 Container -->
-                            <div class="rounded-xl border border-slate-200 shadow-sm bg-slate-50 h-64 flex items-center justify-center p-2 overflow-hidden">
-                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%AF%B9%E6%AF%94%E5%9B%BE2.jpg" class="max-w-full max-h-full object-contain rounded-lg" alt="Comparison 2">
-                            </div>
-                            <!-- Image 2 Container -->
-                            <div class="rounded-xl border border-slate-200 shadow-sm bg-slate-50 h-64 flex items-center justify-center p-2 overflow-hidden">
-                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%AF%B9%E6%AF%94%E5%9B%BE1.jpg" class="max-w-full max-h-full object-contain rounded-lg" alt="Comparison 1">
-                            </div>
-                        </div>
-                        <p class="text-center text-xs text-slate-400 -mt-4 mb-6">Visual Analysis: Stylized vs. Realistic Environment Comparison</p>
-
-                        <!-- SPSS IMAGE HERE -->
-                        <div class="mb-6 rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-white p-1 mt-8">
-                             <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/spss%E5%85%A8%E5%88%86%E6%9E%90.jpg" class="w-full h-auto rounded-lg" alt="SPSS Analysis">
-                        </div>
-                        <p class="text-center text-xs text-slate-400 -mt-4 mb-6">Quantitative Validation: Full SPSS Analysis Data</p>
-
-                        <ul class="space-y-4 text-sm text-slate-600">
-                            <li class="bg-blue-50 p-4 rounded-xl border border-blue-100">
-                                <strong class="block text-blue-900 mb-1">Enhanced Engagement</strong>
-                                Results indicate that NPR environments generated significantly higher scores in "Interest" and "Novelty" compared to photorealistic scenes, suggesting NPR's potential to enhance user engagement in virtual social platforms.
-                            </li>
-                            <li class="bg-blue-50 p-4 rounded-xl border border-blue-100">
-                                <strong class="block text-blue-900 mb-1">Spatial Perception Variance</strong>
-                                The study identified specific deviations in how users perceive space and scale within NPR environments. This finding provides critical guidelines for spatial calibration in future non-realistic VR content creation.
-                            </li>
-                            <li class="bg-blue-50 p-4 rounded-xl border border-blue-100">
-                                <strong class="block text-blue-900 mb-1">Feasibility Verification</strong>
-                                Validated the technical feasibility of using NPR assets for large-scale virtual scene construction, aiming to balance visual aesthetics with computational efficiency for future Metaverse applications.
-                            </li>
-                        </ul>
-                    </div>
-                `,
-                tags: ["Blender", "XR Experiment", "HCI", "Quantitative Analysis"]
-            },
-            "social_adaptation": {
-                title: "Social Adaptation in the Metaverse",
-                subtitle: "High-Fidelity Digital Twins & Identity Construction via Unreal Engine",
-                // Placeholder image for now
-                img: "https://images.unsplash.com/photo-1617802690992-15d93263d3a9?q=80&w=800",
-                description: `
-                    <!-- Section 1 -->
-                    <div class="mb-8">
-                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">Research Context & Objective</h5>
-                        <p class="text-slate-600 text-sm leading-relaxed">
-                            From text messaging to VR interaction, the evolution of communication mediums constantly reshapes human psychological patterns. Conducted at the Beijing Institute for General Artificial Intelligence (BIGAI), this project explores the "adaptive threshold" of future social interaction in the Metaverse. The study posits that <strong>High-Fidelity Environmental Mapping</strong> and <strong>Customized Virtual Identities</strong> are prerequisites for achieving psychological immersion and social adaptability in virtual spaces.
-                        </p>
-                    </div>
-
-                    <!-- Section 2 -->
-                    <div class="mb-8">
-                        <h5 class="text-lg font-bold text-slate-900 mb-4 border-l-4 border-blue-600 pl-3">Technical Framework</h5>
-                        <p class="text-sm text-slate-600 mb-4">The project implements a "Dual-Dimension Adaptive Strategy" using Unreal Engine (UE):</p>
-                        <ul class="space-y-4 text-sm text-slate-600">
-                            <li class="bg-slate-50 p-4 rounded-xl">
-                                <strong class="block text-slate-800 mb-1">Hyper-Realistic Environmental Mapping</strong>
-                                Executed a 1:1 digital twin reconstruction of a living environment. The pipeline integrated advanced PBR (Physically Based Rendering) workflows, involving complex UV mapping, texture baking (Normal/Roughness/AO maps), and dynamic lighting simulation to achieve photorealistic cognitive grounding.
-                            </li>
-                            <li class="bg-slate-50 p-4 rounded-xl">
-                                <strong class="block text-slate-800 mb-1">Virtualized Character Customization</strong>
-                                Developed a high-precision humanoid avatar system. The technical process covered topology optimization, facial blendshape creation (51 morph targets), and skeletal rigging. This establishes a robust foundation for real-time motion capture and emotional expression in virtual social interactions.
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Section 3 -->
-                    <div>
-                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">Impact & Future Implications</h5>
-                        <p class="bg-blue-50 p-5 rounded-2xl text-blue-900 text-sm border border-blue-100">
-                            This project serves as a technical testbed for "Digital Twin Sociology." By establishing a seamless visual standard for both environments and avatars, it provides a validated platform for further research into how users perceive reality, identity, and social norms when transitioning from physical to hyper-realistic virtual domains.
+                            Invited as a <strong>Launch Partner</strong> for the StarArk platform. Created the opening key visual (Splash Screen) and released the exclusive "Wheel · Priest" series, achieving <strong>~1,000 verified sales</strong>, demonstrating strong commercial viability in the Web3 context.
                         </p>
                     </div>
                 `,
-                tags: ["Unreal Engine", "Digital Twins", "Identity Construction", "PBR"]
+                tags: ["Digital Art", "Web3", "Commercial Strategy"]
             }
         };
 
