@@ -132,6 +132,38 @@
             opacity: 1;
             pointer-events: auto;
         }
+
+        /* Toast Notification Styles */
+        #toast {
+            visibility: hidden;
+            min-width: 280px;
+            background-color: #1e293b; /* slate-800 */
+            color: #fff;
+            text-align: center;
+            border-radius: 50px;
+            padding: 12px 24px;
+            position: fixed;
+            z-index: 9999;
+            left: 50%;
+            bottom: 30px;
+            transform: translateX(-50%);
+            font-size: 14px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s, bottom 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        #toast.show {
+            visibility: visible;
+            opacity: 1;
+            bottom: 50px;
+        }
     </style>
 </head>
 <body class="selection:bg-blue-100">
@@ -178,14 +210,10 @@
                         </a>
 
                         <!-- 2. Email Inquiry (Blue Underline) -->
-                        <!-- 已设置好，点击自动发邮件 -->
-                        <a href="mailto:lana_ding@foxmail.com" class="text-sm font-bold border-b-2 border-blue-700 pb-1 hover:text-blue-500 transition self-center">Email Inquiry</a>
+                        <!-- UPDATE: Added onclick event to copy email -->
+                        <a href="mailto:lana_ding@foxmail.com" onclick="copyEmail(event)" class="text-sm font-bold border-b-2 border-blue-700 pb-1 hover:text-blue-500 transition self-center cursor-pointer">Email Inquiry</a>
                         
                         <!-- 3. Academic CV (Blue Underline) -->
-                        <!-- 
-                            已填入你的 PDF 链接
-                            注意：我使用了 /raw/ 路径，这样点击会直接打开 PDF 文件，而不是 GitHub 网页预览页
-                        -->
                         <a href="https://github.com/alankwai/portfolio-library/raw/9f1fc1e36032f9eb904a930ced072c4ce48bd4e1/cv_digital.pdf" target="_blank" class="text-sm font-bold border-b-2 border-blue-700 pb-1 hover:text-blue-500 transition self-center">Academic CV</a>
 
                     </div>
@@ -427,8 +455,10 @@
                     Active seeking PhD opportunities for Fall 2025/2026. Available for research collaborations and academic inquiries.
                 </p>
                 <div class="flex flex-col md:flex-row justify-center gap-6 relative z-10">
-                    <a href="mailto:lana_ding@foxmail.com" class="px-12 py-5 bg-blue-700 text-white rounded-full font-bold hover:bg-blue-600 transition shadow-xl shadow-blue-900/20">Email Me</a>
-                    <a href="#" class="px-12 py-5 border border-slate-700 text-white rounded-full font-bold hover:bg-slate-800 transition">Download CV (PDF)</a>
+                    <!-- UPDATE: Added onclick event -->
+                    <a href="mailto:lana_ding@foxmail.com" onclick="copyEmail(event)" class="px-12 py-5 bg-blue-700 text-white rounded-full font-bold hover:bg-blue-600 transition shadow-xl shadow-blue-900/20 cursor-pointer">Email Me</a>
+                    
+                    <a href="https://github.com/alankwai/portfolio-library/raw/9f1fc1e36032f9eb904a930ced072c4ce48bd4e1/cv_digital.pdf" target="_blank" class="px-12 py-5 border border-slate-700 text-white rounded-full font-bold hover:bg-slate-800 transition">Download CV (PDF)</a>
                 </div>
                 <div class="mt-12 text-slate-500 text-sm relative z-10 font-medium">
                     <i class="fas fa-map-marker-alt mr-2"></i> Xingtai, Hebei, China | (+86) 155-1281-6909
@@ -443,9 +473,13 @@
     </footer>
 
     <!-- Floating Email Button -->
-    <a href="mailto:lana_ding@foxmail.com" class="floating-btn fixed bottom-8 right-8 z-50 flex items-center justify-center w-16 h-16 bg-blue-700 text-white rounded-full shadow-2xl hover:bg-blue-800 hover:scale-110 transition-all duration-300 border-4 border-white" title="Email Me">
+    <!-- UPDATE: Added onclick event -->
+    <a href="mailto:lana_ding@foxmail.com" onclick="copyEmail(event)" class="floating-btn fixed bottom-8 right-8 z-50 flex items-center justify-center w-16 h-16 bg-blue-700 text-white rounded-full shadow-2xl hover:bg-blue-800 hover:scale-110 transition-all duration-300 border-4 border-white cursor-pointer" title="Email Me">
         <i class="fas fa-envelope text-2xl"></i>
     </a>
+
+    <!-- TOAST Notification -->
+    <div id="toast"><i class="fas fa-check-circle text-green-400"></i> Email copied: lana_ding@foxmail.com</div>
 
     <!-- MODAL (Hidden by default) -->
     <div id="project-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4">
@@ -901,6 +935,37 @@
                 closeModal();
             }
         });
+
+        // --- 3. Email Copy Logic ---
+        function copyEmail(e) {
+            e.preventDefault(); // Stop default mailto behavior
+            const email = "lana_ding@foxmail.com";
+            
+            // Use legacy execCommand for maximum compatibility in iframes/non-secure contexts
+            const textArea = document.createElement("textarea");
+            textArea.value = email;
+            textArea.style.position = "fixed"; // Avoid scrolling to bottom
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showToast();
+            } catch (err) {
+                console.error('Copy failed', err);
+                // Fallback to default mailto if copy fails
+                window.location.href = "mailto:" + email;
+            }
+            
+            document.body.removeChild(textArea);
+        }
+
+        function showToast() {
+            const x = document.getElementById("toast");
+            x.className = "show";
+            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+        }
     </script>
 </body>
 </html>
