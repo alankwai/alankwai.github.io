@@ -178,10 +178,15 @@
                         </a>
 
                         <!-- 2. Email Inquiry (Blue Underline) -->
+                        <!-- 已设置好，点击自动发邮件 -->
                         <a href="mailto:lana_ding@foxmail.com" class="text-sm font-bold border-b-2 border-blue-700 pb-1 hover:text-blue-500 transition self-center">Email Inquiry</a>
                         
                         <!-- 3. Academic CV (Blue Underline) -->
-                        <a href="#" class="text-sm font-bold border-b-2 border-blue-700 pb-1 hover:text-blue-500 transition self-center">Academic CV</a>
+                        <!-- 
+                            已填入你的 PDF 链接
+                            注意：我使用了 /raw/ 路径，这样点击会直接打开 PDF 文件，而不是 GitHub 网页预览页
+                        -->
+                        <a href="https://github.com/alankwai/portfolio-library/raw/9f1fc1e36032f9eb904a930ced072c4ce48bd4e1/cv_digital.pdf" target="_blank" class="text-sm font-bold border-b-2 border-blue-700 pb-1 hover:text-blue-500 transition self-center">Academic CV</a>
 
                     </div>
                 </div>
@@ -276,10 +281,11 @@
                             <span class="bg-white text-blue-900 px-4 py-2 rounded-full text-sm font-bold opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 shadow-lg">View Details</span>
                         </div>
                     </div>
-                    <div class="p-6 flex flex-col">
+                    <!-- 布局调整: 添加 flex-1，Tag区域使用 mt-auto 沉底对齐 -->
+                    <div class="p-6 flex flex-col flex-1">
                         <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">Research on the Application of Retro-Futurism in Virtual Anchor Design</h4>
                         <p class="text-xs text-slate-500 mb-0 italic">A Theoretical & Practical Exploration of Digital Identity Aesthetics</p>
-                        <div class="mt-4 flex gap-2 flex-wrap">
+                        <div class="mt-auto pt-4 flex gap-2 flex-wrap">
                             <span class="tag">Character Design</span> <span class="tag">Mixed Methods</span>
                         </div>
                     </div>
@@ -289,17 +295,20 @@
                 <div class="project-grid-item group" onclick="openModal('social_adaptation')">
                     <!-- Aspect Ratio 16:9 -->
                     <div class="aspect-video bg-slate-100 overflow-hidden relative">
-                        <!-- Placeholder for Social Adaptation -->
-                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/%E7%A0%94%E7%A9%B6%E7%94%9F%20%E8%A7%86%E4%BC%A0%20%E4%B8%81%E5%85%B0_09.jpg" alt="Social Adaptation Research" class="w-full h-full object-cover transition duration-700 grayscale-[30%] group-hover:grayscale-0 group-hover:scale-110">
+                        <!-- 
+                            Updated Cover Image: xuanran1.png
+                        -->
+                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/xuanran1.png" alt="Social Adaptation Research" class="w-full h-full object-cover transition duration-700 grayscale-[30%] group-hover:grayscale-0 group-hover:scale-110">
                         <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm italic">2022</div>
                         <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition flex items-center justify-center">
                             <span class="bg-white text-blue-900 px-4 py-2 rounded-full text-sm font-bold opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 shadow-lg">View Details</span>
                         </div>
                     </div>
-                    <div class="p-6 flex flex-col">
+                    <!-- 布局调整: 添加 flex-1，Tag区域使用 mt-auto 沉底对齐 -->
+                    <div class="p-6 flex flex-col flex-1">
                         <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">Social Adaptation in the Metaverse</h4>
                         <p class="text-xs text-slate-500 mb-0 italic">High-Fidelity Digital Twins & Identity Construction</p>
-                        <div class="mt-4 flex gap-2 flex-wrap">
+                        <div class="mt-auto pt-4 flex gap-2 flex-wrap">
                             <span class="tag">Unreal Engine</span> <span class="tag">Digital Twins</span>
                         </div>
                     </div>
@@ -309,7 +318,6 @@
                 <div class="project-grid-item group" onclick="openModal('npr_research')">
                     <!-- Aspect Ratio 16:9 -->
                     <div class="aspect-video bg-slate-100 overflow-hidden relative">
-                        <!-- Updated NPR Image: Correct Link + Bottom Alignment + 140% Scale -->
                         <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%AF%B9%E6%AF%94%E5%9B%BE2%E6%97%A0%E6%B0%B4%E5%8D%B0.jpg" 
                              alt="NPR Research" 
                              class="w-full h-full object-cover object-bottom origin-bottom scale-[1.4] transition duration-700 grayscale-[30%] group-hover:grayscale-0 group-hover:scale-[1.5]">
@@ -318,10 +326,11 @@
                             <span class="bg-white text-blue-900 px-4 py-2 rounded-full text-sm font-bold opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 shadow-lg">View Details</span>
                         </div>
                     </div>
-                    <div class="p-6 flex flex-col">
+                    <!-- 布局调整: 添加 flex-1，Tag区域使用 mt-auto 沉底对齐 -->
+                    <div class="p-6 flex flex-col flex-1">
                         <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">Perceptual Cognition in NPR-based Virtual Environments</h4>
                         <p class="text-xs text-slate-500 mb-0 italic">An Empirical Study on Visual Perception</p>
-                        <div class="mt-4 flex gap-2 flex-wrap">
+                        <div class="mt-auto pt-4 flex gap-2 flex-wrap">
                             <span class="tag">Blender</span> <span class="tag">HCI Research</span>
                         </div>
                     </div>
@@ -337,33 +346,17 @@
                             <span class="bg-white text-blue-900 px-4 py-2 rounded-full text-sm font-bold opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 shadow-lg">View Details</span>
                         </div>
                     </div>
-                    <div class="p-6 flex flex-col">
+                    <!-- 布局调整: 添加 flex-1，Tag区域使用 mt-auto 沉底对齐 -->
+                    <div class="p-6 flex flex-col flex-1">
                         <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">Taikonaut Panda: Project Tiangong</h4>
                         <p class="text-xs text-slate-500 mb-0 italic">A 3D Interactive Sand Table for Aerospace Science</p>
-                        <div class="mt-4 flex gap-2 flex-wrap">
+                        <div class="mt-auto pt-4 flex gap-2 flex-wrap">
                             <span class="tag">Gamification</span> <span class="tag">IP Design</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- 5. NFT Project -->
-                <div class="project-grid-item group" onclick="openModal('nft')">
-                    <!-- Aspect Ratio 16:9 -->
-                    <div class="aspect-video bg-slate-100 overflow-hidden relative">
-                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/ef98cb011e97c97cf87c114cc795ded00c89ac4d/61315918ae052492eaa7cf1a5fbe70c8.jpg" alt="StarArk NFT" class="w-full h-full object-cover transition duration-700 grayscale-[30%] group-hover:grayscale-0 group-hover:scale-110">
-                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm italic">Commercial</div>
-                        <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition flex items-center justify-center">
-                            <span class="bg-white text-blue-900 px-4 py-2 rounded-full text-sm font-bold opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 shadow-lg">View Details</span>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col">
-                        <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">Web3 Digital Collectibles: StarArkNFT</h4>
-                        <p class="text-xs text-slate-500 mb-0 italic">Commercial Art Practice & Digital Creator Economy</p>
-                        <div class="mt-4 flex gap-2 flex-wrap">
-                            <span class="tag">Web3</span> <span class="tag">Commercial</span>
-                        </div>
-                    </div>
-                </div>
+                <!-- Removed NFT Project -->
 
             </div>
         </section>
@@ -506,6 +499,7 @@
                 // Updated Thesis Modal Image
                 img: "https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E4%B8%89%E5%BC%A0%E5%AF%B9%E6%AF%94.jpg",
                 description: `
+                    <!-- 1. Context -->
                     <div class="mb-8">
                         <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">1. Research Context</h5>
                         <p class="text-slate-600 text-sm leading-relaxed mb-4">
@@ -513,10 +507,50 @@
                         </p>
                     </div>
 
-                    <!-- 
-                        =============== Bilibili Video Section (Thesis) =============== 
-                        Inserted BV: BV1RwvvBrET4
-                    -->
+                    <!-- 2. Methodology -->
+                    <div class="mb-8">
+                         <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">2. Methodology & Design Execution</h5>
+                         <ul class="space-y-4 text-sm text-slate-600 mb-6">
+                            <li class="bg-slate-50 p-4 rounded-xl">
+                                <strong class="block text-slate-800 mb-1">Aesthetic Deconstruction</strong>
+                                Systematically analyzed core Retro-Futurist sub-genres (e.g., Atomic Age, Cyberpunk, Vaporwave) to extract visual codes that evoke both nostalgia and technological curiosity.
+                            </li>
+                            <li class="bg-slate-50 p-4 rounded-xl">
+                                <strong class="block text-slate-800 mb-1">Avatar Creation Pipeline</strong>
+                                Translated theoretical findings into a high-fidelity Virtual Anchor character system. The design process integrated aesthetic theory with technical implementation (Live2D/3D modeling and rigging).
+                            </li>
+                         </ul>
+
+                         <!-- Visual Showcase Grid (2x2 Layout) -->
+                         <div class="mb-2">
+                            <h6 class="text-sm font-bold text-slate-700 mb-3">Character Design Series</h6>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="rounded-xl overflow-hidden shadow-sm border border-slate-100">
+                                    <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/%E5%B1%95%E7%A4%BA1-2.jpg" class="w-full h-auto block" alt="Character Design 1">
+                                </div>
+                                <div class="rounded-xl overflow-hidden shadow-sm border border-slate-100">
+                                    <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/%E5%B1%95%E7%A4%BA2.2.jpg" class="w-full h-auto block" alt="Character Design 2">
+                                </div>
+                                <div class="rounded-xl overflow-hidden shadow-sm border border-slate-100">
+                                    <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/%E5%B1%95%E7%A4%BA3-1.jpg" class="w-full h-auto block" alt="Character Design 3">
+                                </div>
+                                <div class="rounded-xl overflow-hidden shadow-sm border border-slate-100">
+                                    <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/%E5%B1%95%E7%A4%BA4.jpg" class="w-full h-auto block" alt="Character Design 4">
+                                </div>
+                            </div>
+                            <p class="text-[10px] text-center text-slate-400 mt-2 italic">Visual Exploration of Retro-Futurist Aesthetics</p>
+                         </div>
+                    </div>
+
+                    <!-- 3. Significance -->
+                    <div class="mb-8">
+                         <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">3. Significance</h5>
+                         <p class="bg-blue-50 p-5 rounded-2xl text-blue-900 text-sm border border-blue-100">
+                             This research bridges the gap between Design Aesthetics and HCI (Human-Computer Interaction). It empirically proves that "Avatar Embodiment" and "Self-presence" can be significantly amplified through distinct stylistic narratives, providing a data-backed framework for the next generation of Virtual IP creation.
+                         </p>
+                    </div>
+
+                    <!-- 4. Video Section -->
                     <div class="mb-8">
                         <h5 class="text-sm font-bold text-slate-900 mb-2 flex items-center gap-2">
                             <i class="fas fa-play-circle text-pink-500"></i> Project Demo Video
@@ -525,7 +559,7 @@
                         <div class="aspect-video w-full rounded-xl overflow-hidden shadow-lg bg-slate-100 relative group border border-slate-200">
                             <iframe 
                                 class="w-full h-full" 
-                                src="//player.bilibili.com/player.html?bvid=BV1RwvvBrET4&page=1&high_quality=1&danmaku=0" 
+                                src="https://player.bilibili.com/player.html?bvid=BV1RwvvBrET4&page=1&high_quality=1&danmaku=0" 
                                 scrolling="no" 
                                 border="0" 
                                 frameborder="0" 
@@ -533,39 +567,18 @@
                                 allowfullscreen="true">
                             </iframe>
                         </div>
+                        <p class="text-xs text-center text-slate-400 mt-2 italic">Demonstration of the virtual environment and character interaction.</p>
+                    </div>
 
-                        <div class="text-center mt-3">
-                            <a href="https://www.bilibili.com/video/BV1RwvvBrET4" target="_blank" class="inline-flex items-center gap-2 text-xs font-bold text-slate-400 hover:text-pink-500 transition border-b border-transparent hover:border-pink-500 pb-0.5">
-                                <i class="fas fa-external-link-alt"></i> 
-                                <span>Video not loading? Watch on Bilibili</span>
-                            </a>
+                    <!-- 5. Concept Board (Moved to Bottom) -->
+                    <div class="mb-8">
+                        <h5 class="text-sm font-bold text-slate-900 mb-2 flex items-center gap-2">
+                             <i class="fas fa-image text-purple-600"></i> Full Design Board
+                        </h5>
+                        <div class="rounded-xl overflow-hidden border border-slate-100 shadow-sm">
+                            <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/%E5%B1%95%E6%9D%BF(1).jpg" alt="Design Concept Board" class="w-full h-auto">
+                            <p class="text-[10px] text-center text-slate-400 py-1 bg-slate-50">Fig 1. Design Concept Overview & Analysis</p>
                         </div>
-                    </div>
-                    <!-- ======================================================== -->
-
-                    <div class="mb-8">
-                         <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">2. Methodology & Design Execution</h5>
-                         <ul class="space-y-4 text-sm text-slate-600 mb-4">
-                            <li class="bg-slate-50 p-4 rounded-xl">
-                                <strong class="block text-slate-800 mb-1">Aesthetic Deconstruction</strong>
-                                Systematically analyzed core Retro-Futurist sub-genres (e.g., Atomic Age, Cyberpunk, Vaporwave) to extract visual codes that evoke both nostalgia and technological curiosity.
-                            </li>
-                            <li class="bg-slate-50 p-4 rounded-xl">
-                                <strong class="block text-slate-800 mb-1">Avatar Creation Pipeline</strong>
-                                Translated theoretical findings into a high-fidelity Virtual Anchor character system. The design process integrated aesthetic theory with technical implementation (Live2D/3D modeling and rigging), ensuring the character possesses both artistic texture and functional interactivity.
-                            </li>
-                            <li class="bg-slate-50 p-4 rounded-xl">
-                                <strong class="block text-slate-800 mb-1">User Research & Validation</strong>
-                                Conducted extensive quantitative research using questionnaires to evaluate audience reception across demographics. The study measured key metrics such as willingness to interact, aesthetic preference, and consumption intent, verifying the market viability of this niche style.
-                            </li>
-                         </ul>
-                    </div>
-
-                    <div class="mb-8">
-                         <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">3. Significance</h5>
-                         <p class="bg-blue-50 p-5 rounded-2xl text-blue-900 text-sm border border-blue-100">
-                             This research bridges the gap between Design Aesthetics and HCI (Human-Computer Interaction). It empirically proves that "Avatar Embodiment" and "Self-presence" can be significantly amplified through distinct stylistic narratives, providing a data-backed framework for the next generation of Virtual IP creation.
-                         </p>
                     </div>
                 `,
                 tags: ["Mixed-Methods", "Character Design", "HCI"]
@@ -573,10 +586,10 @@
             "social_adaptation": {
                 title: "Social Adaptation in the Metaverse",
                 subtitle: "High-Fidelity Digital Twins & Identity Construction via Unreal Engine",
-                // Placeholder image for now
-                img: "https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/%E7%A0%94%E7%A9%B6%E7%94%9F%20%E8%A7%86%E4%BC%A0%20%E4%B8%81%E5%85%B0_09.jpg",
+                // Updated Project Banner to match the new cover (xuanran1.png)
+                img: "https://raw.githubusercontent.com/alankwai/portfolio-library/main/xuanran1.png",
                 description: `
-                    <!-- Section 1 -->
+                    <!-- Section 1: Research Context -->
                     <div class="mb-8">
                         <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">Research Context & Objective</h5>
                         <p class="text-slate-600 text-sm leading-relaxed">
@@ -584,22 +597,81 @@
                         </p>
                     </div>
                     
-                    <!-- 
-                        =============== Bilibili 视频区域 (已优化) =============== 
-                        新增功能：
-                        在视频下方增加了一个 "Watch on Bilibili" 的跳转链接。
-                        作用：防止嵌入播放器卡顿或被拦截时，用户无法观看。
-                    -->
+                    <!-- Section 2: Technical Framework (Integrated Images) -->
+                    <div class="mb-10">
+                        <h5 class="text-lg font-bold text-slate-900 mb-4 border-l-4 border-blue-600 pl-3">Technical Framework & Pipeline</h5>
+                        
+                        <!-- 1. Process Flow Chart -->
+                        <div class="w-11/12 md:w-10/12 mx-auto mb-8 rounded-xl overflow-hidden border border-slate-100 shadow-sm">
+                            <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/process1.png" alt="Development Pipeline" class="w-full h-auto">
+                            <p class="text-[10px] text-center text-slate-400 py-1 bg-slate-50">Fig 1. Development Pipeline</p>
+                        </div>
+
+                        <p class="text-sm text-slate-600 mb-6">The project implements a "Dual-Dimension Adaptive Strategy" utilizing Unreal Engine 5's advanced capabilities:</p>
+                        
+                        <ul class="space-y-8 text-sm text-slate-600">
+                            <!-- Point 1: Environment + Layout Image -->
+                            <li class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                                <strong class="block text-slate-900 text-base mb-2">1. Hyper-Realistic Environmental Mapping</strong>
+                                <p class="mb-4">
+                                    Executed a 1:1 digital twin reconstruction of a living environment. The pipeline integrated advanced PBR (Physically Based Rendering) workflows, involving complex UV mapping, texture baking (Normal/Roughness/AO maps), and dynamic lighting simulation.
+                                </p>
+                                <!-- Layout Image -->
+                                <div class="rounded-lg overflow-hidden border border-slate-200 shadow-sm">
+                                    <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/layout.jpg" alt="Scene Layout" class="w-full h-auto block">
+                                </div>
+                                <p class="text-[10px] text-slate-400 mt-2 italic text-center">Environment Layout & Spatial Mapping</p>
+                            </li>
+
+                            <!-- Point 2: Character + Model Image -->
+                            <li class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                                <strong class="block text-slate-900 text-base mb-2">2. Virtualized Character Customization</strong>
+                                <p class="mb-4">
+                                    Developed a high-precision humanoid avatar system. The technical process covered topology optimization, facial blendshape creation (51 morph targets), and skeletal rigging to facilitate real-time motion capture.
+                                </p>
+                                <!-- Model Image -->
+                                <div class="rounded-lg overflow-hidden border border-slate-200 shadow-sm">
+                                    <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/model1.png" alt="Character Model" class="w-full h-auto block">
+                                </div>
+                                <p class="text-[10px] text-slate-400 mt-2 italic text-center">Character Topology & Rigging</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Section 3: Final Results (Scenes) -->
+                    <div class="mb-10">
+                         <h5 class="text-lg font-bold text-slate-900 mb-4 border-l-4 border-blue-600 pl-3">Scene Realization</h5>
+                         <!-- Grid for Scene Renders -->
+                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <!-- Updated Image 1: sence_new.jpg -->
+                            <div class="rounded-xl overflow-hidden shadow-lg border border-slate-100 bg-black group">
+                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/sence_new.jpg" alt="Scene Render 1" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition">
+                            </div>
+                            <!-- Image 2 -->
+                            <div class="rounded-xl overflow-hidden shadow-lg border border-slate-100 bg-black group">
+                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/sence1.jpg" alt="Scene Render 2" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition">
+                            </div>
+                         </div>
+                         <p class="text-xs text-center text-slate-400 mt-3">High-Fidelity Real-time Renders in Unreal Engine 5</p>
+                    </div>
+
+                    <!-- Section 4: Impact -->
+                    <div class="mb-10">
+                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">Impact & Future Implications</h5>
+                        <p class="bg-blue-50 p-5 rounded-2xl text-blue-900 text-sm border border-blue-100">
+                            This project serves as a technical testbed for "Digital Twin Sociology." By establishing a seamless visual standard for both environments and avatars, it provides a validated platform for further research into how users perceive reality, identity, and social norms when transitioning from physical to hyper-realistic virtual domains.
+                        </p>
+                    </div>
+
+                    <!-- Bilibili Video Section (Moved to Bottom) -->
                     <div class="mb-8">
                         <h5 class="text-sm font-bold text-slate-900 mb-2 flex items-center gap-2">
                             <i class="fas fa-play-circle text-pink-500"></i> Project Demo Video
                         </h5>
-                        
-                        <!-- 视频容器 -->
                         <div class="aspect-video w-full rounded-xl overflow-hidden shadow-lg bg-slate-100 relative group border border-slate-200">
                             <iframe 
                                 class="w-full h-full" 
-                                src="//player.bilibili.com/player.html?bvid=BV1kx411c7Xh&page=1&high_quality=1&danmaku=0" 
+                                src="https://player.bilibili.com/player.html?bvid=BV1RwvvBrETu&page=1&high_quality=1&danmaku=0" 
                                 scrolling="no" 
                                 border="0" 
                                 frameborder="0" 
@@ -607,39 +679,6 @@
                                 allowfullscreen="true">
                             </iframe>
                         </div>
-
-                        <!-- 新增：备用跳转链接 (安全措施) -->
-                        <div class="text-center mt-3">
-                            <a href="https://www.bilibili.com/video/BV1kx411c7Xh" target="_blank" class="inline-flex items-center gap-2 text-xs font-bold text-slate-400 hover:text-pink-500 transition border-b border-transparent hover:border-pink-500 pb-0.5">
-                                <i class="fas fa-external-link-alt"></i> 
-                                <span>Video not loading? Watch on Bilibili</span>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- ============================================= -->
-
-                    <!-- Section 2 -->
-                    <div class="mb-8">
-                        <h5 class="text-lg font-bold text-slate-900 mb-4 border-l-4 border-blue-600 pl-3">Technical Framework</h5>
-                        <p class="text-sm text-slate-600 mb-4">The project implements a "Dual-Dimension Adaptive Strategy" using Unreal Engine (UE):</p>
-                        <ul class="space-y-4 text-sm text-slate-600">
-                            <li class="bg-slate-50 p-4 rounded-xl">
-                                <strong class="block text-slate-800 mb-1">Hyper-Realistic Environmental Mapping</strong>
-                                Executed a 1:1 digital twin reconstruction of a living environment. The pipeline integrated advanced PBR (Physically Based Rendering) workflows, involving complex UV mapping, texture baking (Normal/Roughness/AO maps), and dynamic lighting simulation to achieve photorealistic cognitive grounding.
-                            </li>
-                            <li class="bg-slate-50 p-4 rounded-xl">
-                                <strong class="block text-slate-800 mb-1">Virtualized Character Customization</strong>
-                                Developed a high-precision humanoid avatar system. The technical process covered topology optimization, facial blendshape creation (51 morph targets), and skeletal rigging. This establishes a robust foundation for real-time motion capture and emotional expression in virtual social interactions.
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Section 3 -->
-                    <div>
-                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">Impact & Future Implications</h5>
-                        <p class="bg-blue-50 p-5 rounded-2xl text-blue-900 text-sm border border-blue-100">
-                            This project serves as a technical testbed for "Digital Twin Sociology." By establishing a seamless visual standard for both environments and avatars, it provides a validated platform for further research into how users perceive reality, identity, and social norms when transitioning from physical to hyper-realistic virtual domains.
-                        </p>
                     </div>
                 `,
                 tags: ["Unreal Engine", "Digital Twins", "Identity Construction", "PBR"]
@@ -820,20 +859,6 @@
                     </div>
                 `,
                 tags: ["Gamification", "EdTech", "3D Interaction", "IP Design"]
-            },
-            "nft": {
-                title: "Web3 Digital Collectibles: StarArkNFT",
-                subtitle: "Commercial Art Practice & Digital Creator Economy Validation",
-                img: "https://raw.githubusercontent.com/alankwai/portfolio-library/ef98cb011e97c97cf87c114cc795ded00c89ac4d/61315918ae052492eaa7cf1a5fbe70c8.jpg", 
-                description: `
-                    <div class="mb-8">
-                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">Market Validation</h5>
-                        <p class="text-slate-600 text-sm leading-relaxed">
-                            Invited as a <strong>Launch Partner</strong> for the StarArk platform. Created the opening key visual (Splash Screen) and released the exclusive "Wheel · Priest" series, achieving <strong>~1,000 verified sales</strong>, demonstrating strong commercial viability in the Web3 context.
-                        </p>
-                    </div>
-                `,
-                tags: ["Digital Art", "Web3", "Commercial Strategy"]
             }
         };
 
