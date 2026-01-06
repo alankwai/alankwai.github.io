@@ -210,7 +210,6 @@
                         </a>
 
                         <!-- 2. Email Inquiry (Blue Underline) -->
-                        <!-- UPDATE: Added onclick event to copy email -->
                         <a href="mailto:lana_ding@foxmail.com" onclick="copyEmail(event)" class="text-sm font-bold border-b-2 border-blue-700 pb-1 hover:text-blue-500 transition self-center cursor-pointer">Email Inquiry</a>
                         
                         <!-- 3. Academic CV (Blue Underline) -->
@@ -384,7 +383,26 @@
                     </div>
                 </div>
 
-                <!-- Removed NFT Project -->
+                <!-- 5. Dynamic Composition (New Project) -->
+                <div class="project-grid-item group" onclick="openModal('dynamic_composition')">
+                    <!-- Aspect Ratio 16:9 -->
+                    <div class="aspect-video bg-slate-100 overflow-hidden relative">
+                        <!-- Updated Cover Image: sence1.png -->
+                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/sence1.png" alt="RPG Concept Design" class="w-full h-full object-cover transition duration-700 grayscale-[30%] group-hover:grayscale-0 group-hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm italic">New Research</div>
+                        <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition flex items-center justify-center">
+                            <span class="bg-white text-blue-900 px-4 py-2 rounded-full text-sm font-bold opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 shadow-lg">View Details</span>
+                        </div>
+                    </div>
+                    <!-- 布局调整: 添加 flex-1，Tag区域使用 mt-auto 沉底对齐 -->
+                    <div class="p-6 flex flex-col flex-1">
+                        <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">Research on Dynamic Composition in RPG Concept Design</h4>
+                        <p class="text-xs text-slate-500 mb-0 italic">Visual Immersion via Holistic Dynamic Thinking</p>
+                        <div class="mt-auto pt-4 flex gap-2 flex-wrap">
+                            <span class="tag">UE5</span> <span class="tag">NPR</span> <span class="tag">Game Theory</span>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </section>
@@ -556,7 +574,7 @@
                          </ul>
 
                          <!-- Visual Showcase Grid (2x2 Layout) -->
-                         <div class="mb-2">
+                         <div class="mb-6">
                             <h6 class="text-sm font-bold text-slate-700 mb-3">Character Design Series</h6>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div class="rounded-xl overflow-hidden shadow-sm border border-slate-100">
@@ -574,6 +592,37 @@
                             </div>
                             <p class="text-[10px] text-center text-slate-400 mt-2 italic">Visual Exploration of Retro-Futurist Aesthetics</p>
                          </div>
+
+                         <!-- 
+                            =============== NEW: GIF Gallery (Motion Tests) =============== 
+                            Layout: 3-Column Grid
+                            Style: Fixed Aspect Ratio (3:4) + Object Cover
+                            
+                            【链接修改说明】
+                            根据要求，将前两个 GIF 改回了 GitHub Releases 的下载链接。
+                            这些链接会自动重定向到 objects.githubusercontent.com。
+                         -->
+                         <div class="mb-2">
+                            <h6 class="text-sm font-bold text-slate-700 mb-3">Live2D Motion & Expression Tests</h6>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <!-- GIF 1: Added scale-[1.2] to zoom in -->
+                                <div class="rounded-xl overflow-hidden shadow-sm border border-slate-100 aspect-[3/4]">
+                                    <!-- Changed back to releases/download link -->
+                                    <img src="https://github.com/alankwai/video/releases/download/video-assets/IMG_6622.GIF" class="w-full h-full object-cover block scale-[1.2]" alt="Motion Test 1">
+                                </div>
+                                <!-- GIF 2 -->
+                                <div class="rounded-xl overflow-hidden shadow-sm border border-slate-100 aspect-[3/4]">
+                                    <!-- Changed back to releases/download link -->
+                                    <img src="https://github.com/alankwai/video/releases/download/video-assets/IMG_6625.GIF" class="w-full h-full object-cover block" alt="Motion Test 2">
+                                </div>
+                                <!-- GIF 3 -->
+                                <div class="rounded-xl overflow-hidden shadow-sm border border-slate-100 aspect-[3/4]">
+                                    <!-- This one remains raw as requested previously, or if it works -->
+                                    <img src="https://raw.githubusercontent.com/alankwai/video/main/QQ%E5%9B%BE%E7%89%8720240307011153.gif" class="w-full h-full object-cover block" alt="Motion Test 3">
+                                </div>
+                            </div>
+                            <p class="text-[10px] text-center text-slate-400 mt-2 italic">Dynamic Capture & Interaction</p>
+                         </div>
                     </div>
 
                     <!-- 3. Significance -->
@@ -584,22 +633,24 @@
                          </p>
                     </div>
 
-                    <!-- 4. Video Section -->
+                    <!-- 4. Video Section (Thesis) -->
                     <div class="mb-8">
                         <h5 class="text-sm font-bold text-slate-900 mb-2 flex items-center gap-2">
                             <i class="fas fa-play-circle text-pink-500"></i> Project Demo Video
                         </h5>
                         
                         <div class="aspect-video w-full rounded-xl overflow-hidden shadow-lg bg-slate-100 relative group border border-slate-200">
-                            <iframe 
-                                class="w-full h-full" 
-                                src="https://player.bilibili.com/player.html?bvid=BV1RwvvBrET4&page=1&high_quality=1&danmaku=0" 
-                                scrolling="no" 
-                                border="0" 
-                                frameborder="0" 
-                                framespacing="0" 
-                                allowfullscreen="true">
-                            </iframe>
+                            
+                            <!-- 
+                                ★★★ MP4 视频播放器 ★★★ 
+                                链接已更新为你的 GitHub Release 直链
+                            -->
+                            <video class="w-full h-full object-cover" controls controlsList="nodownload" preload="metadata" poster="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E4%B8%89%E5%BC%A0%E5%AF%B9%E6%AF%94.jpg">
+                                <!-- 这里使用了你提供的 Release 链接 -->
+                                <source src="https://github.com/alankwai/video/releases/download/video-assets/83f87501-8505-4697-92a5-9e1560b032ff.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+
                         </div>
                         <p class="text-xs text-center text-slate-400 mt-2 italic">Demonstration of the virtual environment and character interaction.</p>
                     </div>
@@ -697,21 +748,20 @@
                         </p>
                     </div>
 
-                    <!-- Bilibili Video Section (Moved to Bottom) -->
+                    <!-- MP4 Video Section (Updated) -->
                     <div class="mb-8">
                         <h5 class="text-sm font-bold text-slate-900 mb-2 flex items-center gap-2">
                             <i class="fas fa-play-circle text-pink-500"></i> Project Demo Video
                         </h5>
                         <div class="aspect-video w-full rounded-xl overflow-hidden shadow-lg bg-slate-100 relative group border border-slate-200">
-                            <iframe 
-                                class="w-full h-full" 
-                                src="https://player.bilibili.com/player.html?bvid=BV1RwvvBrETu&page=1&high_quality=1&danmaku=0" 
-                                scrolling="no" 
-                                border="0" 
-                                frameborder="0" 
-                                framespacing="0" 
-                                allowfullscreen="true">
-                            </iframe>
+                            
+                            <!-- ★★★ MP4 视频播放器 ★★★ -->
+                            <video class="w-full h-full object-cover" controls controlsList="nodownload" preload="metadata" poster="https://raw.githubusercontent.com/alankwai/portfolio-library/main/xuanran1.png">
+                                <!-- 替换为新的 Release 链接 -->
+                                <source src="https://github.com/alankwai/video/releases/download/video-assets/2025-12-30_183740_195.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+
                         </div>
                     </div>
                 `,
@@ -893,6 +943,239 @@
                     </div>
                 `,
                 tags: ["Gamification", "EdTech", "3D Interaction", "IP Design"]
+            },
+            "dynamic_composition": {
+                title: "Research on Dynamic Composition in RPG Concept Design",
+                subtitle: "Constructing Visual Immersion via Holistic Dynamic Thinking in Role-Playing Games",
+                img: "https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/sence1.png",
+                description: `
+                    <!-- 1. Background -->
+                    <div class="mb-8">
+                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">1. Research Background & Motivation</h5>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            <strong class="text-slate-800">Core Issue:</strong> This project addresses the challenge of constructing visual immersion in Role-Playing Games (RPGs). Traditional concept design often focuses on static 2D imagery, which can fail to fully translate into the dynamic, open-ended exploration required by modern games.
+                        </p>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            <strong class="text-slate-800">Objective:</strong> The research proposes a framework of "Holistic Dynamic Thinking". It aims to transcend static composition by using dynamic visual arrangements, geometric semiotics, and rhythmic control to guide player attention and evoke emotional responses within a 3D space.
+                        </p>
+                    </div>
+
+                    <!-- 2. Framework -->
+                    <div class="mb-8">
+                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">2. Theoretical Framework: Dynamic Composition</h5>
+                        <p class="text-slate-600 text-sm mb-4">The project establishes a design methodology that bridges theoretical aesthetics and practical application:</p>
+                        <ul class="space-y-4 text-sm text-slate-600 mb-6">
+                            <li class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                                <strong class="block text-slate-800 mb-1">From 2D to 3D</strong>
+                                Investigates how to transform planar composition elements—shapes, silhouettes, negative space, and lighting—into dynamic visual forces within a 3D environment.
+                            </li>
+                            <li class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                                <strong class="block text-slate-800 mb-1">Imagery Shaping</strong>
+                                Fundamental geometric shapes (triangles, squares, circles) are utilized as narrative tools and emotional carriers to implicitly define character personalities and destinies.
+                            </li>
+                            <li class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                                <strong class="block text-slate-800 mb-1">Visual Representation</strong>
+                                Constructs a directional "visual field" through lighting structure, color atmosphere, and rhythmic arrangement, creating a subconscious guide for player navigation.
+                            </li>
+                        </ul>
+
+                        <!-- 
+                            UPDATED: Angle Image (Visual Framework) 
+                            Change: Reduced width from w-3/4 to w-1/2 (50%) for a more compact look.
+                        -->
+                        <div class="w-1/2 mx-auto rounded-xl overflow-hidden border border-slate-100 shadow-sm">
+                            <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/angle.jpg" alt="Dynamic Composition Angles" class="w-full h-auto block">
+                            <p class="text-[10px] text-center text-slate-400 py-1 bg-slate-50">Fig 1. Visual Field Analysis & Composition Structure</p>
+                        </div>
+                    </div>
+
+                    <!-- 3. Practice -->
+                    <div class="mb-8">
+                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">3. Design Practice: "Princess Raynas's Masquerade"</h5>
+                        <p class="text-slate-600 text-sm mb-4 italic">A playable demo set in a stylized Medieval Fantasy world.</p>
+                        
+                        <div class="mb-6 bg-slate-50 p-5 rounded-xl border border-slate-100">
+                            <h6 class="font-bold text-blue-900 mb-3 text-sm uppercase tracking-wide">A. Narrative & World Building</h6>
+                            <p class="text-sm text-slate-600 leading-relaxed">
+                                The story centers on Princess Raynas’s 16th birthday, a pivotal event where she leaves the castle for the first time. The narrative weaves together three factions: the Royal Family (power), the Scholar Faction (truth), and Underground Merchants (profit).
+                            </p>
+                        </div>
+
+                        <div class="mb-6">
+                            <h6 class="font-bold text-slate-800 mb-3 text-sm">B. Character Design & Geometric Semiotics</h6>
+                            <div class="grid md:grid-cols-2 gap-3 text-sm text-slate-600 mb-4">
+                                <div class="bg-white border border-slate-200 p-3 rounded-lg">
+                                    <strong class="block text-slate-900">Princess Raynas (Triangle)</strong>
+                                    Symbolizes "agility" and "instability." Purple gradients and upward-pointing shapes suggest her yearning for freedom.
+                                </div>
+                                <div class="bg-white border border-slate-200 p-3 rounded-lg">
+                                    <strong class="block text-slate-900">Caroline (Vertical Lines)</strong>
+                                    Strict silhouettes and deep blue tones represent rationality and the pursuit of truth.
+                                </div>
+                                <div class="bg-white border border-slate-200 p-3 rounded-lg">
+                                    <strong class="block text-slate-900">Baldwin (Earthy Tones)</strong>
+                                    Simple linen textures and survivalist gear reflect his deep connection to nature.
+                                </div>
+                                <div class="bg-white border border-slate-200 p-3 rounded-lg">
+                                    <strong class="block text-slate-900">Srion (Crow Motifs)</strong>
+                                    Black formal wear symbolizes his neutral, mysterious, and morally ambiguous nature.
+                                </div>
+                            </div>
+
+                            <!-- Role Image (Character Concept) -->
+                            <div class="rounded-xl overflow-hidden border border-slate-100 shadow-sm">
+                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/role.jpg" alt="Character Concept Design" class="w-full h-auto block">
+                                <p class="text-[10px] text-center text-slate-400 py-1 bg-slate-50">Fig 2. Character Design & Geometric Semiotics</p>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h6 class="font-bold text-slate-800 mb-3 text-sm">C. Environment & Visual Guidance</h6>
+                            <ul class="list-disc list-inside space-y-2 text-sm text-slate-600 marker:text-blue-500 mb-6">
+                                <li><strong>The White Castle:</strong> Represents solemnity and order; the starting point of confinement.</li>
+                                <li><strong>The Hidden Cabin:</strong> Uses moss and dappled lighting for a dreamlike atmosphere of freedom.</li>
+                                <li><strong>Visual Guidance:</strong> Integrates butterfly trails and density contrast (forest vs. clearing) to intuitively direct movement.</li>
+                            </ul>
+
+                            <!-- 
+                                =============== REVISED: Scene Gallery =============== 
+                                Change: Fixed Aspect Ratio (aspect-video) + object-cover for the 2x2 grid.
+                                This ensures all 4 images are exactly the same size.
+                            -->
+                            <div class="space-y-4 bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                                
+                                <!-- Level 1: Hero Image -->
+                                <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200">
+                                    <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/final.jpg" alt="Final Scene Concept" class="w-full h-auto block">
+                                </div>
+                                <p class="text-[10px] text-center text-slate-400 -mt-2 mb-2">Key Concept: The Masquerade Atmosphere</p>
+
+                                <!-- Level 2: 2x2 Grid (4 Images) with Fixed Aspect Ratio -->
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <!-- Image 1 -->
+                                    <div class="aspect-video rounded-lg overflow-hidden shadow-sm border border-slate-200">
+                                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/sence2(1).png" class="w-full h-full object-cover hover:scale-110 transition duration-500" alt="Environmental Detail">
+                                    </div>
+                                    <!-- Image 2 -->
+                                    <div class="aspect-video rounded-lg overflow-hidden shadow-sm border border-slate-200">
+                                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/sence4.png" class="w-full h-full object-cover hover:scale-110 transition duration-500" alt="Environmental Detail">
+                                    </div>
+                                    <!-- Image 3 -->
+                                    <div class="aspect-video rounded-lg overflow-hidden shadow-sm border border-slate-200">
+                                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/sence5.png" class="w-full h-full object-cover hover:scale-110 transition duration-500" alt="Environmental Detail">
+                                    </div>
+                                    <!-- Image 4 -->
+                                    <div class="aspect-video rounded-lg overflow-hidden shadow-sm border border-slate-200">
+                                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/sence6.png" class="w-full h-full object-cover hover:scale-110 transition duration-500" alt="Environmental Detail">
+                                    </div>
+                                </div>
+                                
+                                <p class="text-[10px] text-center text-slate-400 italic mt-2">Environmental Details & Lighting Progression</p>
+                            </div>
+                            <!-- =============================================================== -->
+                        </div>
+                    </div>
+
+                    <!-- 4. Tech Implementation -->
+                    <div class="mb-8">
+                        <h5 class="text-lg font-bold text-slate-900 mb-4 border-l-4 border-blue-600 pl-3">4. Technical Implementation (UE5)</h5>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                            <!-- Card 1: Asset Pipeline -->
+                            <div class="bg-slate-50 rounded-xl p-5 border border-slate-100 hover:border-blue-200 transition duration-300">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="w-8 h-8 rounded-lg bg-blue-100 flex items-center justify-center text-blue-600 shrink-0">
+                                        <i class="fas fa-cubes text-sm"></i>
+                                    </div>
+                                    <h6 class="font-bold text-slate-800 text-sm">Asset Pipeline</h6>
+                                </div>
+                                <p class="text-xs text-slate-600 leading-relaxed">
+                                    Executed a rigorous workflow from 2D sketches to 3D white-boxing, high-poly modeling, and UV mapping to ensure design fidelity.
+                                </p>
+                            </div>
+
+                            <!-- Card 2: NPR Rendering -->
+                            <div class="bg-slate-50 rounded-xl p-5 border border-slate-100 hover:border-pink-200 transition duration-300">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="w-8 h-8 rounded-lg bg-pink-100 flex items-center justify-center text-pink-600 shrink-0">
+                                        <i class="fas fa-paint-brush text-sm"></i>
+                                    </div>
+                                    <h6 class="font-bold text-slate-800 text-sm">Stylized Rendering (NPR)</h6>
+                                </div>
+                                <p class="text-xs text-slate-600 leading-relaxed">
+                                    Developed custom shaders with outlines, color grading, and post-process materials to replicate a hand-painted 2D aesthetic within the engine.
+                                </p>
+                            </div>
+
+                            <!-- Card 3: PCG -->
+                            <div class="bg-slate-50 rounded-xl p-5 border border-slate-100 hover:border-green-200 transition duration-300">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="w-8 h-8 rounded-lg bg-green-100 flex items-center justify-center text-green-600 shrink-0">
+                                        <i class="fas fa-tree text-sm"></i>
+                                    </div>
+                                    <h6 class="font-bold text-slate-800 text-sm">Procedural Generation (PCG)</h6>
+                                </div>
+                                <p class="text-xs text-slate-600 leading-relaxed">
+                                    Leveraged UE5's PCG framework for efficient terrain and vegetation generation, allowing for rapid iteration of the environment.
+                                </p>
+                            </div>
+
+                            <!-- Card 4: Animation -->
+                            <div class="bg-slate-50 rounded-xl p-5 border border-slate-100 hover:border-orange-200 transition duration-300">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="w-8 h-8 rounded-lg bg-orange-100 flex items-center justify-center text-orange-600 shrink-0">
+                                        <i class="fas fa-running text-sm"></i>
+                                    </div>
+                                    <h6 class="font-bold text-slate-800 text-sm">Animation & Retargeting</h6>
+                                </div>
+                                <p class="text-xs text-slate-600 leading-relaxed">
+                                    Implemented IK Retargeting to adapt standard motion data to characters with varying proportions, ensuring fluid interaction.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Tech Visuals -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Tech Image 1 -->
+                            <div class="group">
+                                <div class="rounded-xl overflow-hidden border border-slate-200 shadow-sm mb-3 relative">
+                                    <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/NPR_sence.jpg" alt="NPR Shader Breakdown" class="w-full h-auto block">
+                                </div>
+                                <p class="text-xs text-center text-slate-500 font-bold uppercase tracking-wider border-t border-slate-100 pt-2">Fig 3. NPR Shader Implementation</p>
+                            </div>
+                            <!-- Tech Image 2 -->
+                            <div class="group">
+                                <div class="rounded-xl overflow-hidden border border-slate-200 shadow-sm mb-3 relative">
+                                    <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/PCG_terrain.jpg" alt="PCG Terrain System" class="w-full h-auto block">
+                                </div>
+                                <p class="text-xs text-center text-slate-500 font-bold uppercase tracking-wider border-t border-slate-100 pt-2">Fig 4. PCG Terrain Workflow</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MP4 Video Section (New) -->
+                    <div class="mb-8">
+                        <h5 class="text-sm font-bold text-slate-900 mb-2 flex items-center gap-2">
+                            <i class="fas fa-play-circle text-pink-500"></i> Project Demo Video
+                        </h5>
+                        <div class="aspect-video w-full rounded-xl overflow-hidden shadow-lg bg-slate-100 relative group border border-slate-200">
+                            <video class="w-full h-full object-cover" controls controlsList="nodownload" preload="metadata" poster="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/sence1.png">
+                                <source src="https://github.com/alankwai/video/releases/download/video-assets/video_final.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p class="text-xs text-center text-slate-400 mt-2 italic">Demonstration of dynamic composition principles in UE5.</p>
+                    </div>
+
+                    <!-- 5. Conclusion -->
+                    <div>
+                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">5. Conclusion</h5>
+                        <p class="bg-blue-50 p-5 rounded-2xl text-blue-900 text-sm border border-blue-100">
+                            This project successfully validated the efficacy of "Dynamic Composition" in RPG design. It demonstrated that applying 2D aesthetic principles (geometric symbolism, rhythmic arrangement) to 3D space significantly enhances narrative delivery and emotional immersion, resulting in a cohesive visual identity system.
+                        </p>
+                    </div>
+                `,
+                tags: ["UE5", "NPR Rendering", "Game Design", "Dynamic Composition"]
             }
         };
 
