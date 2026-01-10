@@ -210,6 +210,7 @@
                         </a>
 
                         <!-- 2. Email Inquiry (Blue Underline) -->
+                        <!-- UPDATE: Added onclick event to copy email -->
                         <a href="mailto:lana_ding@foxmail.com" onclick="copyEmail(event)" class="text-sm font-bold border-b-2 border-blue-700 pb-1 hover:text-blue-500 transition self-center cursor-pointer">Email Inquiry</a>
                         
                         <!-- 3. Academic CV (Blue Underline) -->
@@ -220,7 +221,8 @@
                 
                 <!-- Avatar Section -->
                 <div class="w-64 h-64 shrink-0 avatar-box rounded-[2.5rem] overflow-hidden shadow-2xl shadow-blue-100 rotate-3 hover:rotate-0 transition-transform duration-500">
-                    <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/ef98cb011e97c97cf87c114cc795ded00c89ac4d/gewoonkarano2718_lat_illustration_geometric_shapes_minimalism_s_8d01dc07-d499-4059-80a7-0eb696186ba1.png" alt="Lan Ding Avatar" class="w-full h-full object-cover">
+                    <!-- Updated Profile Picture -->
+                    <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/Profile%20picture.jpg" alt="Lan Ding Avatar" class="w-full h-full object-cover">
                 </div>
             </div>
         </section>
@@ -299,10 +301,13 @@
                 <div class="project-grid-item group" onclick="openModal('thesis')">
                     <!-- Aspect Ratio 16:9 -->
                     <div class="aspect-video bg-slate-100 overflow-hidden relative">
-                        <!-- Thesis Image: object-[50%_0%] (Top) + scale 120% -->
-                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E4%B8%89%E5%BC%A0%E5%AF%B9%E6%AF%94.jpg" 
+                        <!-- 
+                            Updated Cover Image: program1.jpg
+                            Removed specific positioning classes for safer default cropping with object-cover
+                        -->
+                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/program1.jpg" 
                              alt="Thesis Character Design" 
-                             class="w-full h-full object-cover object-[50%_0%] origin-top scale-[1.2] transition duration-700 grayscale-[30%] group-hover:grayscale-0 group-hover:scale-[1.3]">
+                             class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
                         <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm italic">Master Thesis</div>
                         <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition flex items-center justify-center">
                             <span class="bg-white text-blue-900 px-4 py-2 rounded-full text-sm font-bold opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 shadow-lg">View Details</span>
@@ -324,8 +329,9 @@
                     <div class="aspect-video bg-slate-100 overflow-hidden relative">
                         <!-- 
                             Updated Cover Image: xuanran1.png
+                            Removed grayscale filters
                         -->
-                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/xuanran1.png" alt="Social Adaptation Research" class="w-full h-full object-cover transition duration-700 grayscale-[30%] group-hover:grayscale-0 group-hover:scale-110">
+                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/xuanran1.png" alt="Social Adaptation Research" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
                         <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm italic">2022</div>
                         <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition flex items-center justify-center">
                             <span class="bg-white text-blue-900 px-4 py-2 rounded-full text-sm font-bold opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 shadow-lg">View Details</span>
@@ -345,9 +351,10 @@
                 <div class="project-grid-item group" onclick="openModal('npr_research')">
                     <!-- Aspect Ratio 16:9 -->
                     <div class="aspect-video bg-slate-100 overflow-hidden relative">
+                        <!-- Removed grayscale filters -->
                         <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%AF%B9%E6%AF%94%E5%9B%BE2%E6%97%A0%E6%B0%B4%E5%8D%B0.jpg" 
                              alt="NPR Research" 
-                             class="w-full h-full object-cover object-bottom origin-bottom scale-[1.4] transition duration-700 grayscale-[30%] group-hover:grayscale-0 group-hover:scale-[1.5]">
+                             class="w-full h-full object-cover object-bottom origin-bottom scale-[1.4] transition duration-700 group-hover:scale-[1.5]">
                         <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm italic">2023</div>
                          <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition flex items-center justify-center">
                             <span class="bg-white text-blue-900 px-4 py-2 rounded-full text-sm font-bold opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 shadow-lg">View Details</span>
@@ -363,11 +370,33 @@
                     </div>
                 </div>
 
-                <!-- 4. Taikonaut Panda -->
+                <!-- 4. Yangtze River Digital Twin (NEW PROJECT) -->
+                <div class="project-grid-item group" onclick="openModal('yangtze_river')">
+                    <!-- Aspect Ratio 16:9 -->
+                    <div class="aspect-video bg-slate-100 overflow-hidden relative">
+                        <!-- Updated Cover Image: earth.png. Removed grayscale. -->
+                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/earth.png" alt="Yangtze River Digital Twin" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm italic">2021</div>
+                        <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition flex items-center justify-center">
+                            <span class="bg-white text-blue-900 px-4 py-2 rounded-full text-sm font-bold opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 shadow-lg">View Details</span>
+                        </div>
+                    </div>
+                    <!-- 布局调整: 添加 flex-1，Tag区域使用 mt-auto 沉底对齐 -->
+                    <div class="p-6 flex flex-col flex-1">
+                        <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">Yangtze River Basin Digital Twin</h4>
+                        <p class="text-xs text-slate-500 mb-0 italic">Ecological Evolution Simulation & Scientific Visualization</p>
+                        <div class="mt-auto pt-4 flex gap-2 flex-wrap">
+                            <span class="tag">Digital Twin</span> <span class="tag">Maya</span> <span class="tag">Scientific Vis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Taikonaut Panda (Shifted Down) -->
                 <div class="project-grid-item group" onclick="openModal('taikonaut')">
                     <!-- Aspect Ratio 16:9 -->
                     <div class="aspect-video bg-slate-100 overflow-hidden relative">
-                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E6%B8%B2%E6%9F%93%E5%9B%BE1.jpg" alt="Taikonaut Panda Project" class="w-full h-full object-cover transition duration-700 grayscale-[30%] group-hover:grayscale-0 group-hover:scale-110">
+                        <!-- Removed grayscale filters -->
+                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E6%B8%B2%E6%9F%93%E5%9B%BE1.jpg" alt="Taikonaut Panda Project" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
                         <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm italic">2022</div>
                         <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition flex items-center justify-center">
                             <span class="bg-white text-blue-900 px-4 py-2 rounded-full text-sm font-bold opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 shadow-lg">View Details</span>
@@ -383,12 +412,12 @@
                     </div>
                 </div>
 
-                <!-- 5. Dynamic Composition (New Project) -->
+                <!-- 6. Dynamic Composition (Shifted Down) -->
                 <div class="project-grid-item group" onclick="openModal('dynamic_composition')">
                     <!-- Aspect Ratio 16:9 -->
                     <div class="aspect-video bg-slate-100 overflow-hidden relative">
-                        <!-- Updated Cover Image: sence1.png -->
-                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/sence1.png" alt="RPG Concept Design" class="w-full h-full object-cover transition duration-700 grayscale-[30%] group-hover:grayscale-0 group-hover:scale-110">
+                        <!-- Updated Cover Image: sence1.png. Removed grayscale. -->
+                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/sence1.png" alt="RPG Concept Design" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
                         <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm italic">New Research</div>
                         <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition flex items-center justify-center">
                             <span class="bg-white text-blue-900 px-4 py-2 rounded-full text-sm font-bold opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 shadow-lg">View Details</span>
@@ -549,7 +578,7 @@
                 title: "Research on the Application of Retro-Futurism in Virtual Anchor Design",
                 subtitle: "Master's Thesis | A Theoretical & Practical Exploration of Digital Identity Aesthetics",
                 // Updated Thesis Modal Image
-                img: "https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E4%B8%89%E5%BC%A0%E5%AF%B9%E6%AF%94.jpg",
+                img: "https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/program1.jpg",
                 description: `
                     <!-- 1. Context -->
                     <div class="mb-8">
@@ -645,7 +674,7 @@
                                 ★★★ MP4 视频播放器 ★★★ 
                                 链接已更新为你的 GitHub Release 直链
                             -->
-                            <video class="w-full h-full object-cover" controls controlsList="nodownload" preload="metadata" poster="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E4%B8%89%E5%BC%A0%E5%AF%B9%E6%AF%94.jpg">
+                            <video class="w-full h-full object-cover" controls controlsList="nodownload" preload="metadata" poster="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/program1.jpg">
                                 <!-- 这里使用了你提供的 Release 链接 -->
                                 <source src="https://github.com/alankwai/video/releases/download/video-assets/83f87501-8505-4697-92a5-9e1560b032ff.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
@@ -856,6 +885,100 @@
                 `,
                 tags: ["Blender", "XR Experiment", "HCI", "Quantitative Analysis"]
             },
+            "yangtze_river": {
+                title: "Yangtze River Basin Digital Twin",
+                subtitle: "Ecological Evolution Simulation & Scientific Visualization",
+                // Updated Project Banner to match the new cover (earth.png)
+                img: "https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/earth.png",
+                description: `
+                    <!-- 1. Background -->
+                    <div class="mb-8">
+                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">1. Design Background & Rationale</h5>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            This project aims to transform the complex hydrological and geological data of the Yangtze River Basin into a tangible cinematic visual experience through high-fidelity rendering. Centered on the core concept of the <strong>"Yangtze River Simulator,"</strong> the design utilizes digital terrain reconstruction technology to simulate the ecological changes of the river source region.
+                        </p>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            The goal is to provide a comprehensive scientific observation window, converting abstract geographic information into an intuitive visual demonstration for science popularization.
+                        </p>
+                    </div>
+
+                    <!-- 2. Visual Fidelity (Unified Style: Standard List) -->
+                    <div class="mb-8">
+                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">2. Visual Fidelity & Terrain Mechanics</h5>
+                        <ul class="space-y-4 text-sm text-slate-600 mb-6">
+                            <li class="bg-slate-50 p-4 rounded-xl">
+                                <strong class="block text-slate-800 mb-1">Scientific Realism System</strong>
+                                Establishes a rigorous "Scientific Realism" standard. The visual identity is defined by the objective restoration of geological features—from the glacial textures of the river source to the vegetation coverage—strictly aligning with geographic data to ensure scientific accuracy.
+                            </li>
+                            <li class="bg-slate-50 p-4 rounded-xl">
+                                <strong class="block text-slate-800 mb-1">3D Spatial Reconstruction</strong>
+                                Features a massive-scale mesh structure covering the Yangtze River basin. It offers a "God’s Eye" perspective, allowing the audience to observe the macro-geological environment and ecological details through a continuous, immersive camera movement.
+                            </li>
+                            <li class="bg-slate-50 p-4 rounded-xl">
+                                <strong class="block text-slate-800 mb-1">Scientific Data Translation</strong>
+                                Raw geographic inputs—specifically Digital Elevation Models (DEM)—are translated into 3D geometric assets. This process directly maps numerical altitude coordinates into perceptible terrain undulations, ensuring the digital model mirrors the physical reality.
+                            </li>
+                        </ul>
+
+                        <!-- NEW: Terrain Gallery (3 Images) -->
+                        <div class="space-y-2">
+                             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div class="rounded-xl overflow-hidden border border-slate-100 shadow-sm">
+                                    <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/mountain1.png" alt="Terrain Detail 1" class="w-full h-auto block">
+                                </div>
+                                <div class="rounded-xl overflow-hidden border border-slate-100 shadow-sm">
+                                    <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/mountain2.png" alt="Terrain Detail 2" class="w-full h-auto block">
+                                </div>
+                                <div class="rounded-xl overflow-hidden border border-slate-100 shadow-sm">
+                                    <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/mountain3.png" alt="Terrain Detail 3" class="w-full h-auto block">
+                                </div>
+                             </div>
+                             <p class="text-[10px] text-center text-slate-400 italic">Digital Terrain Reconstruction: Glacial & Vegetation Textures</p>
+                        </div>
+                    </div>
+
+                    <!-- 3. Technical Implementation (Unified Style: Standard List) -->
+                    <div class="mb-8">
+                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">3. Technical Implementation</h5>
+                        <ul class="space-y-4 text-sm text-slate-600">
+                            <li class="bg-slate-50 p-4 rounded-xl">
+                                <strong class="block text-slate-800 mb-1">Data-Driven Mesh Generation</strong>
+                                Utilized basic geographic data to generate high-precision terrain meshes in Autodesk Maya. The workflow focuses on the efficient processing of large-scale datasets to construct a seamless continental environment without compromising geometric integrity.
+                            </li>
+                            <li class="bg-slate-50 p-4 rounded-xl">
+                                <strong class="block text-slate-800 mb-1">Physically Based Rendering (PBR)</strong>
+                                Applied the Arnold Renderer to simulate realistic climatic atmospheres. By configuring physical sun and sky systems, the design authentically restores the lighting conditions of the plateau, presenting a pure and naturalistic visual result for video demonstration.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 4. Impact -->
+                    <div class="mb-8">
+                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">4. Impact & Recognition</h5>
+                        <p class="bg-blue-50 p-5 rounded-2xl text-blue-900 text-sm border border-blue-100">
+                            Supported by the <strong>Central Government Support for Local Special Projects</strong> (Key Technology Research of Ecological Environment System), this project serves as the visual component for science popularization and reporting. It demonstrates the application value of 3D visualization in interpreting complex ecological data for public and academic presentation.
+                        </p>
+                    </div>
+
+                    <!-- 
+                        5. Video Section (NEW)
+                        Added MP4 video using GitHub Releases link
+                    -->
+                    <div class="mb-8">
+                        <h5 class="text-sm font-bold text-slate-900 mb-2 flex items-center gap-2">
+                            <i class="fas fa-play-circle text-pink-500"></i> Project Demo Video
+                        </h5>
+                        <div class="aspect-video w-full rounded-xl overflow-hidden shadow-lg bg-slate-100 relative group border border-slate-200">
+                            <video class="w-full h-full object-cover" controls controlsList="nodownload" preload="metadata" poster="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/earth.png">
+                                <source src="https://github.com/alankwai/video/releases/download/video-assets/hecheng.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p class="text-xs text-center text-slate-400 mt-2 italic">Cinematic visualization of ecological evolution.</p>
+                    </div>
+                `,
+                tags: ["Digital Twin", "Maya", "Scientific Vis"]
+            },
             "taikonaut": {
                 // Updated Title and Subtitle as per your request
                 title: "Taikonaut Panda: Project Tiangong",
@@ -960,29 +1083,26 @@
                         </p>
                     </div>
 
-                    <!-- 2. Framework -->
+                    <!-- 2. Framework (Unified Style: Standard List) -->
                     <div class="mb-8">
                         <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">2. Theoretical Framework: Dynamic Composition</h5>
                         <p class="text-slate-600 text-sm mb-4">The project establishes a design methodology that bridges theoretical aesthetics and practical application:</p>
                         <ul class="space-y-4 text-sm text-slate-600 mb-6">
-                            <li class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                            <li class="bg-slate-50 p-4 rounded-xl">
                                 <strong class="block text-slate-800 mb-1">From 2D to 3D</strong>
                                 Investigates how to transform planar composition elements—shapes, silhouettes, negative space, and lighting—into dynamic visual forces within a 3D environment.
                             </li>
-                            <li class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                            <li class="bg-slate-50 p-4 rounded-xl">
                                 <strong class="block text-slate-800 mb-1">Imagery Shaping</strong>
                                 Fundamental geometric shapes (triangles, squares, circles) are utilized as narrative tools and emotional carriers to implicitly define character personalities and destinies.
                             </li>
-                            <li class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                            <li class="bg-slate-50 p-4 rounded-xl">
                                 <strong class="block text-slate-800 mb-1">Visual Representation</strong>
                                 Constructs a directional "visual field" through lighting structure, color atmosphere, and rhythmic arrangement, creating a subconscious guide for player navigation.
                             </li>
                         </ul>
 
-                        <!-- 
-                            UPDATED: Angle Image (Visual Framework) 
-                            Change: Reduced width from w-3/4 to w-1/2 (50%) for a more compact look.
-                        -->
+                        <!-- Angle Image (Visual Framework) -->
                         <div class="w-1/2 mx-auto rounded-xl overflow-hidden border border-slate-100 shadow-sm">
                             <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/angle.jpg" alt="Dynamic Composition Angles" class="w-full h-auto block">
                             <p class="text-[10px] text-center text-slate-400 py-1 bg-slate-50">Fig 1. Visual Field Analysis & Composition Structure</p>
@@ -1037,11 +1157,7 @@
                                 <li><strong>Visual Guidance:</strong> Integrates butterfly trails and density contrast (forest vs. clearing) to intuitively direct movement.</li>
                             </ul>
 
-                            <!-- 
-                                =============== REVISED: Scene Gallery =============== 
-                                Change: Fixed Aspect Ratio (aspect-video) + object-cover for the 2x2 grid.
-                                This ensures all 4 images are exactly the same size.
-                            -->
+                            <!-- Scene Gallery -->
                             <div class="space-y-4 bg-slate-50 p-4 rounded-2xl border border-slate-100">
                                 
                                 <!-- Level 1: Hero Image -->
@@ -1052,19 +1168,15 @@
 
                                 <!-- Level 2: 2x2 Grid (4 Images) with Fixed Aspect Ratio -->
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    <!-- Image 1 -->
                                     <div class="aspect-video rounded-lg overflow-hidden shadow-sm border border-slate-200">
                                         <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/sence2(1).png" class="w-full h-full object-cover hover:scale-110 transition duration-500" alt="Environmental Detail">
                                     </div>
-                                    <!-- Image 2 -->
                                     <div class="aspect-video rounded-lg overflow-hidden shadow-sm border border-slate-200">
                                         <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/sence4.png" class="w-full h-full object-cover hover:scale-110 transition duration-500" alt="Environmental Detail">
                                     </div>
-                                    <!-- Image 3 -->
                                     <div class="aspect-video rounded-lg overflow-hidden shadow-sm border border-slate-200">
                                         <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/sence5.png" class="w-full h-full object-cover hover:scale-110 transition duration-500" alt="Environmental Detail">
                                     </div>
-                                    <!-- Image 4 -->
                                     <div class="aspect-video rounded-lg overflow-hidden shadow-sm border border-slate-200">
                                         <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/sence6.png" class="w-full h-full object-cover hover:scale-110 transition duration-500" alt="Environmental Detail">
                                     </div>
@@ -1072,67 +1184,31 @@
                                 
                                 <p class="text-[10px] text-center text-slate-400 italic mt-2">Environmental Details & Lighting Progression</p>
                             </div>
-                            <!-- =============================================================== -->
                         </div>
                     </div>
 
-                    <!-- 4. Tech Implementation -->
+                    <!-- 4. Tech Implementation (Unified Style: Standard List) -->
                     <div class="mb-8">
                         <h5 class="text-lg font-bold text-slate-900 mb-4 border-l-4 border-blue-600 pl-3">4. Technical Implementation (UE5)</h5>
                         
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-                            <!-- Card 1: Asset Pipeline -->
-                            <div class="bg-slate-50 rounded-xl p-5 border border-slate-100 hover:border-blue-200 transition duration-300">
-                                <div class="flex items-center gap-3 mb-2">
-                                    <div class="w-8 h-8 rounded-lg bg-blue-100 flex items-center justify-center text-blue-600 shrink-0">
-                                        <i class="fas fa-cubes text-sm"></i>
-                                    </div>
-                                    <h6 class="font-bold text-slate-800 text-sm">Asset Pipeline</h6>
-                                </div>
-                                <p class="text-xs text-slate-600 leading-relaxed">
-                                    Executed a rigorous workflow from 2D sketches to 3D white-boxing, high-poly modeling, and UV mapping to ensure design fidelity.
-                                </p>
-                            </div>
-
-                            <!-- Card 2: NPR Rendering -->
-                            <div class="bg-slate-50 rounded-xl p-5 border border-slate-100 hover:border-pink-200 transition duration-300">
-                                <div class="flex items-center gap-3 mb-2">
-                                    <div class="w-8 h-8 rounded-lg bg-pink-100 flex items-center justify-center text-pink-600 shrink-0">
-                                        <i class="fas fa-paint-brush text-sm"></i>
-                                    </div>
-                                    <h6 class="font-bold text-slate-800 text-sm">Stylized Rendering (NPR)</h6>
-                                </div>
-                                <p class="text-xs text-slate-600 leading-relaxed">
-                                    Developed custom shaders with outlines, color grading, and post-process materials to replicate a hand-painted 2D aesthetic within the engine.
-                                </p>
-                            </div>
-
-                            <!-- Card 3: PCG -->
-                            <div class="bg-slate-50 rounded-xl p-5 border border-slate-100 hover:border-green-200 transition duration-300">
-                                <div class="flex items-center gap-3 mb-2">
-                                    <div class="w-8 h-8 rounded-lg bg-green-100 flex items-center justify-center text-green-600 shrink-0">
-                                        <i class="fas fa-tree text-sm"></i>
-                                    </div>
-                                    <h6 class="font-bold text-slate-800 text-sm">Procedural Generation (PCG)</h6>
-                                </div>
-                                <p class="text-xs text-slate-600 leading-relaxed">
-                                    Leveraged UE5's PCG framework for efficient terrain and vegetation generation, allowing for rapid iteration of the environment.
-                                </p>
-                            </div>
-
-                            <!-- Card 4: Animation -->
-                            <div class="bg-slate-50 rounded-xl p-5 border border-slate-100 hover:border-orange-200 transition duration-300">
-                                <div class="flex items-center gap-3 mb-2">
-                                    <div class="w-8 h-8 rounded-lg bg-orange-100 flex items-center justify-center text-orange-600 shrink-0">
-                                        <i class="fas fa-running text-sm"></i>
-                                    </div>
-                                    <h6 class="font-bold text-slate-800 text-sm">Animation & Retargeting</h6>
-                                </div>
-                                <p class="text-xs text-slate-600 leading-relaxed">
-                                    Implemented IK Retargeting to adapt standard motion data to characters with varying proportions, ensuring fluid interaction.
-                                </p>
-                            </div>
-                        </div>
+                        <ul class="space-y-4 text-sm text-slate-600 mb-8">
+                            <li class="bg-slate-50 p-4 rounded-xl">
+                                <strong class="block text-slate-800 mb-1">Asset Pipeline</strong>
+                                Executed a rigorous workflow from 2D sketches to 3D white-boxing, high-poly modeling, and UV mapping to ensure design fidelity.
+                            </li>
+                            <li class="bg-slate-50 p-4 rounded-xl">
+                                <strong class="block text-slate-800 mb-1">Stylized Rendering (NPR)</strong>
+                                Developed custom shaders with outlines, color grading, and post-process materials to replicate a hand-painted 2D aesthetic within the engine.
+                            </li>
+                            <li class="bg-slate-50 p-4 rounded-xl">
+                                <strong class="block text-slate-800 mb-1">Procedural Generation (PCG)</strong>
+                                Leveraged UE5's PCG framework for efficient terrain and vegetation generation, allowing for rapid iteration of the environment.
+                            </li>
+                            <li class="bg-slate-50 p-4 rounded-xl">
+                                <strong class="block text-slate-800 mb-1">Animation & Retargeting</strong>
+                                Implemented IK Retargeting to adapt standard motion data to characters with varying proportions, ensuring fluid interaction.
+                            </li>
+                        </ul>
 
                         <!-- Tech Visuals -->
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -1153,7 +1229,7 @@
                         </div>
                     </div>
 
-                    <!-- MP4 Video Section (New) -->
+                    <!-- MP4 Video Section -->
                     <div class="mb-8">
                         <h5 class="text-sm font-bold text-slate-900 mb-2 flex items-center gap-2">
                             <i class="fas fa-play-circle text-pink-500"></i> Project Demo Video
