@@ -283,7 +283,7 @@
                         <h3 class="text-xl font-bold text-slate-800">Master's Thesis Research</h3>
                         <span class="text-slate-400 text-sm italic">2023 - 2024</span>
                     </div>
-                    <p class="text-slate-600 mb-2"><strong>Topic:</strong> Research on the Application of Retro-Futurism in Virtual Anchor Design</p>
+                    <p class="text-slate-600 mb-2"><strong>Topic:</strong> The Application of Retrofuturism in VTuber Avatar Design</p>
                     <p class="text-sm text-slate-500 mb-4">Supervisor: Prof. Zhe Yang</p>
                     <a href="#presentations" class="text-sm font-bold text-blue-700 hover:underline">
                         <i class="fas fa-arrow-down mr-1"></i> See Detailed Project in Portfolio Section
@@ -315,15 +315,42 @@
                     </div>
                     <!-- 布局调整: 添加 flex-1，Tag区域使用 mt-auto 沉底对齐 -->
                     <div class="p-6 flex flex-col flex-1">
-                        <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">Research on the Application of Retro-Futurism in Virtual Anchor Design</h4>
+                        <!-- Updated Title -->
+                        <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">The Application of Retrofuturism in VTuber Avatar Design</h4>
+                        <!-- Reverted font to default (Lora) for the italic ampersand style -->
                         <p class="text-xs text-slate-500 mb-0 italic">A Theoretical & Practical Exploration of Digital Identity Aesthetics</p>
+                        <!-- HTML Tag Display (Editable Here) -->
                         <div class="mt-auto pt-4 flex gap-2 flex-wrap">
                             <span class="tag">Character Design</span> <span class="tag">Mixed Methods</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- 2. Social Adaptation (Metaverse) -->
+                <!-- 2. NPR Research (Moved Up) -->
+                <div class="project-grid-item group" onclick="openModal('npr_research')">
+                    <!-- Aspect Ratio 16:9 -->
+                    <div class="aspect-video bg-slate-100 overflow-hidden relative">
+                        <!-- Removed grayscale filters -->
+                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%AF%B9%E6%AF%94%E5%9B%BE2%E6%97%A0%E6%B0%B4%E5%8D%B0.jpg" 
+                             alt="NPR Research" 
+                             class="w-full h-full object-cover object-bottom origin-bottom scale-[1.4] transition duration-700 group-hover:scale-[1.5]">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm italic">2023</div>
+                         <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition flex items-center justify-center">
+                            <span class="bg-white text-blue-900 px-4 py-2 rounded-full text-sm font-bold opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 shadow-lg">View Details</span>
+                        </div>
+                    </div>
+                    <!-- 布局调整: 添加 flex-1，Tag区域使用 mt-auto 沉底对齐 -->
+                    <div class="p-6 flex flex-col flex-1">
+                        <!-- Updated Title -->
+                        <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">Impact of Non-Photorealistic Rendering on Human Perception in Virtual Reality</h4>
+                        <p class="text-xs text-slate-500 mb-0 italic">An Empirical Study on Visual Perception</p>
+                        <div class="mt-auto pt-4 flex gap-2 flex-wrap">
+                            <span class="tag">Blender</span> <span class="tag">HCI Research</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Social Adaptation (Metaverse) (Moved Down) -->
                 <div class="project-grid-item group" onclick="openModal('social_adaptation')">
                     <!-- Aspect Ratio 16:9 -->
                     <div class="aspect-video bg-slate-100 overflow-hidden relative">
@@ -339,7 +366,7 @@
                     </div>
                     <!-- 布局调整: 添加 flex-1，Tag区域使用 mt-auto 沉底对齐 -->
                     <div class="p-6 flex flex-col flex-1">
-                        <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">Social Adaptation in the Metaverse</h4>
+                        <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">Exploration of Metaverse Development and its Impact on Social Interaction Patterns</h4>
                         <p class="text-xs text-slate-500 mb-0 italic">High-Fidelity Digital Twins & Identity Construction</p>
                         <div class="mt-auto pt-4 flex gap-2 flex-wrap">
                             <span class="tag">Unreal Engine</span> <span class="tag">Digital Twins</span>
@@ -347,51 +374,29 @@
                     </div>
                 </div>
 
-                <!-- 3. NPR Research -->
-                <div class="project-grid-item group" onclick="openModal('npr_research')">
+                <!-- 4. Dynamic Composition (Moved Here & Tag Updated to 2022) -->
+                <div class="project-grid-item group" onclick="openModal('dynamic_composition')">
                     <!-- Aspect Ratio 16:9 -->
                     <div class="aspect-video bg-slate-100 overflow-hidden relative">
-                        <!-- Removed grayscale filters -->
-                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%AF%B9%E6%AF%94%E5%9B%BE2%E6%97%A0%E6%B0%B4%E5%8D%B0.jpg" 
-                             alt="NPR Research" 
-                             class="w-full h-full object-cover object-bottom origin-bottom scale-[1.4] transition duration-700 group-hover:scale-[1.5]">
-                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm italic">2023</div>
-                         <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition flex items-center justify-center">
-                            <span class="bg-white text-blue-900 px-4 py-2 rounded-full text-sm font-bold opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 shadow-lg">View Details</span>
-                        </div>
-                    </div>
-                    <!-- 布局调整: 添加 flex-1，Tag区域使用 mt-auto 沉底对齐 -->
-                    <div class="p-6 flex flex-col flex-1">
-                        <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">Perceptual Cognition in NPR-based Virtual Environments</h4>
-                        <p class="text-xs text-slate-500 mb-0 italic">An Empirical Study on Visual Perception</p>
-                        <div class="mt-auto pt-4 flex gap-2 flex-wrap">
-                            <span class="tag">Blender</span> <span class="tag">HCI Research</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 4. Yangtze River Digital Twin (NEW PROJECT) -->
-                <div class="project-grid-item group" onclick="openModal('yangtze_river')">
-                    <!-- Aspect Ratio 16:9 -->
-                    <div class="aspect-video bg-slate-100 overflow-hidden relative">
-                        <!-- Updated Cover Image: earth.png. Removed grayscale. -->
-                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/earth.png" alt="Yangtze River Digital Twin" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
-                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm italic">2021</div>
+                        <!-- Updated Cover Image: sence1.png. Removed grayscale. -->
+                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/sence1.png" alt="RPG Concept Design" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <!-- Tag Changed to 2022 -->
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm italic">2022</div>
                         <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition flex items-center justify-center">
                             <span class="bg-white text-blue-900 px-4 py-2 rounded-full text-sm font-bold opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 shadow-lg">View Details</span>
                         </div>
                     </div>
                     <!-- 布局调整: 添加 flex-1，Tag区域使用 mt-auto 沉底对齐 -->
                     <div class="p-6 flex flex-col flex-1">
-                        <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">Yangtze River Basin Digital Twin</h4>
-                        <p class="text-xs text-slate-500 mb-0 italic">Ecological Evolution Simulation & Scientific Visualization</p>
+                        <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">Research on Dynamic Composition in the Concept Design of Role-Playing Games</h4>
+                        <p class="text-xs text-slate-500 mb-0 italic">Visual Immersion via Holistic Dynamic Thinking</p>
                         <div class="mt-auto pt-4 flex gap-2 flex-wrap">
-                            <span class="tag">Digital Twin</span> <span class="tag">Maya</span> <span class="tag">Scientific Vis</span>
+                            <span class="tag">UE5</span> <span class="tag">NPR</span> <span class="tag">Game Theory</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- 5. Taikonaut Panda (Shifted Down) -->
+                <!-- 5. Taikonaut Panda -->
                 <div class="project-grid-item group" onclick="openModal('taikonaut')">
                     <!-- Aspect Ratio 16:9 -->
                     <div class="aspect-video bg-slate-100 overflow-hidden relative">
@@ -412,23 +417,24 @@
                     </div>
                 </div>
 
-                <!-- 6. Dynamic Composition (Shifted Down) -->
-                <div class="project-grid-item group" onclick="openModal('dynamic_composition')">
+                <!-- 6. Yangtze River Digital Twin (Moved Here) -->
+                <div class="project-grid-item group" onclick="openModal('yangtze_river')">
                     <!-- Aspect Ratio 16:9 -->
                     <div class="aspect-video bg-slate-100 overflow-hidden relative">
-                        <!-- Updated Cover Image: sence1.png. Removed grayscale. -->
-                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/sence1.png" alt="RPG Concept Design" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
-                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm italic">New Research</div>
+                        <!-- Updated Cover Image: earth.png. Removed grayscale. -->
+                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/earth.png" alt="Yangtze River Digital Twin" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm italic">2021</div>
                         <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition flex items-center justify-center">
                             <span class="bg-white text-blue-900 px-4 py-2 rounded-full text-sm font-bold opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 shadow-lg">View Details</span>
                         </div>
                     </div>
                     <!-- 布局调整: 添加 flex-1，Tag区域使用 mt-auto 沉底对齐 -->
                     <div class="p-6 flex flex-col flex-1">
-                        <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">Research on Dynamic Composition in RPG Concept Design</h4>
-                        <p class="text-xs text-slate-500 mb-0 italic">Visual Immersion via Holistic Dynamic Thinking</p>
+                        <!-- Updated Title -->
+                        <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">Digital Simulation and Evolutionary Analysis of the Yangtze River Basin Ecosystem</h4>
+                        <p class="text-xs text-slate-500 mb-0 italic">Ecological Evolution Simulation & Scientific Visualization</p>
                         <div class="mt-auto pt-4 flex gap-2 flex-wrap">
-                            <span class="tag">UE5</span> <span class="tag">NPR</span> <span class="tag">Game Theory</span>
+                            <span class="tag">Digital Twin</span> <span class="tag">Maya</span> <span class="tag">Scientific Vis</span>
                         </div>
                     </div>
                 </div>
@@ -495,20 +501,43 @@
 
         <!-- Contact Footer -->
         <section id="cv" class="mb-20">
-            <div class="bg-slate-950 p-16 text-center rounded-[3rem] text-white relative overflow-hidden">
-                <div class="absolute top-0 right-0 w-96 h-96 bg-blue-600 rounded-full -mr-48 -mt-48 opacity-10 blur-[100px]"></div>
-                <h2 class="text-4xl font-bold mb-6 relative z-10">Let's Connect</h2>
-                <p class="text-slate-400 mb-10 max-w-md mx-auto relative z-10">
-                    Active seeking PhD opportunities for Fall 2025/2026. Available for research collaborations and academic inquiries.
-                </p>
-                <div class="flex flex-col md:flex-row justify-center gap-6 relative z-10">
-                    <!-- UPDATE: Added onclick event -->
-                    <a href="mailto:lana_ding@foxmail.com" onclick="copyEmail(event)" class="px-12 py-5 bg-blue-700 text-white rounded-full font-bold hover:bg-blue-600 transition shadow-xl shadow-blue-900/20 cursor-pointer">Email Me</a>
+            <!-- 
+                Refined Layout: "Banner Style"
+                Changes:
+                1. Used 'flex-row' for desktop to reduce vertical height.
+                2. Added a secondary purple gradient orb for visual balance.
+                3. Adjusted padding for a tighter, sleeker look.
+            -->
+            <div class="bg-slate-950 rounded-[2.5rem] relative overflow-hidden">
+                
+                <!-- Background Effects -->
+                <div class="absolute top-0 right-0 w-96 h-96 bg-blue-600 rounded-full -mr-20 -mt-40 opacity-20 blur-[80px]"></div>
+                <!-- Added a subtle purple glow at bottom-left to balance the void -->
+                <div class="absolute bottom-0 left-0 w-80 h-80 bg-purple-600 rounded-full -ml-20 -mb-40 opacity-10 blur-[80px]"></div>
+
+                <div class="relative z-10 px-8 py-12 md:px-16 md:py-14 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
                     
-                    <a href="https://github.com/alankwai/portfolio-library/raw/9f1fc1e36032f9eb904a930ced072c4ce48bd4e1/cv_digital.pdf" target="_blank" class="px-12 py-5 border border-slate-700 text-white rounded-full font-bold hover:bg-slate-800 transition">Download CV (PDF)</a>
-                </div>
-                <div class="mt-12 text-slate-500 text-sm relative z-10 font-medium">
-                    <i class="fas fa-map-marker-alt mr-2"></i> Xingtai, Hebei, China | (+86) 155-1281-6909
+                    <!-- Left Side: Text -->
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-white mb-2">Let's Connect</h2>
+                        <p class="text-slate-400 text-sm font-medium">Open for academic exchanges & collaborations.</p>
+                    </div>
+
+                    <!-- Right Side: Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 shrink-0">
+                        <!-- Email Button -->
+                        <a href="mailto:lana_ding@foxmail.com" onclick="copyEmail(event)" class="px-8 py-4 bg-white text-slate-900 rounded-full font-bold hover:bg-blue-50 transition shadow-lg flex items-center justify-center gap-2 cursor-pointer group">
+                            <i class="fas fa-envelope text-blue-600 group-hover:scale-110 transition"></i>
+                            <span>Email Me</span>
+                        </a>
+                        
+                        <!-- CV Button -->
+                        <a href="https://github.com/alankwai/portfolio-library/raw/9f1fc1e36032f9eb904a930ced072c4ce48bd4e1/cv_digital.pdf" target="_blank" class="px-8 py-4 bg-slate-800 text-white rounded-full font-bold hover:bg-slate-700 transition border border-slate-700 flex items-center justify-center gap-2">
+                            <i class="fas fa-file-pdf text-slate-400"></i>
+                            <span>Download CV</span>
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -551,6 +580,7 @@
             <div class="px-8 md:px-12 pb-16 -mt-12 relative">
                 <div class="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 mb-8">
                     <h3 id="modal-title" class="text-3xl md:text-4xl font-bold text-slate-900 mb-3 leading-tight">Project Title</h3>
+                    <!-- Modified modal subtitle font to match the card -->
                     <p id="modal-subtitle" class="text-base md:text-lg text-blue-700 font-bold italic">Subtitle / Conference Name</p>
                 </div>
                 
@@ -575,7 +605,7 @@
         const projectData = {
             "thesis": {
                 // Updated Title and content
-                title: "Research on the Application of Retro-Futurism in Virtual Anchor Design",
+                title: "The Application of Retrofuturism in VTuber Avatar Design",
                 subtitle: "Master's Thesis | A Theoretical & Practical Exploration of Digital Identity Aesthetics",
                 // Updated Thesis Modal Image
                 img: "https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/program1.jpg",
@@ -698,7 +728,7 @@
                 tags: ["Mixed-Methods", "Character Design", "HCI"]
             },
             "social_adaptation": {
-                title: "Social Adaptation in the Metaverse",
+                title: "Exploration of Metaverse Development and its Impact on Social Interaction Patterns",
                 subtitle: "High-Fidelity Digital Twins & Identity Construction via Unreal Engine",
                 // Updated Project Banner to match the new cover (xuanran1.png)
                 img: "https://raw.githubusercontent.com/alankwai/portfolio-library/main/xuanran1.png",
@@ -798,7 +828,7 @@
             },
             "npr_research": {
                 // Updated Title and Subtitle for NPR Project
-                title: "Perceptual Cognition in NPR-based Virtual Environments",
+                title: "Impact of Non-Photorealistic Rendering on Human Perception in Virtual Reality",
                 subtitle: "An Empirical Study on Visual Perception & Spatial Cognition in Immersive Spaces",
                 // Updated Image Link to the new 'No Watermark' version
                 img: "https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%AF%B9%E6%AF%94%E5%9B%BE2%E6%97%A0%E6%B0%B4%E5%8D%B0.jpg",
@@ -886,7 +916,8 @@
                 tags: ["Blender", "XR Experiment", "HCI", "Quantitative Analysis"]
             },
             "yangtze_river": {
-                title: "Yangtze River Basin Digital Twin",
+                // Updated Title
+                title: "Digital Simulation and Evolutionary Analysis of the Yangtze River Basin Ecosystem",
                 subtitle: "Ecological Evolution Simulation & Scientific Visualization",
                 // Updated Project Banner to match the new cover (earth.png)
                 img: "https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/earth.png",
@@ -1029,7 +1060,7 @@
                             </li>
                         </ul>
 
-                        <!-- Image Group 2: Components & Layout (Equal Size 1:1) -->
+                        <!-- Image Group 2: Components & Layout -->
                         <div class="space-y-6">
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <!-- Box 1: Game Components -->
@@ -1054,6 +1085,13 @@
                                 <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E8%AE%BE%E8%AE%A1%E5%9B%BE.jpg" alt="Concept Design" class="w-full h-auto block">
                                 <p class="text-xs text-center text-slate-500 py-2 bg-white border-t border-slate-100">Concept & Mechanics Design</p>
                             </div>
+
+                            <!-- NEW IMAGE: 3 Perspectives (Inserted Here) -->
+                            <div class="rounded-xl overflow-hidden border border-slate-100 bg-slate-50">
+                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/3prespectives.jpg" alt="3D Structural Views" class="w-full h-auto block">
+                                <p class="text-xs text-center text-slate-500 py-2 bg-white border-t border-slate-100">Multi-Angle Structural Analysis</p>
+                            </div>
+
                         </div>
                     </div>
 
@@ -1068,7 +1106,7 @@
                 tags: ["Gamification", "EdTech", "3D Interaction", "IP Design"]
             },
             "dynamic_composition": {
-                title: "Research on Dynamic Composition in RPG Concept Design",
+                title: "Research on Dynamic Composition in the Concept Design of Role-Playing Games",
                 subtitle: "Constructing Visual Immersion via Holistic Dynamic Thinking in Role-Playing Games",
                 img: "https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/sence1.png",
                 description: `
