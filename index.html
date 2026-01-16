@@ -179,19 +179,57 @@
             <a href="#" class="font-bold tracking-tight text-xl text-blue-900">LAN DING.</a>
             <div class="hidden md:flex space-x-10 text-xs uppercase tracking-[0.2em] text-slate-500 font-bold">
                 <a href="#about" class="hover:text-blue-900 transition">About</a>
+                <a href="#presentations" class="hover:text-blue-900 transition">Projects</a>
                 <a href="#education" class="hover:text-blue-900 transition">Education</a>
                 <a href="#research" class="hover:text-blue-900 transition">Research</a>
-                <a href="#presentations" class="hover:text-blue-900 transition">Projects</a>
+                <a href="#credentials" class="hover:text-blue-900 transition">Credentials</a>
                 <a href="#cv" class="hover:text-blue-900 transition">Contact</a>
             </div>
         </div>
     </nav>
 
+    <!-- Side Navigation (Fixed Right) -->
+    <!-- 修改：hidden xl:flex 改为 hidden md:flex，让它在平板和笔记本上也能显示 -->
+    <!-- 修改：right-10 改为 right-6，稍微靠边一点，防止遮挡内容 -->
+    <div class="fixed right-6 top-1/2 transform -translate-y-1/2 z-40 hidden md:flex flex-col items-end gap-6">
+        <!-- About -->
+        <a href="#about" class="group flex items-center gap-4 cursor-pointer" aria-label="About">
+            <span class="text-xs font-bold text-slate-400 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">About</span>
+            <!-- 修改：bg-slate-300 改为 bg-slate-400，增加默认对比度 -->
+            <div class="w-2 h-2 rounded-full bg-slate-400 group-hover:bg-blue-700 group-hover:scale-150 transition-all duration-300 nav-dot" data-section="about"></div>
+        </a>
+        <!-- Projects -->
+        <a href="#presentations" class="group flex items-center gap-4 cursor-pointer" aria-label="Projects">
+            <span class="text-xs font-bold text-slate-400 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">Projects</span>
+            <div class="w-2 h-2 rounded-full bg-slate-400 group-hover:bg-blue-700 group-hover:scale-150 transition-all duration-300 nav-dot" data-section="presentations"></div>
+        </a>
+        <!-- Education -->
+        <a href="#education" class="group flex items-center gap-4 cursor-pointer" aria-label="Education">
+            <span class="text-xs font-bold text-slate-400 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">Education</span>
+            <div class="w-2 h-2 rounded-full bg-slate-400 group-hover:bg-blue-700 group-hover:scale-150 transition-all duration-300 nav-dot" data-section="education"></div>
+        </a>
+        <!-- Research -->
+        <a href="#research" class="group flex items-center gap-4 cursor-pointer" aria-label="Research">
+            <span class="text-xs font-bold text-slate-400 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">Research</span>
+            <div class="w-2 h-2 rounded-full bg-slate-400 group-hover:bg-blue-700 group-hover:scale-150 transition-all duration-300 nav-dot" data-section="research"></div>
+        </a>
+        <!-- Credentials -->
+        <a href="#credentials" class="group flex items-center gap-4 cursor-pointer" aria-label="Credentials">
+            <span class="text-xs font-bold text-slate-400 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">Credentials</span>
+            <div class="w-2 h-2 rounded-full bg-slate-400 group-hover:bg-blue-700 group-hover:scale-150 transition-all duration-300 nav-dot" data-section="credentials"></div>
+        </a>
+        <!-- Contact -->
+        <a href="#cv" class="group flex items-center gap-4 cursor-pointer" aria-label="Contact">
+            <span class="text-xs font-bold text-slate-400 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">Contact</span>
+            <div class="w-2 h-2 rounded-full bg-slate-400 group-hover:bg-blue-700 group-hover:scale-150 transition-all duration-300 nav-dot" data-section="cv"></div>
+        </a>
+    </div>
+
     <!-- Main Content Container -->
     <main class="max-w-[1440px] mx-auto px-8 py-20">
         
-        <!-- Hero Section -->
-        <section id="about" class="mb-40">
+        <!-- 1. Hero Section -->
+        <section id="about" class="mb-40 scroll-mt-32">
             <div class="flex flex-col-reverse md:flex-row items-center gap-16">
                 <div class="flex-1 text-center md:text-left">
                     <h1 class="text-5xl md:text-7xl font-bold text-slate-900 mb-8 leading-[1.1]">
@@ -226,73 +264,8 @@
             </div>
         </section>
 
-        <!-- Education -->
-        <section id="education" class="mb-40">
-            <h2 class="section-title">Education</h2>
-            <div class="space-y-12">
-                <div class="academic-card">
-                    <div class="flex justify-between items-baseline mb-3">
-                        <h3 class="text-2xl font-bold text-slate-900">China University of Geosciences</h3>
-                        <span class="text-slate-400 text-sm italic">2021 - 2024</span>
-                    </div>
-                    <p class="text-slate-600 font-medium italic">M.F.A. in Art and Design (Media)</p>
-                    <p class="text-sm text-slate-500 mt-2">GPA: 3.9/4.0 | Recommended for Admission (Exempt from Entrance Exam)</p>
-                </div>
-                <div class="academic-card">
-                    <div class="flex justify-between items-baseline mb-3">
-                        <h3 class="text-2xl font-bold text-slate-900">Zhongnan University of Economics and Law</h3>
-                        <span class="text-slate-400 text-sm italic">2017 - 2021</span>
-                    </div>
-                    <p class="text-slate-600 font-medium italic">B.F.A. in Artistic Design | Joint Dual-Degree Program</p>
-                    <p class="text-sm text-slate-500 mt-2">GPA: 3.73/4.0 | Outstanding Graduate and Outstanding Graduation Design Award</p>
-                </div>
-                <div class="academic-card">
-                    <div class="flex justify-between items-baseline mb-3">
-                        <h3 class="text-2xl font-bold text-slate-900">Dongseo University (South Korea)</h3>
-                        <span class="text-slate-400 text-sm italic">2019 - 2020</span>
-                    </div>
-                    <p class="text-slate-600 font-medium italic">B.Eng. in Animation | College of Software Convergence</p>
-                    <p class="text-sm text-slate-500 mt-2">GPA: 3.92/4.0 | 1st Prize, International College Digital Arts Show</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Research Experience -->
-        <section id="research" class="mb-40">
-            <h2 class="section-title">Research Experience</h2>
-            <div class="space-y-16">
-                <!-- BIGAI -->
-                <div class="academic-card">
-                    <div class="flex justify-between items-baseline mb-4">
-                        <h3 class="text-2xl font-bold text-slate-900">Beijing Institute for General Artificial Intelligence (BIGAI)</h3>
-                        <span class="text-slate-400 text-sm italic">2022 - 2023</span>
-                    </div>
-                    <p class="text-blue-800 font-bold mb-4">Research Assistant | Human-AI Interaction Lab</p>
-                    <p class="text-slate-600 mb-6">
-                        Collaborated with AI scientists to develop the visual embodiment for the multimodal AGI character <strong>"Tongtong"</strong>. Focused on bridging the gap between AGI logic and human perception by developing facial/gestural expression libraries and constructing virtual training environments (UE5), ensuring the agent's behavior aligns with human social expectations.
-                    </p>
-                    <div class="flex gap-2">
-                        <span class="tag">UE5</span> <span class="tag">AGI</span> <span class="tag">Interaction Lab</span>
-                    </div>
-                </div>
-
-                <!-- Simplified Master Thesis Entry -->
-                <div class="academic-card border-l-blue-200">
-                    <div class="flex justify-between items-baseline mb-2">
-                        <h3 class="text-xl font-bold text-slate-800">Master's Thesis Research</h3>
-                        <span class="text-slate-400 text-sm italic">2023 - 2024</span>
-                    </div>
-                    <p class="text-slate-600 mb-2"><strong>Topic:</strong> The Application of Retrofuturism in VTuber Avatar Design</p>
-                    <p class="text-sm text-slate-500 mb-4">Supervisor: Prof. Zhe Yang</p>
-                    <a href="#presentations" class="text-sm font-bold text-blue-700 hover:underline">
-                        <i class="fas fa-arrow-down mr-1"></i> See Detailed Project in Portfolio Section
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Selected Projects -->
-        <section id="presentations" class="mb-40">
+        <!-- 2. Selected Projects (Moved Up as requested) -->
+        <section id="presentations" class="mb-40 scroll-mt-32">
             <h2 class="section-title">Selected Research & Design Projects</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
@@ -329,7 +302,7 @@
                     </div>
                     <div class="p-6 flex flex-col flex-1">
                         <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">Impact of Non-Photorealistic Rendering on Human Perception in Virtual Reality</h4>
-                        <p class="text-xs text-slate-500 mb-0 italic">Empirical Study @ BIGAI | Mixed-Methods HCI Research</p>
+                        <p class="text-xs text-slate-500 mb-0 italic">Empirical Study @ AI Research Institute</p>
                         <div class="mt-auto pt-4 flex gap-2 flex-wrap">
                             <span class="tag">Blender</span> <span class="tag">HCI Research</span> <span class="tag">Quantitative</span>
                         </div>
@@ -347,7 +320,7 @@
                     </div>
                     <div class="p-6 flex flex-col flex-1">
                         <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">High-Fidelity Embodiment for General Artificial Intelligence</h4>
-                        <p class="text-xs text-slate-500 mb-0 italic">Project 'Tongtong' @ BIGAI | Technical Art & Rigging Pipeline</p>
+                        <p class="text-xs text-slate-500 mb-0 italic">World's First AGI Agent 'Tongtong' @ BIGAI</p>
                         <div class="mt-auto pt-4 flex gap-2 flex-wrap">
                             <span class="tag">AGI</span> <span class="tag">Tech Art</span> <span class="tag">UE5</span>
                         </div>
@@ -365,7 +338,7 @@
                     </div>
                     <div class="p-6 flex flex-col flex-1">
                         <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">Research on Dynamic Composition in the Concept Design of Role-Playing Games</h4>
-                        <p class="text-xs text-slate-500 mb-0 italic">Visual Narrative & Environment Research @ Semester Group Project</p>
+                        <p class="text-xs text-slate-500 mb-0 italic">Visual Narrative & Environment Research @ Group Project</p>
                         <div class="mt-auto pt-4 flex gap-2 flex-wrap">
                             <span class="tag">UE5</span> <span class="tag">NPR</span> <span class="tag">Game Theory</span>
                         </div>
@@ -383,7 +356,7 @@
                     </div>
                     <div class="p-6 flex flex-col flex-1">
                         <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">Taikonaut Panda: Project Tiangong</h4>
-                        <p class="text-xs text-slate-500 mb-0 italic">Gamified Science Popularization @ School Studio Project</p>
+                        <p class="text-xs text-slate-500 mb-0 italic">Gamified Science Popularization @ Studio Project</p>
                         <div class="mt-auto pt-4 flex gap-2 flex-wrap">
                             <span class="tag">Gamification</span> <span class="tag">IP Design</span>
                         </div>
@@ -411,65 +384,119 @@
             </div>
         </section>
 
-        <!-- Honors -->
-        <section id="honors" class="mb-40">
-            <h2 class="section-title">Academic Honors</h2>
-            <div class="space-y-6">
-                <div class="flex items-start gap-6 p-6 rounded-2xl bg-slate-50 border border-slate-100">
-                    <div class="w-12 h-12 shrink-0 bg-blue-100 rounded-xl flex items-center justify-center text-blue-700">
-                        <i class="fas fa-trophy text-xl"></i>
+        <!-- 3. Education -->
+        <section id="education" class="mb-40 scroll-mt-32">
+            <h2 class="section-title">Education</h2>
+            <div class="space-y-12">
+                <div class="academic-card">
+                    <div class="flex justify-between items-baseline mb-3">
+                        <h3 class="text-2xl font-bold text-slate-900">China University of Geosciences</h3>
+                        <span class="text-slate-400 text-sm italic">2021 - 2024</span>
                     </div>
-                    <div>
-                        <h4 class="font-bold text-slate-900">National Scholarship for Postgraduates</h4>
-                        <p class="text-slate-500 text-sm">Top 1% Nationwide Achievement | Awarded Consecutively (2021-2023)</p>
+                    <p class="text-slate-600 font-medium italic">M.F.A. in Art and Design (Media)</p>
+                    <p class="text-sm text-slate-500 mt-2">GPA: 3.9/4.0 | Recommended for Admission (Exempt from Entrance Exam)</p>
+                </div>
+                <div class="academic-card">
+                    <div class="flex justify-between items-baseline mb-3">
+                        <h3 class="text-2xl font-bold text-slate-900">Zhongnan University of Economics and Law</h3>
+                        <span class="text-slate-400 text-sm italic">2017 - 2021</span>
+                    </div>
+                    <p class="text-slate-600 font-medium italic">B.F.A. in Artistic Design | Joint Dual-Degree Program</p>
+                    <p class="text-sm text-slate-500 mt-2">GPA: 3.73/4.0 | Outstanding Graduate and Outstanding Graduation Design Award</p>
+                </div>
+                <div class="academic-card">
+                    <div class="flex justify-between items-baseline mb-3">
+                        <h3 class="text-2xl font-bold text-slate-900">Dongseo University (South Korea)</h3>
+                        <span class="text-slate-400 text-sm italic">2019 - 2020</span>
+                    </div>
+                    <p class="text-slate-600 font-medium italic">B.Eng. in Animation | College of Software Convergence</p>
+                    <p class="text-sm text-slate-500 mt-2">GPA: 3.92/4.0 | 1st Prize, International College Digital Arts Show</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Research Experience -->
+        <section id="research" class="mb-40 scroll-mt-32">
+            <h2 class="section-title">Research Experience</h2>
+            <div class="space-y-16">
+                <!-- BIGAI -->
+                <div class="academic-card">
+                    <div class="flex justify-between items-baseline mb-4">
+                        <h3 class="text-2xl font-bold text-slate-900">Beijing Institute for General Artificial Intelligence (BIGAI)</h3>
+                        <span class="text-slate-400 text-sm italic">2022 - 2023</span>
+                    </div>
+                    <p class="text-blue-800 font-bold mb-4">Research Assistant | Human-AI Interaction Lab</p>
+                    <p class="text-slate-600 mb-6">
+                        Collaborated with AI scientists to develop the visual embodiment for the multimodal AGI character <strong>"Tongtong"</strong>. Focused on bridging the gap between AGI logic and human perception by developing facial/gestural expression libraries and constructing virtual training environments (UE5), ensuring the agent's behavior aligns with human social expectations.
+                    </p>
+                    <div class="flex gap-2">
+                        <span class="tag">UE5</span> <span class="tag">AGI</span> <span class="tag">Interaction Lab</span>
                     </div>
                 </div>
-                <div class="flex items-start gap-6 p-6 rounded-2xl bg-slate-50 border border-slate-100">
-                    <div class="w-12 h-12 shrink-0 bg-blue-100 rounded-xl flex items-center justify-center text-blue-700">
-                        <i class="fas fa-award text-xl"></i>
+
+                <!-- Simplified Master Thesis Entry -->
+                <div class="academic-card border-l-blue-200">
+                    <div class="flex justify-between items-baseline mb-2">
+                        <h3 class="text-xl font-bold text-slate-800">Master's Thesis Research</h3>
+                        <span class="text-slate-400 text-sm italic">2023 - 2024</span>
                     </div>
-                    <div>
-                        <h4 class="font-bold text-slate-900">1st Prize, International College Digital Arts Show (Animation)</h4>
-                        <p class="text-slate-500 text-sm">Dongseo University, South Korea | Best Animated Short Film Award (2019)</p>
-                    </div>
+                    <p class="text-slate-600 mb-2"><strong>Topic:</strong> The Application of Retrofuturism in VTuber Avatar Design</p>
+                    <p class="text-sm text-slate-500 mb-4">Supervisor: Prof. Zhe Yang</p>
+                    <a href="#presentations" class="text-sm font-bold text-blue-700 hover:underline">
+                        <i class="fas fa-arrow-down mr-1"></i> See Detailed Project in Portfolio Section
+                    </a>
                 </div>
-                <div class="flex items-start gap-6 p-6 rounded-2xl bg-slate-50 border border-slate-100">
-                    <div class="w-12 h-12 shrink-0 bg-blue-100 rounded-xl flex items-center justify-center text-blue-700">
-                        <i class="fas fa-certificate text-xl"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-slate-900">Outstanding Graduate and Thesis Award</h4>
-                        <p class="text-slate-500 text-sm">Recognized for top academic and creative achievements | 2021</p>
+            </div>
+        </section>
+
+        <!-- 5. Credentials (Honors & Expertise Compact) -->
+        <section id="credentials" class="mb-40 border-t border-slate-100 pt-16 scroll-mt-32">
+            <div class="grid md:grid-cols-12 gap-12">
+                <!-- Honors Column -->
+                <div class="md:col-span-6">
+                     <h4 class="text-sm font-bold text-slate-400 uppercase tracking-widest mb-6">Honors & Awards</h4>
+                     <ul class="space-y-4 text-sm text-slate-600">
+                         <li class="flex gap-4">
+                             <span class="text-slate-400 font-mono text-xs shrink-0 pt-1">2021-2023</span>
+                             <span>
+                                 <strong class="block text-slate-800">National Scholarship for Postgraduates</strong> 
+                                 <span class="text-slate-500 text-xs">Top 1% Nationwide Achievement</span>
+                             </span>
+                         </li>
+                         <li class="flex gap-4">
+                             <span class="text-slate-400 font-mono text-xs shrink-0 pt-1">2019</span>
+                             <span>
+                                 <strong class="block text-slate-800">1st Prize, International College Digital Arts Show</strong> 
+                                 <span class="text-slate-500 text-xs">Best Animated Short Film (Dongseo Univ., South Korea)</span>
+                             </span>
+                         </li>
+                         <li class="flex gap-4">
+                             <span class="text-slate-400 font-mono text-xs shrink-0 pt-1">2021</span>
+                             <span>
+                                 <strong class="block text-slate-800">Outstanding Graduate and Thesis Award</strong> 
+                                 <span class="text-slate-500 text-xs">Zhongnan University of Economics and Law</span>
+                             </span>
+                         </li>
+                     </ul>
+                </div>
+                
+                <!-- Expertise Column -->
+                <div class="md:col-span-6">
+                    <h4 class="text-sm font-bold text-slate-400 uppercase tracking-widest mb-6">Technical Toolbox</h4>
+                    <div class="mb-6">
+                        <p class="text-xs font-bold text-slate-500 mb-2">Digital Content & CGI</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tag">Maya</span> <span class="tag">Blender</span> <span class="tag">ZBrush</span> 
+                            <span class="tag">Marvelous Designer</span> <span class="tag">Substance Painter</span> 
+                            <span class="tag">Unreal Engine 4/5</span> <span class="tag">Live2D</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Expertise -->
-        <section id="expertise" class="mb-40">
-            <h2 class="section-title">Technical Expertise</h2>
-            <div class="space-y-8">
-                <div class="p-8 rounded-[2rem] border border-slate-100 bg-white">
-                    <h4 class="text-blue-800 uppercase text-xs tracking-widest font-bold mb-6 italic">Digital Content and CGI</h4>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="tag">Maya</span> <span class="tag">Blender</span> <span class="tag">ZBrush</span> 
-                        <span class="tag">Marvelous Designer</span> <span class="tag">Substance Painter</span> 
-                        <span class="tag">Unreal Engine 4/5</span> <span class="tag">Live2D</span>
-                    </div>
-                </div>
-                <div class="p-8 rounded-[2rem] border border-slate-100 bg-white">
-                    <h4 class="text-blue-800 uppercase text-xs tracking-widest font-bold mb-6 italic">Research and Communication</h4>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="tag">Mixed-Methods Research</span> <span class="tag">Qualitative Interviewing</span> 
-                        <span class="tag">A/B Testing</span> <span class="tag">IELTS 6.0</span> 
-                        <span class="tag">Korean TOPIK 3</span> <span class="tag">Mandarin (Level 1-B)</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Footer -->
-        <section id="cv" class="mb-20">
+        <!-- 6. Contact Footer -->
+        <section id="cv" class="mb-20 scroll-mt-32">
             <div class="bg-slate-950 rounded-[2.5rem] relative overflow-hidden">
                 <div class="absolute top-0 right-0 w-96 h-96 bg-blue-600 rounded-full -mr-20 -mt-40 opacity-20 blur-[80px]"></div>
                 <div class="absolute bottom-0 left-0 w-80 h-80 bg-purple-600 rounded-full -ml-20 -mb-40 opacity-10 blur-[80px]"></div>
@@ -546,7 +573,7 @@
         const projectData = {
             "npr_research": {
                 title: "Impact of Non-Photorealistic Rendering on Human Perception in Virtual Reality",
-                subtitle: "Empirical Study @ AI Research Institute | Mixed-Methods HCI Research",
+                subtitle: "Empirical Study @ AI Research Institute",
                 img: "https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%AF%B9%E6%AF%94%E5%9B%BE2%E6%97%A0%E6%B0%B4%E5%8D%B0.jpg",
                 description: `
                     <!-- Role -->
@@ -830,7 +857,7 @@
             },
             "social_adaptation": {
                 title: "High-Fidelity Embodiment for General Artificial Intelligence",
-                subtitle: "Project 'Tongtong' @ BIGAI | World's First AGI Agent",
+                subtitle: "World's First AGI Agent 'Tongtong' @ BIGAI",
                 img: "https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/display1_3.png",
                 description: `
                     <!-- Role -->
@@ -1024,7 +1051,7 @@
             },
             "dynamic_composition": {
                 title: "Research on Dynamic Composition in the Concept Design of Role-Playing Games",
-                subtitle: "Visual Narrative & Environment Research @ Semester Group Project",
+                subtitle: "Visual Narrative & Environment Research @ Group Project",
                 img: "https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/sence1.png",
                 description: `
                     <!-- Role -->
@@ -1063,6 +1090,12 @@
                             <div class="rounded-xl overflow-hidden border border-slate-100 shadow-sm">
                                 <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/whitebox.jpg" alt="Level Design Whiteboxing" class="w-full h-auto block">
                                 <p class="text-[10px] text-center text-slate-400 py-1 bg-slate-50">Level Design Whiteboxing</p>
+                            </div>
+
+                            <!-- MOVED IMAGE: Shape Analysis (Enlarged) -->
+                            <div class="w-[90%] mx-auto rounded-xl overflow-hidden border border-slate-100 shadow-sm">
+                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/xingzhuang1.png" alt="Shape Analysis" class="w-full h-auto block">
+                                <p class="text-[10px] text-center text-slate-400 py-1 bg-slate-50">Geometric Shape Analysis</p>
                             </div>
                             
                             <!-- Tech Grid -->
@@ -1104,6 +1137,12 @@
                                 The high-detail "White Cottage" (the subject) is positioned against a low-density forest background. This deliberate visual weight difference acts as a magnet for player attention, naturally highlighting the objective without the need for intrusive UI markers.
                             </li>
                         </ul>
+
+                        <!-- NEW IMAGE: White House -->
+                        <div class="w-[90%] mx-auto rounded-xl overflow-hidden border border-slate-100 shadow-sm mb-6">
+                            <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/whitehouse.jpg" alt="The White Cottage" class="w-full h-auto block">
+                            <p class="text-[10px] text-center text-slate-400 py-1 bg-slate-50">Focal Point: The White Cottage Design</p>
+                        </div>
 
                         <!-- Visual Guidance -->
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -1173,7 +1212,7 @@
             },
             "taikonaut": {
                 title: "Taikonaut Panda: Project Tiangong",
-                subtitle: "Gamified Science Popularization @ School Studio Project",
+                subtitle: "Gamified Science Popularization @ Studio Project",
                 img: "https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E6%B8%B2%E6%9F%93%E5%9B%BE1.jpg",
                 description: `
                     <!-- Role -->
@@ -1181,96 +1220,93 @@
                         <i class="fas fa-user-circle mr-2"></i> Role: 3D Modeler & Board Graphic Designer
                     </p>
 
-                    <!-- Overview -->
-                    <div class="mb-8">
-                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">Project Overview</h5>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            This work serves as a tabletop board game (utilizing Flying Chess mechanics), developed as a science popularization project hosted by a school studio. It is an educational initiative designed to reconstruct the China Space Station (CSS) mission structure. My specific role focused on the 3D modeling of the game pieces and the graphic design of the multi-layered board.
-                        </p>
-                        <p class="text-slate-600 text-sm leading-relaxed">
-                            The game operates on a multi-layered 3D spatial logic to simulate the vertical ascent of spaceflight.
-                        </p>
-                    </div>
+                    <!-- Overview Content (No Header) -->
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        This work serves as a tabletop board game (utilizing Flying Chess mechanics), developed as a science popularization project hosted by a school studio. It is an educational initiative designed to reconstruct the China Space Station (CSS) mission structure. My specific role focused on the 3D modeling of the game pieces and the graphic design of the multi-layered board.
+                    </p>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-8">
+                        The game operates on a multi-layered 3D spatial logic to simulate the vertical ascent of spaceflight.
+                    </p>
 
-                    <!-- Character System & Spatial Narrative -->
-                    <div class="mb-8">
-                        <h5 class="text-lg font-bold text-slate-900 mb-4 border-l-4 border-blue-600 pl-3">Character System & Spatial Narrative</h5>
-                        
-                        <ul class="space-y-6 text-sm text-slate-600 mb-8">
-                            <li class="bg-slate-50 p-4 rounded-xl">
-                                <strong class="block text-slate-800 mb-2">Character System</strong>
-                                <p class="mb-4">The game features a team of four "Taikonaut Pandas"—named Vento, Lay, Green, and Flory. As the national symbol of China, the panda figure aligns perfectly with the localized theme of the "Project Tiangong." This design choice embodies cultural identity, making the high-tech aerospace narrative more approachable and culturally resonant.</p>
-                                
-                                <!-- Concept Design Image: No Container -->
-                                <div class="w-[90%] mx-auto mt-4">
-                                    <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E8%AE%BE%E8%AE%A1%E5%9B%BE.jpg" alt="Concept Design" class="w-full h-auto block rounded-lg shadow-sm">
-                                    <p class="text-[10px] text-center text-slate-400 py-2 italic">Concept & Mechanics Design</p>
-                                </div>
-                            </li>
-
-                            <li class="bg-slate-50 p-4 rounded-xl">
-                                <strong class="block text-slate-800 mb-2">Spatial Narrative</strong>
-                                <p class="mb-4">A three-tiered board structure represents different atmospheric layers. Players utilize "Space Ladders" to achieve vertical movement, conceptually reenacting the climb from Earth to Space.</p>
-                                
-                                <!-- Structural View Image: No Container -->
-                                <div class="w-[90%] mx-auto mt-4">
-                                    <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/3prespectives.jpg" alt="3D Structural Views" class="w-full h-auto block rounded-lg shadow-sm">
-                                    <p class="text-[10px] text-center text-slate-400 py-2 italic">Multi-Angle Structural Analysis</p>
-                                </div>
-                            </li>
-                        </ul>
-
-                        <!-- Supporting Images (Logo & Spacecraft): No Container -->
-                        <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 mb-2">
-                            <div class="flex items-center justify-center h-64">
-                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/logo.png" alt="Project Logo" class="max-w-full max-h-full object-contain">
-                            </div>
-                            <div class="flex items-center justify-center h-64">
-                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E9%A3%9E%E8%A1%8C%E5%99%A8%E4%BB%8B%E7%BB%8D%E5%9B%BE.png" alt="Spacecraft Details" class="max-w-full max-h-full object-contain">
-                            </div>
-                        </div>
-                        <p class="text-center text-xs text-slate-400 italic">Visual Identity & Spacecraft Mechanics</p>
-                    </div>
-
-                    <!-- Evidence-Based Design -->
-                    <div class="mb-8">
-                        <h5 class="text-lg font-bold text-slate-900 mb-4 border-l-4 border-blue-600 pl-3">3. Evidence-Based Design</h5>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                            Applying the method of "Visualizing Scientific Concepts," I incorporated hardcore aerospace equipment into the gameplay mechanics.
-                        </p>
-
-                        <div class="space-y-4 mb-6">
-                            <div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm">
-                                <strong class="block text-blue-900 mb-2 text-sm">Symbolic Representation</strong>
-                                <p class="text-slate-600 text-xs leading-relaxed">Complex machinery like the Long March Rocket and Tianhe Core Module were integrated as assembly components and propulsion boosters. These elements serve as gameplay buffs, allowing players to accelerate their movement and rapidly advance towards the finish line.</p>
-                            </div>
-                            <div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm">
-                                <strong class="block text-blue-900 mb-2 text-sm">Environmental Awareness</strong>
-                                <p class="text-slate-600 text-xs leading-relaxed">The game incorporates a "Buff/Debuff" mechanism. Environmental elements such as solar storms and meteor strikes are integrated as random events. This design allows players to intuitively recognize the dangers present in the space environment and gain a more detailed understanding of orbital challenges during play.</p>
-                            </div>
-                        </div>
-
-                        <!-- Remaining Images: No Container -->
-                        <div class="space-y-8">
-                            <div class="w-[90%] mx-auto">
-                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%B0%8F%E7%89%A9%E5%86%85%E5%AE%B9.jpg" alt="Game Items" class="w-full h-auto block rounded-lg shadow-sm">
-                                <p class="text-xs text-center text-slate-400 py-2 italic">Game Components</p>
-                            </div>
+                    <!-- Character & Spatial Content (No Header) -->
+                    <ul class="space-y-6 text-sm text-slate-600 mb-8">
+                        <li class="bg-slate-50 p-4 rounded-xl">
+                            <strong class="block text-slate-800 mb-2">Character System</strong>
+                            <p class="mb-4">The game features a team of four "Taikonaut Pandas"—named Vento, Lay, Green, and Flory. As the national symbol of China, the panda figure aligns perfectly with the localized theme of the "Project Tiangong." This design choice embodies cultural identity, making the high-tech aerospace narrative more approachable and culturally resonant.</p>
                             
-                            <div class="w-[90%] mx-auto">
-                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%B9%B3%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE.jpg" alt="Board Layout" class="w-full h-auto block rounded-lg shadow-sm">
-                                <p class="text-xs text-center text-slate-400 py-2 italic">Board Layout</p>
+                            <!-- Concept Design Image: No Container -->
+                            <div class="w-[90%] mx-auto mt-4">
+                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E8%AE%BE%E8%AE%A1%E5%9B%BE.jpg" alt="Concept Design" class="w-full h-auto block rounded-lg shadow-sm">
+                                <p class="text-[10px] text-center text-slate-400 py-2 italic">Concept & Mechanics Design</p>
                             </div>
+                        </li>
+
+                        <li class="bg-slate-50 p-4 rounded-xl">
+                            <strong class="block text-slate-800 mb-2">Spatial Narrative</strong>
+                            <p class="mb-4">A three-tiered board structure represents different atmospheric layers. Players utilize "Space Ladders" to achieve vertical movement, conceptually reenacting the climb from Earth to Space.</p>
+                            
+                            <!-- Structural View Image: No Container -->
+                            <div class="w-[90%] mx-auto mt-4">
+                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/3prespectives.jpg" alt="3D Structural Views" class="w-full h-auto block rounded-lg shadow-sm">
+                                <p class="text-[10px] text-center text-slate-400 py-2 italic">Multi-Angle Structural Analysis</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- Supporting Images (Logo & Spacecraft): No Container -->
+                    <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 mb-2">
+                        <div class="flex items-center justify-center h-64">
+                            <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/logo.png" alt="Project Logo" class="max-w-full max-h-full object-contain">
+                        </div>
+                        <div class="flex items-center justify-center h-64">
+                            <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E9%A3%9E%E8%A1%8C%E5%99%A8%E4%BB%8B%E7%BB%8D%E5%9B%BE.png" alt="Spacecraft Details" class="max-w-full max-h-full object-contain">
+                        </div>
+                    </div>
+                    <p class="text-center text-xs text-slate-400 italic mb-8">Visual Identity & Spacecraft Mechanics</p>
+
+                    <!-- Evidence-Based Content (No Header) -->
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Applying the method of "Visualizing Scientific Concepts," I incorporated hardcore aerospace equipment into the gameplay mechanics.
+                    </p>
+
+                    <div class="space-y-4 mb-6">
+                        <div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm">
+                            <strong class="block text-blue-900 mb-2 text-sm">Symbolic Representation</strong>
+                            <p class="text-slate-600 text-xs leading-relaxed">Complex machinery like the Long March Rocket and Tianhe Core Module were integrated as assembly components and propulsion boosters. These elements serve as gameplay buffs, allowing players to accelerate their movement and rapidly advance towards the finish line.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm">
+                            <strong class="block text-blue-900 mb-2 text-sm">Environmental Awareness</strong>
+                            <p class="text-slate-600 text-xs leading-relaxed">The game incorporates a "Buff/Debuff" mechanism. Environmental elements such as solar storms and meteor strikes are integrated as random events. This design allows players to intuitively recognize the dangers present in the space environment and gain a more detailed understanding of orbital challenges during play.</p>
                         </div>
                     </div>
 
-                    <!-- Social & Academic Goal -->
-                    <div class="mb-8">
-                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">4. Social & Academic Goal</h5>
-                        <div class="bg-blue-50 p-6 rounded-xl border border-blue-100">
-                            <p class="text-sm text-blue-900 leading-relaxed">
-                                The project aims to promote public understanding of the China Space Station (CSS). It subtly integrates aerospace knowledge into the gameplay experience, fostering an organic learning process. Thanks to its innovative form of science popularization, this project received award support from the Sichuan Forestry and Grassland Bureau, validating its value in interdisciplinary education.
-                            </p>
+                    <!-- Remaining Images: No Container -->
+                    <div class="space-y-8 mb-8">
+                        <div class="w-[90%] mx-auto">
+                            <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%B0%8F%E7%89%A9%E5%86%85%E5%AE%B9.jpg" alt="Game Items" class="w-full h-auto block rounded-lg shadow-sm">
+                            <p class="text-xs text-center text-slate-400 py-2 italic">Game Components</p>
+                        </div>
+                        
+                        <div class="w-[90%] mx-auto">
+                            <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%B9%B3%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE.jpg" alt="Board Layout" class="w-full h-auto block rounded-lg shadow-sm">
+                            <p class="text-xs text-center text-slate-400 py-2 italic">Board Layout</p>
+                        </div>
+                    </div>
+
+                    <!-- Social & Academic Goal Content (No Header) -->
+                    <div class="bg-blue-50 p-6 rounded-xl border border-blue-100 mb-12">
+                        <p class="text-sm text-blue-900 leading-relaxed">
+                            The project aims to promote public understanding of the China Space Station (CSS). It subtly integrates aerospace knowledge into the gameplay experience, fostering an organic learning process. Thanks to its innovative form of science popularization, this project received award support from the Sichuan Forestry and Grassland Bureau, validating its value in interdisciplinary education.
+                        </p>
+                    </div>
+
+                    <!-- Final Renders (Side by Side, No Text) -->
+                    <div class="grid grid-cols-2 gap-4 w-[90%] mx-auto mb-8">
+                        <div class="shadow-sm rounded-lg overflow-hidden">
+                            <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/%E6%B8%B2%E6%9F%93%E5%9B%BE1.jpg" alt="Product Render 1" class="w-full h-auto block">
+                        </div>
+                        <div class="shadow-sm rounded-lg overflow-hidden">
+                            <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/%E6%B8%B2%E6%9F%93%E5%9B%BE2.png" alt="Product Render 2" class="w-full h-auto block">
                         </div>
                     </div>
                 `,
@@ -1469,6 +1505,37 @@
             x.className = "show";
             setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
         }
+
+        // --- Sidebar Active State Logic ---
+        const sections = document.querySelectorAll('section');
+        const navDots = document.querySelectorAll('.nav-dot');
+
+        const observerOptions = {
+            threshold: 0.2 // 修改：稍微降低触发阈值，让高亮更灵敏
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    // Remove active class from all
+                    navDots.forEach(dot => {
+                        dot.classList.remove('bg-blue-700', 'scale-150');
+                        dot.classList.add('bg-slate-400'); // 保持默认深灰色
+                    });
+                    // Add active class to current
+                    const activeDot = document.querySelector(`.nav-dot[data-section="${id}"]`);
+                    if (activeDot) {
+                        activeDot.classList.remove('bg-slate-400');
+                        activeDot.classList.add('bg-blue-700', 'scale-150');
+                    }
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
     </script>
 </body>
 </html>
