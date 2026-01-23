@@ -73,10 +73,9 @@
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
+        /* 修改：去掉了背景色变化和位移(transform)，只保留左侧边框颜色变化 */
         .academic-card:hover {
             border-left-color: var(--academic-blue);
-            background-color: #f8fafc;
-            transform: translateX(5px);
         }
 
         .project-grid-item {
@@ -189,13 +188,10 @@
     </nav>
 
     <!-- Side Navigation (Fixed Right) -->
-    <!-- 修改：hidden xl:flex 改为 hidden md:flex，让它在平板和笔记本上也能显示 -->
-    <!-- 修改：right-10 改为 right-6，稍微靠边一点，防止遮挡内容 -->
     <div class="fixed right-6 top-1/2 transform -translate-y-1/2 z-40 hidden md:flex flex-col items-end gap-6">
         <!-- About -->
         <a href="#about" class="group flex items-center gap-4 cursor-pointer" aria-label="About">
             <span class="text-xs font-bold text-slate-400 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">About</span>
-            <!-- 修改：bg-slate-300 改为 bg-slate-400，增加默认对比度 -->
             <div class="w-2 h-2 rounded-full bg-slate-400 group-hover:bg-blue-700 group-hover:scale-150 transition-all duration-300 nav-dot" data-section="about"></div>
         </a>
         <!-- Projects -->
@@ -229,7 +225,7 @@
     <main class="max-w-[1440px] mx-auto px-8 py-20">
         
         <!-- 1. Hero Section -->
-        <section id="about" class="mb-40 scroll-mt-32">
+        <section id="about" class="mb-20 scroll-mt-32">
             <div class="flex flex-col-reverse md:flex-row items-center gap-16">
                 <div class="flex-1 text-center md:text-left">
                     <h1 class="text-5xl md:text-7xl font-bold text-slate-900 mb-8 leading-[1.1]">
@@ -264,8 +260,8 @@
             </div>
         </section>
 
-        <!-- 2. Selected Projects (Moved Up as requested) -->
-        <section id="presentations" class="mb-40 scroll-mt-32">
+        <!-- 2. Selected Projects -->
+        <section id="presentations" class="mb-20 scroll-mt-32">
             <h2 class="section-title">Selected Research & Design Projects</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
@@ -384,43 +380,48 @@
             </div>
         </section>
 
-        <!-- 3. Education -->
-        <section id="education" class="mb-40 scroll-mt-32">
+        <!-- 3. Education (Compact Stack) -->
+        <section id="education" class="mb-20 scroll-mt-32">
             <h2 class="section-title">Education</h2>
-            <div class="space-y-12">
-                <div class="academic-card">
-                    <div class="flex justify-between items-baseline mb-3">
-                        <h3 class="text-2xl font-bold text-slate-900">China University of Geosciences</h3>
-                        <span class="text-slate-400 text-sm italic">2021 - 2024</span>
+            <div class="space-y-4">
+                <!-- Uni 1 -->
+                <div class="academic-card mb-0">
+                    <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-1">
+                        <h3 class="text-xl font-bold text-slate-900">China University of Geosciences</h3>
+                        <span class="text-sm font-mono text-slate-400">2021 - 2024</span>
                     </div>
-                    <p class="text-slate-600 font-medium italic">M.F.A. in Art and Design (Media)</p>
-                    <p class="text-sm text-slate-500 mt-2">GPA: 3.9/4.0 | Recommended for Admission (Exempt from Entrance Exam)</p>
+                    <p class="text-base text-slate-700 font-medium italic">M.F.A. in Art and Design (Media)</p>
+                    <p class="text-xs text-slate-500 mt-1">GPA: 3.9/4.0 | Recommended for Admission (Exempt from Entrance Exam)</p>
                 </div>
-                <div class="academic-card">
-                    <div class="flex justify-between items-baseline mb-3">
-                        <h3 class="text-2xl font-bold text-slate-900">Zhongnan University of Economics and Law</h3>
-                        <span class="text-slate-400 text-sm italic">2017 - 2021</span>
+
+                <!-- Uni 2 -->
+                <div class="academic-card mb-0">
+                    <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-1">
+                        <h3 class="text-xl font-bold text-slate-900">Zhongnan University of Economics and Law</h3>
+                        <span class="text-sm font-mono text-slate-400">2017 - 2021</span>
                     </div>
-                    <p class="text-slate-600 font-medium italic">B.F.A. in Artistic Design | Joint Dual-Degree Program</p>
-                    <p class="text-sm text-slate-500 mt-2">GPA: 3.73/4.0 | Outstanding Graduate and Outstanding Graduation Design Award</p>
+                    <p class="text-base text-slate-700 font-medium italic">B.F.A. in Artistic Design | Joint Dual-Degree Program</p>
+                    <p class="text-xs text-slate-500 mt-1">GPA: 3.73/4.0 | Outstanding Graduate and Outstanding Graduation Design Award</p>
                 </div>
-                <div class="academic-card">
-                    <div class="flex justify-between items-baseline mb-3">
-                        <h3 class="text-2xl font-bold text-slate-900">Dongseo University (South Korea)</h3>
-                        <span class="text-slate-400 text-sm italic">2019 - 2020</span>
+
+                <!-- Uni 3 -->
+                <div class="academic-card mb-0">
+                    <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-1">
+                        <h3 class="text-xl font-bold text-slate-900">Dongseo University (South Korea)</h3>
+                        <span class="text-sm font-mono text-slate-400">2019 - 2020</span>
                     </div>
-                    <p class="text-slate-600 font-medium italic">B.Eng. in Animation | College of Software Convergence</p>
-                    <p class="text-sm text-slate-500 mt-2">GPA: 3.92/4.0 | 1st Prize, International College Digital Arts Show</p>
+                    <p class="text-base text-slate-700 font-medium italic">B.Eng. in Animation | College of Software Convergence</p>
+                    <p class="text-xs text-slate-500 mt-1">GPA: 3.92/4.0 | 1st Prize, International College Digital Arts Show</p>
                 </div>
             </div>
         </section>
 
         <!-- 4. Research Experience -->
-        <section id="research" class="mb-40 scroll-mt-32">
+        <section id="research" class="mb-20 scroll-mt-32">
             <h2 class="section-title">Research Experience</h2>
-            <div class="space-y-16">
+            <div class="space-y-4">
                 <!-- BIGAI -->
-                <div class="academic-card">
+                <div class="academic-card mb-0">
                     <div class="flex justify-between items-baseline mb-4">
                         <h3 class="text-2xl font-bold text-slate-900">Beijing Institute for General Artificial Intelligence (BIGAI)</h3>
                         <span class="text-slate-400 text-sm italic">2022 - 2023</span>
@@ -435,22 +436,22 @@
                 </div>
 
                 <!-- Simplified Master Thesis Entry -->
-                <div class="academic-card border-l-blue-200">
+                <div class="academic-card border-l-blue-200 mb-0">
                     <div class="flex justify-between items-baseline mb-2">
                         <h3 class="text-xl font-bold text-slate-800">Master's Thesis Research</h3>
                         <span class="text-slate-400 text-sm italic">2023 - 2024</span>
                     </div>
                     <p class="text-slate-600 mb-2"><strong>Topic:</strong> The Application of Retrofuturism in VTuber Avatar Design</p>
                     <p class="text-sm text-slate-500 mb-4">Supervisor: Prof. Zhe Yang</p>
-                    <a href="#presentations" class="text-sm font-bold text-blue-700 hover:underline">
-                        <i class="fas fa-arrow-down mr-1"></i> See Detailed Project in Portfolio Section
+                    <a href="javascript:void(0)" onclick="openModal('thesis')" class="text-sm font-bold text-blue-700 hover:underline">
+                        See Detailed Project
                     </a>
                 </div>
             </div>
         </section>
 
         <!-- 5. Credentials (Honors & Expertise Compact) -->
-        <section id="credentials" class="mb-40 border-t border-slate-100 pt-16 scroll-mt-32">
+        <section id="credentials" class="mb-20 border-t border-slate-100 pt-16 scroll-mt-32">
             <div class="grid md:grid-cols-12 gap-12">
                 <!-- Honors Column -->
                 <div class="md:col-span-6">
@@ -751,106 +752,155 @@
             },
             "thesis": {
                 title: "The Application of Retrofuturism in VTuber Avatar Design",
-                subtitle: "Master's Thesis | A Theoretical & Practical Exploration of Digital Identity Aesthetics",
+                subtitle: "Master's Thesis | Extensive Abstract",
                 img: "https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/program1.jpg",
                 description: `
-                    <!-- Key Contribution -->
-                    <div class="bg-blue-50 p-6 rounded-xl border border-blue-100 mb-8">
-                        <strong class="block text-blue-900 mb-2 font-bold uppercase text-xs tracking-wider">Key Contribution</strong>
-                        <p class="text-sm text-blue-900">
-                            Proposes a "Retro-Futurist" design framework for Virtual Anchors to mitigate visual homogeneity. Validated through mixed-methods research that distinct stylistic narratives significantly amplify user "Avatar Embodiment" and "Self-presence".
+                    <!-- Keywords -->
+                    <div class="mb-10 font-serif">
+                        <p class="text-base text-slate-800 italic">
+                            <strong class="not-italic font-bold">Keywords:</strong> 
+                            Retrofuturism; VTuber; Live2D; Interactive Experience
                         </p>
                     </div>
 
-                    <!-- 1. Context -->
+                    <!-- 1. Introduction -->
                     <div class="mb-8">
-                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">1. Research Context</h5>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            In the rapidly evolving landscape of the Metaverse and Virtual Streaming, the design of Virtual Anchors (VTubers) faces a crisis of visual homogeneity. This Master of Fine Arts (MFA) thesis project explores Retro-Futurism—a distinctive aesthetic visualizing "the future as seen from the past"—as a strategic solution to enhance stylistic differentiation and cultural depth in digital avatars.
+                        <h4 class="text-xl font-bold text-slate-900 mb-4 font-sans">1. Introduction</h4>
+                        <p class="text-slate-800 text-base leading-loose mb-4 text-justify font-serif">
+                            The ubiquity of the mobile internet has catalysed a surge in China's digital culture industry. As of June 2023, the nation’s digital user base exceeded 1.079 billion (CNNIC, 2023). Propelled by this massive audience, the market for Virtual YouTubers (VTubers) has witnessed exponential expansion, with its core valuation reaching 12.08 billion RMB in 2022 (iiMedia Research, 2022). VTubers are progressively transcending subcultural boundaries to enter the mainstream, fundamentally reshaping social interaction and digital consumption patterns in the digital age.
+                        </p>
+                        <p class="text-slate-800 text-base leading-loose mb-4 text-justify font-serif">
+                            However, rapid commercialisation has precipitated a severe ‘visual homogenisation’. As analysed in this study, contemporary VTuber designs frequently rely on formulaic archetypes, characterised by the uncritical mimicry of top-tier avatars or the repetitive stacking of a single visual element. This deficiency in visual distinctiveness and cultural depth not only impedes the establishment of profound emotional connections between avatars and ‘Generation Z’ audiences but also constrains the sector’s sustainable development.
+                        </p>
+                        <p class="text-slate-800 text-base leading-loose mb-4 text-justify font-serif">
+                            Consequently, this study introduces ‘Retrofuturism’—a unique aesthetic style blending nostalgic sentiment with futuristic fantasy (Guffey & Lemay, 2014, p. 435)—to explore its strategic application in VTuber avatar design. By establishing a differentiated design methodology, this research attempts to mitigate visual uniformity, enhance avatar recognisability, and satisfy the dual user demands for personalisation and aesthetic profundity.
                         </p>
                     </div>
 
-                    <!-- 2. Methodology -->
+                    <!-- 2. Literature Review -->
                     <div class="mb-8">
-                         <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">2. Methodology & Design Execution</h5>
-                         <ul class="space-y-4 text-sm text-slate-600 mb-6">
-                            <li class="bg-slate-50 p-4 rounded-xl">
-                                <strong class="block text-slate-800 mb-1">Aesthetic Deconstruction</strong>
-                                Systematically analyzed core Retro-Futurist sub-genres (e.g., Atomic Age, Cyberpunk, Vaporwave) to extract visual codes that evoke both nostalgia and technological curiosity.
-                            </li>
-                            <li class="bg-slate-50 p-4 rounded-xl">
-                                <strong class="block text-slate-800 mb-1">Avatar Creation Pipeline</strong>
-                                Translated theoretical findings into a high-fidelity Virtual Anchor character system. The design process integrated aesthetic theory with technical implementation (Live2D/3D modeling and rigging).
-                            </li>
-                         </ul>
+                        <h4 class="text-xl font-bold text-slate-900 mb-4 font-sans">2. Literature Review</h4>
+                        <p class="text-slate-800 text-base leading-loose mb-4 text-justify font-serif">
+                            This study categorises existing literature into two thematic strands: the aesthetic philosophy of Retrofuturism and industry research on Virtual YouTubers (VTubers).
+                        </p>
+                        <p class="text-slate-800 text-base leading-loose mb-4 text-justify font-serif">
+                            Retrofuturism is widely conceptualised not merely as a visual style, but as a cultural reflection on the era of technological acceleration. Specifically, it has been interpreted—particularly through the lens of Victorian industrial aesthetics—as a manifestation of social anxiety (Herschmann, 2013) and further framed as a critique of modernism (Liu, 2019). Research into its sub-genres (e.g., Y2K) has explored how conflicting visual symbols generate unique aesthetic experiences, providing a theoretical foundation for applying this style to digital avatars (Peng, 2022; Li, 2023).
+                        </p>
+                        <p class="text-slate-800 text-base leading-loose mb-4 text-justify font-serif">
+                            Regarding the VTuber industry, contemporary literature predominantly focuses on macro-media ecology and technical implementation. For instance, the operational logic of ‘Kizuna AI’ as a digital commodity has been analysed (Zhou, 2020), whilst the industry’s operational mechanisms and developmental trends have been revealed through comparative analyses of agency models such as Hololive and Nijisanji (Hung, 2022). Furthermore, specific applications of Artificial Intelligence (AI) and motion capture technology in character construction have been examined (Xu, 2021). However, the success of a VTuber relies heavily on its ‘persona’. Although persona construction is identified as the core competency for establishing emotional resonance (Zhang, 2021; Liu, 2024), the industry remains confronted with a severe dilemma of visual homogenisation, necessitating urgent visual innovation (Wu, 2023).
+                        </p>
+                    </div>
 
-                         <!-- Visual Showcase Grid -->
-                         <div class="mb-6">
-                            <h6 class="text-sm font-bold text-slate-700 mb-3">Character Design Series</h6>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <div class="rounded-xl overflow-hidden shadow-sm border border-slate-100">
-                                    <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/%E5%B1%95%E7%A4%BA1-2.jpg" class="w-full h-auto block" alt="Character Design 1">
-                                </div>
-                                <div class="rounded-xl overflow-hidden shadow-sm border border-slate-100">
-                                    <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/%E5%B1%95%E7%A4%BA2.2.jpg" class="w-full h-auto block" alt="Character Design 2">
-                                </div>
-                                <div class="rounded-xl overflow-hidden shadow-sm border border-slate-100">
-                                    <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/%E5%B1%95%E7%A4%BA3-1.jpg" class="w-full h-auto block" alt="Character Design 3">
-                                </div>
-                                <div class="rounded-xl overflow-hidden shadow-sm border border-slate-100">
-                                    <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/%E5%B1%95%E7%A4%BA4.jpg" class="w-full h-auto block" alt="Character Design 4">
-                                </div>
-                            </div>
-                            <p class="text-[10px] text-center text-slate-400 mt-2 italic">Visual Exploration of Retro-Futurist Aesthetics</p>
-                         </div>
+                    <!-- 3. Methodology -->
+                    <div class="mb-8">
+                        <h4 class="text-xl font-bold text-slate-900 mb-4 font-sans">3. Methodology</h4>
+                        <p class="text-slate-800 text-base leading-loose mb-4 text-justify font-serif">
+                            This study adopts Frayling’s (1993) ‘Research through Design’ (RtD) approach, aiming to integrate quantitative analysis with design practice. Initially, through a comparative analysis of domestic and international cases, three prominent characteristics of contemporary avatar design are summarised: narrative framing, ‘Moe’ aesthetics, and zoomorphic hybridity. Building upon these effective structural elements, the study seeks innovation in visual style.
+                        </p>
+                        <p class="text-slate-800 text-base leading-loose mb-4 text-justify font-serif">
+                            To assess the viability of this approach, a survey regarding stylistic preferences was distributed, yielding 331 valid responses. The respondent profile was predominantly comprised of highly educated individuals aged 18–35. Data indicates that 64.35% of respondents expressed a strong willingness to engage with Retrofuturist VTubers, showing particular anticipation for such innovations within the domains of ‘gaming’ and ‘singing’ streams.
+                        </p>
+                        <p class="text-slate-800 text-base leading-loose mb-6 text-justify font-serif">
+                            Drawing upon the survey data and theoretical framework, this study proposes three core principles to guide the design process: firstly, Uniqueness and Recognisability, which entails the creation of distinctive silhouettes and visual anchor elements; secondly, Aesthetic Value, necessitating a balance between Retrofuturist style and mainstream aesthetics; and thirdly, Flexibility and Extensibility, thereby ensuring commercial extensibility across diverse media. The design workflow follows a sequential path: proceeding from the deconstruction of retro elements and costume styling, through to principle-based visual representation, and concluding with technical realisation via Live2D.
+                        </p>
 
-                         <!-- GIF Gallery -->
-                         <div class="mb-2">
-                            <h6 class="text-sm font-bold text-slate-700 mb-3">Live2D Motion & Expression Tests</h6>
+                         <!-- GIF Figure -->
+                         <div class="my-8">
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                                <!-- GIF 1 -->
-                                <div class="rounded-xl overflow-hidden shadow-sm border border-slate-100 aspect-[3/4]">
-                                    <img src="https://github.com/alankwai/video/releases/download/video-assets/IMG_6622.GIF" class="w-full h-full object-cover block scale-[1.2]" alt="Motion Test 1">
+                                <div class="aspect-[3/4] bg-slate-100 overflow-hidden relative rounded-lg">
+                                    <img src="https://github.com/alankwai/video/releases/download/video-assets/IMG_6622.GIF" class="w-full h-full object-cover scale-[1.2]" alt="Motion Test 1">
                                 </div>
-                                <!-- GIF 2 -->
-                                <div class="rounded-xl overflow-hidden shadow-sm border border-slate-100 aspect-[3/4]">
-                                    <img src="https://github.com/alankwai/video/releases/download/video-assets/IMG_6625.GIF" class="w-full h-full object-cover block" alt="Motion Test 2">
+                                <div class="aspect-[3/4] bg-slate-100 overflow-hidden relative rounded-lg">
+                                    <img src="https://github.com/alankwai/video/releases/download/video-assets/IMG_6625.GIF" class="w-full h-full object-cover" alt="Motion Test 2">
                                 </div>
-                                <!-- GIF 3 -->
-                                <div class="rounded-xl overflow-hidden shadow-sm border border-slate-100 aspect-[3/4]">
-                                    <img src="https://raw.githubusercontent.com/alankwai/video/main/QQ%E5%9B%BE%E7%89%8720240307011153.gif" class="w-full h-full object-cover block" alt="Motion Test 3">
+                                <div class="aspect-[3/4] bg-slate-100 overflow-hidden relative rounded-lg">
+                                    <img src="https://raw.githubusercontent.com/alankwai/video/main/QQ%E5%9B%BE%E7%89%8720240307011153.gif" class="w-full h-full object-cover" alt="Motion Test 3">
                                 </div>
                             </div>
-                            <p class="text-[10px] text-center text-slate-400 mt-2 italic">Dynamic Capture & Interaction</p>
+                            <p class="text-sm text-center text-slate-500 mt-3 font-serif italic">Figure 1. Live2D Motion & Expression Tests demonstrating technical realisation.</p>
                          </div>
                     </div>
 
-                    <!-- 4. Video Section -->
+                    <!-- 4. Research Results -->
                     <div class="mb-8">
-                        <h5 class="text-sm font-bold text-slate-900 mb-2 flex items-center gap-2">
-                            <i class="fas fa-play-circle text-pink-500"></i> Project Demo Video
-                        </h5>
+                        <h4 class="text-xl font-bold text-slate-900 mb-4 font-sans">4. Research Results</h4>
+                        <p class="text-slate-800 text-base leading-loose mb-6 text-justify font-serif">
+                            The core output of this study is the creation of the VTuber group <strong>Heguang Tongchen</strong>, comprising three avatars representing distinct streaming genres.
+                        </p>
                         
-                        <div class="aspect-video w-full rounded-xl overflow-hidden shadow-lg bg-slate-100 relative group border border-slate-200">
-                            <!-- MP4 Video Player -->
-                            <video class="w-full h-full object-cover" controls controlsList="nodownload" preload="metadata" poster="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/program1.jpg">
-                                <source src="https://github.com/alankwai/video/releases/download/video-assets/83f87501-8505-4697-92a5-9e1560b032ff.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
+                        <p class="text-slate-800 text-base leading-loose mb-4 text-justify font-serif">
+                            <strong>Zhuchen (Gaming Streamer).</strong> Leading the group is Zhuchen, who functions as a gaming streamer and is narratively defined as an astronaut from Panda Planet. Inspired by the Space Age of the 1960s, the design features an X-line silhouette characterised by a metallic breastplate and a voluminous skirt. The color scheme of Cosmic Black and silver, accented with Bamboo Green, effectively combines a high-tech aesthetic with ‘Moe’ elements, aligning with the visual preferences of the gaming community.
+                        </p>
 
-                        </div>
-                        <p class="text-xs text-center text-slate-400 mt-2 italic">Demonstration of the virtual environment and character interaction.</p>
+                        <p class="text-slate-800 text-base leading-loose mb-4 text-justify font-serif">
+                            <strong>Hefeng (Singing Streamer).</strong> Complementing the lineup is Hefeng, who functions as a singing streamer and is narratively defined as an anti-AI human vocalist within a cyberpunk universe. His visual identity is grounded in a ‘Chinese Cyberpunk’ aesthetic, characterised by the deconstruction and reimagining of the traditional Tang Dynasty round-collar robe (Yuanlingpao). Breaking away from traditional materials, the design replaces standard fabrics with transparent holographic PVC and Techwear-inspired straps, while using high-saturation fluorescent purples and blues to create a strong visual impact.
+                        </p>
+
+                        <p class="text-slate-800 text-base leading-loose mb-6 text-justify font-serif">
+                            <strong>Hypatia (Academic Streamer).</strong> Completing the triad is Hypatia, who functions as an academic streamer and is narratively defined as a library curator in a fantasy world, based on Victorian Steampunk aesthetics. He wears a classic Ulster coat adorned with brass gears and star motifs, paired with a cape styled to resemble a book. The retro golden-brown palette conveys a sense of academic rigour and magical mystery.
+                        </p>
+
+                         <!-- Image Figure -->
+                         <div class="my-8">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/%E5%B1%95%E7%A4%BA1-2.jpg" class="w-full h-auto block" alt="Character Design 1">
+                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/%E5%B1%95%E7%A4%BA2.2.jpg" class="w-full h-auto block" alt="Character Design 2">
+                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/%E5%B1%95%E7%A4%BA3-1.jpg" class="w-full h-auto block" alt="Character Design 3">
+                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/%E5%B1%95%E7%A4%BA4.jpg" class="w-full h-auto block" alt="Character Design 4">
+                            </div>
+                            <p class="text-sm text-center text-slate-500 mt-3 font-serif italic">Figure 2. Visual Exploration of Retro-Futurist Aesthetics across three character archetypes.</p>
+                         </div>
                     </div>
 
-                    <!-- 5. Concept Board -->
+                    <!-- 5. Discussion -->
                     <div class="mb-8">
-                        <h5 class="text-sm font-bold text-slate-900 mb-2 flex items-center gap-2">
-                             <i class="fas fa-image text-purple-600"></i> Full Design Board
-                        </h5>
-                        <div class="rounded-xl overflow-hidden border border-slate-100 shadow-sm">
-                            <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/%E5%B1%95%E6%9D%BF(1).jpg" alt="Design Concept Board" class="w-full h-auto">
-                            <p class="text-[10px] text-center text-slate-400 py-1 bg-slate-50">Design Concept Overview & Analysis</p>
+                        <h4 class="text-xl font-bold text-slate-900 mb-4 font-sans">5. Discussion</h4>
+                        <p class="text-slate-800 text-base leading-loose mb-4 text-justify font-serif">
+                            The design practice demonstrates that Retrofuturism effectively achieves character differentiation through a strategy of ‘conflict and fusion’. By juxtaposing contrasting materials (such as traditional silk versus holographic PVC) and temporal differences (Tang Dynasty versus Cyberpunk), and by translating cultural narratives into tangible visual symbols within the design, the approach significantly enhances both narrative depth and visual tension. These results validate the feasibility of leveraging unique cultural symbols to boost user engagement and break the cycle of visual homogenisation.
+                        </p>
+                        <p class="text-slate-800 text-base leading-loose mb-4 text-justify font-serif">
+                            However, this study is subject to certain limitations. Firstly, the sample size (N=331) is relatively small and confined to the Chinese market, which may limit the generalisability of the findings on a global scale. Secondly, the technical realisation relies on Live2D (2.5D), which implies constraints in managing complex layer occlusion and representing multi-angle spatial perspectives when compared to full 3D modelling.
+                        </p>
+                        <p class="text-slate-800 text-base leading-loose mb-6 text-justify font-serif">
+                            In conclusion, this study demonstrates that Retrofuturism serves as an effective strategy for avatar design. The proposed ‘three design principles’ offer a replicable methodological framework for practitioners. Future research will investigate the application of these principles within 3D avatars and Metaverse environments, alongside the potential of integrating AIGC technologies for asset generation.
+                        </p>
+
+                         <!-- Video Figure -->
+                        <div class="my-8">
+                            <div class="aspect-video w-full bg-slate-100 relative">
+                                <video class="w-full h-full object-cover" controls controlsList="nodownload" preload="metadata" poster="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/program1.jpg">
+                                    <source src="https://github.com/alankwai/video/releases/download/video-assets/83f87501-8505-4697-92a5-9e1560b032ff.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <p class="text-sm text-center text-slate-500 mt-3 font-serif italic">Video 1. Project demonstration of the virtual environment and character interaction.</p>
                         </div>
+
+                        <!-- Board Figure -->
+                        <div class="my-8">
+                            <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/%E5%B1%95%E6%9D%BF(1).jpg" alt="Design Concept Board" class="w-full h-auto">
+                            <p class="text-sm text-center text-slate-500 mt-3 font-serif italic">Figure 3. Full Design Board outlining concept overview and analysis.</p>
+                        </div>
+                    </div>
+
+                    <!-- 8. References -->
+                    <div class="mb-12 border-t border-slate-200 pt-8">
+                        <h4 class="text-xl font-bold text-slate-900 mb-6 font-sans">8. Selected References</h4>
+                        <ul class="text-sm text-slate-600 space-y-4 leading-normal font-serif pl-0 list-none">
+                            <li class="pl-4 -indent-4">China Internet Network Information Center. (2023). <em>The 52nd statistical report on China's internet development.</em> https://www.cnnic.com.cn/IDR/ReportDownloads/</li>
+                            <li class="pl-4 -indent-4">Frayling, C. (1993). Research in art and design. <em>Royal College of Art Research Papers</em>, 1(1), 1–5. https://researchonline.rca.ac.uk/384/</li>
+                            <li class="pl-4 -indent-4">Guffey, E., & Lemay, K. C. (2014). Retrofuturism and steampunk. In R. Latham (Ed.), <em>The Oxford handbook of science fiction</em> (pp. 434–450). Oxford University Press.</li>
+                            <li class="pl-4 -indent-4">Herschmann, M. M., Pegoraro, E., & Fernandes, C. S. (2013). Steampunks e retrofuturismo: Reflexos de inquietações sócio-temporais contemporâneas. <em>Comunicação Mídia e Consumo</em>, 10(28), 209–228. https://doi.org/10.18568/cmc.v10i28.307</li>
+                            <li class="pl-4 -indent-4">Hung, C. (2022, August 6). Japanese VTuber, a virtual anime pop idol and show host, sets Taiwan alight. <em>Radio Free Asia.</em></li>
+                            <li class="pl-4 -indent-4">iiMedia Research. (2023). <em>2023 nian Zhongguo xuni zhubo hangye yanjiu baogao [2023 Research report on China's virtual anchor industry].</em></li>
+                            <li class="pl-4 -indent-4">Liu, J. (2019). The origin and application of retro-futurism. <em>Journal of Landscape Research</em>, 11(5), 104–108.</li>
+                            <li class="pl-4 -indent-4">Liu, J. (2024). Xuni zhubo wenhua xia de shouzhong qinggan manzu tanxi. <em>Journal of Yangtze Normal University</em>, 40(1), 70–77.</li>
+                            <li class="pl-4 -indent-4">Peng, Y. (2022). Huidao weilai: Qiantan dangdai shijue sheji zhong de fugu weilai zhuyi chaoliu. <em>Art Panorama</em>, (32), 73–75.</li>
+                            <li class="pl-4 -indent-4">Wu, Y., Li, T., & Wang, D. (2023). Xuni zhubo yu fensi shequn de hudong chuanbo. <em>Radio & TV Journal</em>, (11), 124–127.</li>
+                            <li class="pl-4 -indent-4">Xu, S. H. (2021). The research on applying artificial intelligence technology to virtual YouTuber. <em>IEEE International Conference on Robotics, Automation and Artificial Intelligence (RAAI)</em>.</li>
+                            <li class="pl-4 -indent-4">Zhang, L. (2021). Xuni zhubo juese lun: Qinggan, xianshi yu shehui guanxi. <em>Contemporary Animation</em>, (1), 22–28.</li>
+                            <li class="pl-4 -indent-4">Zhou, L. (2020). Virtual YouTuber Kizuna AI: Co-creating human-non-human interaction and celebrity-audience relationship [Master’s thesis, Lund University]. <em>LUP Student Papers.</em> https://lup.lub.lu.se/student-papers/search/publication/9010072</li>
+                        </ul>
                     </div>
                 `,
                 tags: ["Mixed-Methods", "Character Design", "HCI"]
