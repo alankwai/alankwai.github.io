@@ -73,7 +73,6 @@
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        /* 修改：去掉了背景色变化和位移(transform)，只保留左侧边框颜色变化 */
         .academic-card:hover {
             border-left-color: var(--academic-blue);
         }
@@ -228,7 +227,8 @@
         <section id="about" class="mb-20 scroll-mt-32">
             <div class="flex flex-col-reverse md:flex-row items-center gap-16">
                 <div class="flex-1 text-center md:text-left">
-                    <h1 class="text-5xl md:text-7xl font-bold text-slate-900 mb-8 leading-[1.1]">
+                    <!-- Modified: increased line-height from leading-[1.1] to leading-[1.2] to prevent overlap -->
+                    <h1 class="text-5xl md:text-7xl font-bold text-slate-900 mb-8 leading-[1.2]">
                         Investigating Virtual Embodiment & <br><span class="text-blue-700">Cognitive Perception</span>
                     </h1>
                     <p class="text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl">
@@ -247,9 +247,10 @@
                             <i class="fas fa-arrow-down ml-2"></i>
                         </a>
 
-                        <a href="mailto:lana_ding@foxmail.com" onclick="copyEmail(event)" class="text-sm font-bold border-b-2 border-blue-700 pb-1 hover:text-blue-500 transition self-center cursor-pointer">Email Inquiry</a>
+                        <a href="mailto:lana_ding@foxmail.com" onclick="copyEmail(event)" class="text-sm font-bold border-b-2 border-blue-700 pb-1 hover:text-blue-500 transition self-center cursor-pointer">Email</a>
                         
-                        <a href="https://github.com/alankwai/portfolio-library/raw/9f1fc1e36032f9eb904a930ced072c4ce48bd4e1/cv_digital.pdf" target="_blank" class="text-sm font-bold border-b-2 border-blue-700 pb-1 hover:text-blue-500 transition self-center">Academic CV</a>
+                        <!-- Modified: Link updated to raw format -->
+                        <a href="https://github.com/alankwai/portfolio-library/raw/main/cv_digital.pdf" target="_blank" class="text-sm font-bold border-b-2 border-blue-700 pb-1 hover:text-blue-500 transition self-center">Academic CV</a>
                     </div>
                 </div>
                 
@@ -321,7 +322,7 @@
                         <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">High-Fidelity Embodiment for General Artificial Intelligence</h4>
                         <p class="text-xs text-slate-500 mb-0 italic">World's First AGI Agent 'Tongtong' @ BIGAI</p>
                         <div class="mt-auto pt-4 flex gap-2 flex-wrap">
-                            <span class="tag">AGI</span> <span class="tag">Tech Art</span> <span class="tag">UE5</span>
+                            <span class="tag">AGI</span> <span class="tag">Model Design</span> <span class="tag">UE5</span>
                         </div>
                     </div>
                 </div>
@@ -339,7 +340,7 @@
                         <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">Research on Dynamic Composition in the Concept Design of Role-Playing Games</h4>
                         <p class="text-xs text-slate-500 mb-0 italic">Visual Narrative & Environment Research @ Group Project</p>
                         <div class="mt-auto pt-4 flex gap-2 flex-wrap">
-                            <span class="tag">UE5</span> <span class="tag">Game Theory</span>
+                            <span class="tag">UE5</span> <span class="tag">Game Theory</span> <span class="tag">Graphic Design</span>
                         </div>
                     </div>
                 </div>
@@ -375,7 +376,7 @@
                         <h4 class="text-lg font-bold mb-2 group-hover:text-blue-700 transition leading-tight">Digital Simulation and Evolutionary Analysis of the Yangtze River Basin Ecosystem</h4>
                         <p class="text-xs text-slate-500 mb-0 italic">Ecological Evolution Simulation & Scientific Visualization @ Social Science Foundation Research Project</p>
                         <div class="mt-auto pt-4 flex gap-2 flex-wrap">
-                            <span class="tag">Digital Twin</span> <span class="tag">Maya</span> <span class="tag">Scientific Vis</span>
+                            <span class="tag">Digital Twin</span> <span class="tag">Scientific Vis</span>
                         </div>
                     </div>
                 </div>
@@ -429,7 +430,7 @@
                         <h3 class="text-2xl font-bold text-slate-900">Beijing Institute for General Artificial Intelligence (BIGAI)</h3>
                         <span class="text-slate-400 text-sm italic">2022 - 2023</span>
                     </div>
-                    <p class="text-blue-800 font-bold mb-4">Research Assistant | Human-AI Interaction Lab</p>
+                    <p class="text-blue-800 font-bold mb-4">Research Assistant | Advanced Technology Center</p>
                     <p class="text-slate-600 mb-6">
                         Collaborated with AI scientists to develop the visual embodiment for the multimodal AGI character <strong>"Tongtong"</strong>. Focused on bridging the gap between AGI logic and human perception by developing facial/gestural expression libraries and constructing virtual training environments (UE5), ensuring the agent's behavior aligns with human social expectations.
                     </p>
@@ -531,7 +532,8 @@
                             <span>Email Me</span>
                         </a>
                         
-                        <a href="https://github.com/alankwai/portfolio-library/raw/9f1fc1e36032f9eb904a930ced072c4ce48bd4e1/cv_digital.pdf" target="_blank" class="px-8 py-4 bg-slate-800 text-white rounded-full font-bold hover:bg-slate-700 transition border border-slate-700 flex items-center justify-center gap-2">
+                        <!-- Modified: Link updated to raw format for consistency -->
+                        <a href="https://github.com/alankwai/portfolio-library/raw/main/cv_digital.pdf" target="_blank" class="px-8 py-4 bg-slate-800 text-white rounded-full font-bold hover:bg-slate-700 transition border border-slate-700 flex items-center justify-center gap-2">
                             <i class="fas fa-file-pdf text-slate-400"></i>
                             <span>Download CV</span>
                         </a>
@@ -699,15 +701,15 @@
                                 The study adopted a Between-Subjects Design with 64 participants randomly assigned to two parallel groups (N=32 per group).
                             </p>
 
-                            <!-- Visual Stimuli Grid (Merged) -->
+                            <!-- Visual Stimuli Grid (Merged & Equal Height) -->
                             <div class="my-6 rounded-xl border border-slate-200 bg-slate-50 shadow-sm overflow-hidden">
-                                <!-- 修改：移除了固定高度限制(h-80)，改为自适应，确保图片完整显示不被压缩或留白过大 -->
                                 <div class="grid grid-cols-1 md:grid-cols-2">
-                                    <div class="w-full bg-slate-100 border-b md:border-b-0 md:border-r border-slate-200">
-                                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%AF%B9%E6%AF%94%E5%9B%BE1.jpg" class="w-full h-auto block" alt="Photorealistic">
+                                    <!-- Modified: Removed border classes (border-b md:border-b-0 md:border-r border-slate-200) -->
+                                    <div class="w-full h-72 md:h-80 bg-slate-100 flex items-center justify-center p-2">
+                                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%AF%B9%E6%AF%94%E5%9B%BE1.jpg" class="max-w-full max-h-full object-contain" alt="Photorealistic">
                                     </div>
-                                    <div class="w-full bg-slate-100">
-                                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%AF%B9%E6%AF%94%E5%9B%BE2%E6%97%A0%E6%B0%B4%E5%8D%B0.jpg" class="w-full h-auto block" alt="NPR">
+                                    <div class="w-full h-72 md:h-80 bg-slate-100 flex items-center justify-center p-2">
+                                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%AF%B9%E6%AF%94%E5%9B%BE2%E6%97%A0%E6%B0%B4%E5%8D%B0.jpg" class="max-w-full max-h-full object-contain" alt="NPR">
                                     </div>
                                 </div>
                                 <div class="bg-white py-2 px-3 border-t border-slate-200">
@@ -941,91 +943,90 @@
                 subtitle: "World's First AGI Agent 'Tongtong' @ BIGAI",
                 img: "https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/display1_3.png",
                 description: `
-                    <!-- Role -->
+                    <!-- Role (Kept) -->
                     <p class="font-bold text-blue-800 text-xl mb-8 border-b border-slate-100 pb-4">
                         <i class="fas fa-user-circle mr-2"></i> Role: Early-Stage Core Contributor (Visual Engineering & Environment Simulation)
                     </p>
 
-                    <!-- 1. Research Context -->
-                    <div class="mb-8 flex flex-col md:flex-row gap-6 items-start border-b border-slate-100 pb-6">
-                        <div class="flex-1">
-                            <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">Research Context: Virtual Co-existence</h5>
-                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                                As the Metaverse evolves, the core of social interaction is shifting from simple communication to "Virtual Co-existence." Unlike traditional AI driven by big data, <strong>"Tongtong" (Little Girl)</strong>—the world's first AGI prototype developed by BIGAI—possesses an autonomous mind driven by Values and Causality. She doesn't just execute code; she thinks, reasons, and makes decisions based on her own internal value system.
-                            </p>
-                            <p class="text-slate-600 text-sm leading-relaxed">
-                                The core challenge was: <strong>How to build a "Digital Body" that matches her advanced mind?</strong> If the body is too stiff, users won't treat her as a "person." My goal was to verify if a high-fidelity environment and avatar are the prerequisites for users to accept and interact with AGI socially.
-                            </p>
-                        </div>
-                        <!-- BIGAI Logo -->
-                        <div class="w-48 shrink-0 rounded-lg overflow-hidden">
-                            <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/name.jpg" alt="BIGAI Identity" class="w-full h-auto rounded">
-                        </div>
-                    </div>
-
-                    <!-- Technical Production Process (New Layout) -->
-                    <div class="mb-10 space-y-4">
-                        
-                        <!-- 1. White Model (Full Width) -->
-                        <div class="rounded-xl border border-slate-200 bg-slate-50 shadow-sm overflow-hidden">
-                             <div class="p-2">
-                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/whitemodel1.jpg" alt="White Model Environment" class="w-full h-auto block rounded">
-                             </div>
-                             <div class="bg-white py-2 px-3 border-t border-slate-200">
-                                 <p class="text-[10px] text-center text-slate-500 font-medium">Character White Model & Rigging</p>
-                             </div>
-                        </div>
-
-                        <!-- 2. Layout (Full Width) -->
-                        <div class="rounded-xl border border-slate-200 bg-slate-50 shadow-sm overflow-hidden">
-                             <div class="p-2">
-                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/layout.jpg" alt="Environment Layout" class="w-full h-auto block rounded">
-                             </div>
-                             <div class="bg-white py-2 px-3 border-t border-slate-200">
-                                 <p class="text-[10px] text-center text-slate-500 font-medium">Pre-production Character Costume Design Test</p>
-                             </div>
-                        </div>
-
-                        <!-- 3. Substance & Rigging (Side-by-Side, Consistent Height) -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <!-- Substance -->
-                            <div class="rounded-xl border border-slate-200 bg-slate-50 shadow-sm flex flex-col overflow-hidden">
-                                <div class="h-64 w-full bg-white flex items-center justify-center p-2">
-                                    <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/model1.png" alt="Topology" class="h-full w-auto object-contain">
-                                </div>
-                                <div class="bg-white py-2 px-3 border-t border-slate-200 mt-auto">
-                                    <p class="text-[10px] text-center text-slate-500 font-medium">Substance Texture Painting</p>
-                                </div>
-                            </div>
-                            
-                            <!-- Rigging -->
-                            <div class="rounded-xl border border-slate-200 bg-slate-50 shadow-sm flex flex-col overflow-hidden">
-                                <div class="h-64 w-full bg-white flex items-center justify-center p-2">
-                                    <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/rigging.jpg" alt="Rigging Debug" class="h-full w-auto object-contain">
-                                </div>
-                                <div class="bg-white py-2 px-3 border-t border-slate-200 mt-auto">
-                                    <p class="text-[10px] text-center text-slate-500 font-medium">Rigging & Weight Testing</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    
-                    <!-- 2. Environment -->
+                    <!-- Intro -->
                     <div class="mb-8">
-                        <h5 class="text-lg font-bold text-slate-900 mb-4 border-l-4 border-blue-600 pl-3">1:1 Digital Reality Construction</h5>
-                        
                         <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                            As one of the key early-stage contributors, I was responsible for constructing the visual foundation that grants "Tongtong" the power of action. To create a seamless Mixed Reality testbed, our team first constructed a physical living space within the research institute. My specific role was to <strong>replicate this physical environment 1:1 into Unreal Engine 5</strong>.
+                            "Tongtong" is an AGI prototype driven by Values and Causality, possessing an autonomous cognitive system. The primary objective of this project was to construct a high-fidelity visual system—specifically the digital avatar and the corresponding living environment—to facilitate human-AGI interaction.
                         </p>
+                    </div>
+
+                    <!-- 1. Character Asset Creation -->
+                    <div class="mb-10">
+                        <h5 class="text-lg font-bold text-slate-900 mb-4 border-l-4 border-blue-600 pl-3">1. Character Asset Creation & Iteration</h5>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            The character development phase focused on high-precision modeling and aesthetic exploration.
+                        </p>
+                        <ul class="space-y-4 text-sm text-slate-600 mb-6">
+                            <li class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                                <strong class="block text-slate-900 mb-1">Visual Development</strong>
+                                During the initial phase, various color schemes were tested. A pink-and-white color palette was ultimately selected for the final outfit to enhance visual affinity and approachability, aligning the avatar's appearance with the "little girl" persona to lower user wariness.
+                            </li>
+                            <li class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                                <strong class="block text-slate-900 mb-1">Iterative Prototyping</strong>
+                                The development process also involved the creation of a fully rigged male avatar variant. However, this iteration was discarded in the final stage to allocate technical resources toward optimizing the female prototype for stability and interaction fluidity.
+                            </li>
+                        </ul>
+
+                        <!-- Technical Production Process (Preserved Layout) -->
+                        <div class="mb-6 space-y-4">
+                            <!-- 1. White Model (Full Width) -->
+                            <div class="rounded-xl border border-slate-200 bg-slate-50 shadow-sm overflow-hidden">
+                                 <div class="p-2">
+                                    <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/whitemodel1.jpg" alt="White Model Environment" class="w-full h-auto block rounded">
+                                 </div>
+                                 <div class="bg-white py-2 px-3 border-t border-slate-200">
+                                     <p class="text-[10px] text-center text-slate-500 font-medium">Character White Model & Rigging</p>
+                                 </div>
+                            </div>
+
+                            <!-- 2. Layout (Full Width) -->
+                            <div class="rounded-xl border border-slate-200 bg-slate-50 shadow-sm overflow-hidden">
+                                 <div class="p-2">
+                                    <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/layout.jpg" alt="Environment Layout" class="w-full h-auto block rounded">
+                                 </div>
+                                 <div class="bg-white py-2 px-3 border-t border-slate-200">
+                                     <p class="text-[10px] text-center text-slate-500 font-medium">Pre-production Character Costume Design Test</p>
+                                 </div>
+                            </div>
+
+                            <!-- 3. Substance & Rigging (Side-by-Side, Consistent Height) -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <!-- Substance -->
+                                <div class="rounded-xl border border-slate-200 bg-slate-50 shadow-sm flex flex-col overflow-hidden">
+                                    <div class="h-64 w-full bg-white flex items-center justify-center p-2">
+                                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/model1.png" alt="Topology" class="h-full w-auto object-contain">
+                                    </div>
+                                    <div class="bg-white py-2 px-3 border-t border-slate-200 mt-auto">
+                                        <p class="text-[10px] text-center text-slate-500 font-medium">Substance Texture Painting</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Rigging -->
+                                <div class="rounded-xl border border-slate-200 bg-slate-50 shadow-sm flex flex-col overflow-hidden">
+                                    <div class="h-64 w-full bg-white flex items-center justify-center p-2">
+                                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/rigging.jpg" alt="Rigging Debug" class="h-full w-auto object-contain">
+                                    </div>
+                                    <div class="bg-white py-2 px-3 border-t border-slate-200 mt-auto">
+                                        <p class="text-[10px] text-center text-slate-500 font-medium">Rigging & Weight Testing</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Environmental Digital Twin -->
+                    <div class="mb-10">
+                        <h5 class="text-lg font-bold text-slate-900 mb-4 border-l-4 border-blue-600 pl-3">2. Environmental Digital Twin Construction</h5>
                         <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                            By strictly adhering to physical laws in rendering (PBR), I created a "Digital Reality" that synchronized perfectly with the physical world. This setup allowed users wearing VR headsets to interact with Tongtong in a spatially consistent manner, transforming her from an abstract algorithm into a tangible entity with embodied agency.
+                            To create a seamless Mixed Reality testbed, the physical living space within the research institute was replicated 1:1 into Unreal Engine 5. By adhering to Physically Based Rendering (PBR) workflows, a "Digital Reality" was constructed to synchronize with the physical world. This setup ensures that users wearing VR headsets perceive a spatially consistent environment, thereby providing the AGI agent with a tangible space for embodied interaction.
                         </p>
 
-                         <!-- 
-                            MERGED SHOWCASE: Day / Night / Tongtong 
-                            All images restored with 'refs/heads/main' path and w-full h-auto
-                         -->
+                        <!-- Merged Showcase: Day / Night / Tongtong -->
                          <div class="rounded-xl border border-slate-200 bg-slate-50 shadow-sm mb-4 overflow-hidden">
                             <!-- Top Row: Day & Night -->
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-1 p-1 pb-0">
@@ -1049,13 +1050,22 @@
                          </div>
                     </div>
 
-                    <!-- 3. Facial Rigging & MetaHuman -->
-                    <div class="mb-8">
-                        <h5 class="text-lg font-bold text-slate-900 mb-4 border-l-4 border-blue-600 pl-3">Bridging the Gap: MetaHuman Facial Rigging</h5>
-                        
-                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                            To bridge the gap between human users and an autonomous AI, the visual system must convey intent. I strategically utilized the <strong>MetaHuman framework</strong> for facial rigging to act as the window to Tongtong’s mind. Since Tongtong is driven by values (e.g., a desire for tidiness or curiosity), I mapped these invisible cognitive states to the MetaHuman facial system to generate perceivable micro-expressions.
+                    <!-- 3. Facial Rigging -->
+                    <div class="mb-10">
+                        <h5 class="text-lg font-bold text-slate-900 mb-4 border-l-4 border-blue-600 pl-3">3. Facial Rigging & Affective Display</h5>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            The MetaHuman framework was utilized to establish the facial rigging system, enabling the agent to convey emotions and intent effectively.
                         </p>
+                        <ul class="space-y-4 text-sm text-slate-600 mb-6">
+                            <li class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                                <strong class="block text-slate-900 mb-1">Expression Mapping</strong>
+                                Internal cognitive states (driven by the AGI's value system) were mapped to the MetaHuman facial control rig, allowing for the generation of perceivable micro-expressions.
+                            </li>
+                            <li class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                                <strong class="block text-slate-900 mb-1">Mitigating the Uncanny Valley</strong>
+                                A major technical focus was balancing visual realism with animation fluidity. The facial assets were fine-tuned to eliminate mechanical stiffness and mitigate the "Uncanny Valley" effect, ensuring interactions remain comfortable for human users.
+                            </li>
+                        </ul>
                         
                         <!-- GIFs -->
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
@@ -1066,18 +1076,14 @@
                                 <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/tongtong4.gif" alt="Facial Rigging GIF 2" class="w-full h-auto block">
                             </div>
                         </div>
-
-                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                            A key focus was consciously controlling the visual fidelity. By fine-tuning the MetaHuman assets, I aimed to eliminate the "robotic" stiffness while carefully mitigating the <strong>"Uncanny Valley"</strong> effect. This balance ensures that users feel comfortable and safe, rather than unsettled, when interacting with a highly realistic agent.
-                        </p>
                     </div>
 
-                    <!-- 4. Impact & Awards -->
-                    <div class="mb-8">
+                    <!-- 4. Impact & Recognition -->
+                    <div class="mb-10">
                         <h5 class="text-lg font-bold text-slate-900 mb-4 border-l-4 border-blue-600 pl-3">Impact & Recognition</h5>
-                        <div class="bg-blue-50 p-6 rounded-xl border border-blue-100">
+                        <div class="bg-blue-50 p-6 rounded-xl border border-blue-100 mb-6">
                             <p class="text-sm text-blue-900 leading-relaxed mb-4">
-                                This work successfully demonstrated that high-fidelity embodiment is essential for AGI to integrate into human social norms. My contribution to the early-stage visual engineering laid the groundwork for Tongtong’s public debut.
+                                This project demonstrates that high-fidelity embodiment is a prerequisite for AGI to integrate into human social norms.
                             </p>
                             <ul class="space-y-3">
                                 <li class="flex items-start gap-3 text-sm text-blue-900 font-bold">
@@ -1090,13 +1096,8 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
 
-                    <!-- Exhibition -->
-                    <div class="mb-8">
-                        <h5 class="text-sm font-bold text-slate-900 mb-3 flex items-center gap-2">
-                            <i class="fas fa-images text-purple-600"></i> Exhibition & Public Debut
-                        </h5>
+                        <!-- Exhibition Images -->
                         <div class="grid grid-cols-2 gap-4">
                             <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200">
                                 <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/display1_2.png" alt="Exhibition 1" class="w-full h-auto block">
@@ -1126,7 +1127,7 @@
                         </div>
                     </div>
                 `,
-                tags: ["AGI", "Tech Art", "UE5", "Digital Twin"]
+                tags: ["AGI", "Model Design", "UE5", "Digital Twin"]
             },
             "dynamic_composition": {
                 title: "Research on Dynamic Composition in the Concept Design of Role-Playing Games",
@@ -1135,17 +1136,16 @@
                 description: `
                     <!-- Role -->
                     <p class="font-bold text-blue-800 text-xl mb-8 border-b border-slate-100 pb-4">
-                        <i class="fas fa-user-circle mr-2"></i> Role: Environment Artist (Full-Process 3D Production)
+                        <i class="fas fa-user-circle mr-2"></i> Role: 3D Character Modeler & Level Artist
                     </p>
 
-                    <!-- 1. Functional Definition -->
+                    <!-- Paragraph 1 -->
                     <div class="mb-8">
-                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">1. Functional Definition</h5>
                         <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                            This work serves as an experimental 3D environment demo, developed as a semester group research project. It functions not as a playable game with combat mechanics, but as a visual research set designed to explore the application of "Dynamic Composition" in a 3D space. My specific contribution covered the full 3D production pipeline, including environmental modeling, texture mapping, and final scene assembly in Unreal Engine 5 to realize the conceptual design in three dimensions.
+                            Developed as a semester group research project, this work serves as a non-playable game prototype designed to explore the application of "Dynamic Composition" within game environments. Within the collaborative framework, my primary technical focus centered on the high-precision 3D modeling of the main character and the construction of the initial level blockout (greybox) to establish spatial logic. Additionally, I contributed to the preliminary conceptual planning and assisted in the final scene integration within Unreal Engine 5.
                         </p>
                         
-                        <!-- Images -->
+                        <!-- Images Block 1 -->
                         <div class="space-y-6">
                             <!-- Fig 1: Angle -->
                             <div class="w-full md:w-1/2 mx-auto rounded-xl overflow-hidden border border-slate-100 shadow-sm">
@@ -1200,22 +1200,11 @@
                         </div>
                     </div>
 
-                    <!-- 2. Mechanism Explanation -->
+                    <!-- Paragraph 2 -->
                     <div class="mb-8">
-                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">2. Mechanism Explanation</h5>
                         <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            In this open-world setting, visual elements function as a "Silent Navigation System" to guide player exploration.
+                            In this open-world setting, visual elements function as an "Implicit Visual Guidance" system to guide player exploration. Specifically, particle systems—manifested as butterfly motifs—are utilised to establish a clear visual path, subconsciously directing the player’s gaze. Furthermore, the design employs tonal contrast rather than structural complexity to highlight objectives. The "White Cottage" utilizes its pristine whiteness to create a sharp distinction against the dense, darker forest background, acting as a focal point that naturally attracts attention without intrusive UI indicators.
                         </p>
-                        <ul class="space-y-4 text-sm text-slate-600 mb-6">
-                            <li class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-                                <strong class="block text-slate-800 mb-1">Guiding Butterflies</strong>
-                                As illustrated in the design breakdown, particle systems (butterflies) are used to create dynamic visual flow, subconsciously directing the player’s gaze and movement path.
-                            </li>
-                            <li class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-                                <strong class="block text-slate-800 mb-1">Density Contrast</strong>
-                                The high-detail "White Cottage" (the subject) is positioned against a low-density forest background. This deliberate visual weight difference acts as a magnet for player attention, naturally highlighting the objective without the need for intrusive UI markers.
-                            </li>
-                        </ul>
 
                         <!-- NEW IMAGE: White House -->
                         <div class="w-[90%] mx-auto rounded-xl overflow-hidden border border-slate-100 shadow-sm mb-6">
@@ -1235,16 +1224,11 @@
                         <p class="text-[10px] text-center text-slate-400 italic mt-2">Scene Showcase</p>
                     </div>
 
-                    <!-- 3. Evidence-Based Design -->
+                    <!-- Paragraph 3 -->
                     <div class="mb-8">
-                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">3. Evidence-Based Design</h5>
                         <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            Leveraging Unreal Engine 5, I validated these composition theories through practical construction.
+                            Utilizing Unreal Engine 5, these composition theories were validated through practical construction, where atmospheric lighting and spatial arrangement were organized to drive the exploration narrative. This project demonstrates that effective visual guidance can naturally lead player exploration, replacing rigid instructions with intuitive cues to enhance game immersion.
                         </p>
-                        <ul class="list-disc list-inside space-y-2 text-sm text-slate-600 marker:text-blue-500 mb-6">
-                            <li><strong>Atmospheric Lighting:</strong> Lighting hierarchies were established to separate visual layers, creating a focal point that naturally attracts the eye.</li>
-                            <li><strong>Spatial Arrangement:</strong> Assets were strategically organized based on "Dynamic Composition" theories to create a visual rhythm. This setup verifies that spatial logic alone can effectively drive the exploration narrative and guide the player's attention flow.</li>
-                        </ul>
 
                         <!-- Key Concept & Final -->
                         <div class="space-y-4 bg-slate-50 p-4 rounded-2xl border border-slate-100">
@@ -1265,14 +1249,6 @@
                         </div>
                     </div>
 
-                    <!-- 4. Research Goal -->
-                    <div class="mb-8">
-                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">4. Research Goal</h5>
-                        <p class="bg-blue-50 p-5 rounded-2xl text-blue-900 text-sm border border-blue-100">
-                            The project investigates the potential of "Dynamic Composition" in enhancing game immersion. It validates that effective visual guidance can naturally lead player exploration, replacing rigid instructions with intuitive visual cues. This approach not only improves the aesthetic quality of the scene but also deepens the emotional resonance of the RPG experience.
-                        </p>
-                    </div>
-
                     <!-- MP4 Video Section -->
                     <div class="mb-8">
                         <h5 class="text-sm font-bold text-slate-900 mb-2 flex items-center gap-2">
@@ -1284,7 +1260,6 @@
                                 Your browser does not support the video tag.
                             </video>
                         </div>
-                        <!-- Removed Caption -->
                     </div>
                 `,
                 tags: [] // Empty tags to hide the section
@@ -1313,10 +1288,16 @@
                             <strong class="block text-slate-800 mb-2">Character System</strong>
                             <p class="mb-4">The game features a team of four "Taikonaut Pandas"—named Vento, Lay, Green, and Flory. As the national symbol of China, the panda figure aligns perfectly with the localized theme of the "Project Tiangong." This design choice embodies cultural identity, making the high-tech aerospace narrative more approachable and culturally resonant.</p>
                             
-                            <!-- Concept Design Image: No Container -->
-                            <div class="w-[90%] mx-auto mt-4">
+                            <!-- Concept Design Image: Character Three Views -->
+                            <div class="w-[90%] mx-auto mt-4 mb-4">
                                 <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E8%AE%BE%E8%AE%A1%E5%9B%BE.jpg" alt="Concept Design" class="w-full h-auto block rounded-lg shadow-sm">
                                 <p class="text-[10px] text-center text-slate-400 py-2 italic">Character Three Views</p>
+                            </div>
+
+                            <!-- Moved Here: 3D Character Three Views -->
+                            <div class="w-[90%] mx-auto mt-4">
+                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/3prespectives.jpg" alt="3D Structural Views" class="w-full h-auto block rounded-lg shadow-sm">
+                                <p class="text-[10px] text-center text-slate-400 py-2 italic">3D Character Three Views</p>
                             </div>
                         </li>
 
@@ -1324,10 +1305,10 @@
                             <strong class="block text-slate-800 mb-2">Spatial Narrative</strong>
                             <p class="mb-4">A three-tiered board structure represents different atmospheric layers. Players utilize "Space Ladders" to achieve vertical movement, conceptually reenacting the climb from Earth to Space.</p>
                             
-                            <!-- Structural View Image: No Container -->
+                            <!-- Moved Here: Board Layout -->
                             <div class="w-[90%] mx-auto mt-4">
-                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/3prespectives.jpg" alt="3D Structural Views" class="w-full h-auto block rounded-lg shadow-sm">
-                                <p class="text-[10px] text-center text-slate-400 py-2 italic">3D Character Three Views</p>
+                                <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%B9%B3%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE.jpg" alt="Board Layout" class="w-full h-auto block rounded-lg shadow-sm">
+                                <p class="text-xs text-center text-slate-400 py-2 italic">Board Layout</p>
                             </div>
                         </li>
                     </ul>
@@ -1359,16 +1340,11 @@
                         </div>
                     </div>
 
-                    <!-- Remaining Images: No Container -->
+                    <!-- Remaining Images: Just Game Components Now -->
                     <div class="space-y-8 mb-8">
                         <div class="w-[90%] mx-auto">
                             <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%B0%8F%E7%89%A9%E5%86%85%E5%AE%B9.jpg" alt="Game Items" class="w-full h-auto block rounded-lg shadow-sm">
                             <p class="text-xs text-center text-slate-400 py-2 italic">Game Components</p>
-                        </div>
-                        
-                        <div class="w-[90%] mx-auto">
-                            <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/main/%E5%B9%B3%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE.jpg" alt="Board Layout" class="w-full h-auto block rounded-lg shadow-sm">
-                            <p class="text-xs text-center text-slate-400 py-2 italic">Board Layout</p>
                         </div>
                     </div>
 
@@ -1401,70 +1377,86 @@
                 description: `
                     <!-- Role -->
                     <p class="font-bold text-blue-800 text-xl mb-8 border-b border-slate-100 pb-4">
-                        <i class="fas fa-user-circle mr-2"></i> Role: 3D Artist (Scene Construction & Animation)
+                        <i class="fas fa-user-circle mr-2"></i> Role: 3D Scene Artist & Animator
                     </p>
 
-                    <!-- Content Block 1: Functional Definition (No Header) -->
-                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                        This work serves as the visual demonstration component for a Key Social Science Foundation Research Project. It functions as a scientific observation window, transforming the hydrological and geological data of the Yangtze River Basin into a visualized evolutionary process. My specific contribution focused on scene construction and animation production, converting abstract geographic information into an intuitive video demonstration for public reporting.
-                    </p>
-
-                    <!-- Image 1 -->
-                    <div class="w-[90%] mx-auto mb-8">
-                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/mountain1.png" alt="Terrain Detail 1" class="w-full h-auto block rounded-lg shadow-sm">
-                        <p class="text-[10px] text-center text-slate-400 py-2 italic">Glacial Texture Detail</p>
-                    </div>
-
-                    <!-- Content Block 2: Mechanism Explanation (No Header) -->
-                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                        The visualization focuses on the objective reproduction of geological features based on data references.
-                    </p>
-                    
-                    <div class="space-y-4 mb-8">
-                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-                            <strong class="block text-slate-800 mb-1">Evolutionary Perspective</strong>
-                            <p class="text-sm text-slate-600">The system presents a dynamic process of ecological change. It allows the audience to observe the geological environment—from the glacial textures of the river source to the vegetation coverage—unfolding over time through the video demonstration.</p>
-                        </div>
-                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-                            <strong class="block text-slate-800 mb-1">Visual Representation</strong>
-                            <p class="text-sm text-slate-600">The terrain modeling is informed by geographic data. I reconstructed the terrain features to reflect the general physical reality, providing a scientific yet accessible representation of the ecosystem’s evolution.</p>
-                        </div>
-                    </div>
-
-                    <!-- Image 2 -->
-                    <div class="w-[90%] mx-auto mb-8">
-                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/mountain2.png" alt="Terrain Detail 2" class="w-full h-auto block rounded-lg shadow-sm">
-                        <p class="text-[10px] text-center text-slate-400 py-2 italic">Water Body Simulation</p>
-                    </div>
-
-                    <!-- Content Block 3: Evidence-Based Design (No Header) -->
-                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                        Applying the workflow of "Data-to-Visual Translation," I converted geographic inputs into 3D geometric assets.
-                    </p>
-                    
-                    <!-- Stacked Cards (Changed from Grid) -->
-                    <div class="space-y-4 mb-8">
-                        <div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm">
-                            <strong class="block text-blue-900 mb-2 text-sm">Terrain Generation</strong>
-                            <p class="text-slate-600 text-xs leading-relaxed">Digital Elevation Models (DEM) were referenced in Autodesk Maya to generate terrain meshes. This process maps altitude coordinates into perceptible terrain undulations to represent the landscape structure.</p>
-                        </div>
-                        <div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm">
-                            <strong class="block text-blue-900 mb-2 text-sm">Atmospheric Simulation</strong>
-                            <p class="text-slate-600 text-xs leading-relaxed">I applied the Arnold Renderer and Physically Based Rendering (PBR) workflows. By configuring physical sun and sky systems, the design simulates dynamic cloud flow, achieving a visual atmosphere that is closer to physical reality.</p>
-                        </div>
-                    </div>
-
-                    <!-- Image 3 -->
-                    <div class="w-[90%] mx-auto mb-8">
-                        <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/mountain3.png" alt="Terrain Detail 3" class="w-full h-auto block rounded-lg shadow-sm">
-                        <p class="text-[10px] text-center text-slate-400 py-2 italic">Geological Feature Restoration</p>
-                    </div>
-
-                    <!-- Content Block 4: Social & Academic Goal (No Header) -->
-                    <div class="bg-blue-50 p-6 rounded-xl border border-blue-100 mb-8">
-                        <p class="text-sm text-blue-900 leading-relaxed">
-                            The project aims to provide a visual interpretation of ecological data for public presentation. It demonstrates the value of 3D visualization in making complex ecological systems understandable. This work is supported by the Central Government Support for Local Special Projects (Key Technology Research of Ecological Environment System).
+                    <!-- 1. Project Overview -->
+                    <div class="mb-8">
+                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">1. Project Overview</h5>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            This work constitutes the visual demonstration module for a Key Social Science Foundation Research Project. It functions as a data visualization platform, translating the hydrological and geological data of the Yangtze River Basin into a visualized geological evolution. My specific role was 3D scene construction and animation production, converting abstract geographic information into an intuitive visual narrative for public dissemination.
                         </p>
+
+                        <!-- Image 1 -->
+                        <div class="w-[90%] mx-auto mb-8">
+                            <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/mountain1.png" alt="Terrain Detail 1" class="w-full h-auto block rounded-lg shadow-sm">
+                            <p class="text-[10px] text-center text-slate-400 py-2 italic">Glacial Texture Detail</p>
+                        </div>
+                    </div>
+
+                    <!-- 2. Spatiotemporal Visualization Strategy -->
+                    <div class="mb-8">
+                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">2. Spatiotemporal Visualization Strategy</h5>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            The visualization focuses on the objective reproduction of geological features based on data references.
+                        </p>
+                        
+                        <div class="space-y-4 mb-8">
+                            <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                                <strong class="block text-slate-800 mb-1">Dynamic Geological Evolution</strong>
+                                <p class="text-sm text-slate-600">The system presents a dynamic reconstruction of crustal changes. It visualizes the macroscopic displacement of the crust and the morphological evolution of the continent over geological epochs.</p>
+                            </div>
+                            <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                                <strong class="block text-slate-800 mb-1">Scientific Representation</strong>
+                                <p class="text-sm text-slate-600">The terrain modeling adheres to geographic data references. Terrain features were reconstructed to reflect geological authenticity, providing a scientific yet accessible representation of the landscape's evolution.</p>
+                            </div>
+                        </div>
+
+                        <!-- Image 2 -->
+                        <div class="w-[90%] mx-auto mb-8">
+                            <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/mountain2.png" alt="Terrain Detail 2" class="w-full h-auto block rounded-lg shadow-sm">
+                            <p class="text-[10px] text-center text-slate-400 py-2 italic">Water Body Simulation</p>
+                        </div>
+                    </div>
+
+                    <!-- 3. Technical Implementation -->
+                    <div class="mb-8">
+                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">3. Technical Implementation: Data-to-Visual Translation</h5>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            The workflow of "Data-to-Visual Translation" was applied to convert geographic inputs into 3D geometric assets.
+                        </p>
+                        
+                        <!-- Stacked Cards (Data Mapping) -->
+                        <div class="space-y-4 mb-8">
+                            <div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm">
+                                <strong class="block text-blue-900 mb-2 text-sm">Terrain Modeling</strong>
+                                <p class="text-slate-600 text-xs leading-relaxed">Geographic references were utilized in Autodesk Maya to reconstruct the terrain meshes. This process mapped altitude information into perceptible terrain undulations to accurately represent the landscape structure.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm">
+                                <strong class="block text-blue-900 mb-2 text-sm">Atmospheric Simulation</strong>
+                                <p class="text-slate-600 text-xs leading-relaxed">The Arnold Renderer and Physically Based Rendering (PBR) workflows were employed. By configuring physical sun and sky systems, dynamic volumetric cloud flows were simulated to achieve a photorealistic atmospheric quality.</p>
+                            </div>
+                        </div>
+
+                        <!-- Image 3 -->
+                        <div class="w-[90%] mx-auto mb-8">
+                            <img src="https://raw.githubusercontent.com/alankwai/portfolio-library/refs/heads/main/mountain3.png" alt="Terrain Detail 3" class="w-full h-auto block rounded-lg shadow-sm">
+                            <p class="text-[10px] text-center text-slate-400 py-2 italic">Plate Tectonics Animation</p>
+                        </div>
+                    </div>
+
+                    <!-- 4. Research Impact & Acknowledgment -->
+                    <div class="mb-8">
+                        <h5 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-600 pl-3">4. Research Impact & Acknowledgment</h5>
+                        <div class="bg-blue-50 p-6 rounded-xl border border-blue-100 mb-8">
+                            <p class="text-sm text-blue-900 leading-relaxed mb-4">
+                                The project aims to provide an interpretative visual framework for geological data, demonstrating the efficacy of 3D visualization in making complex systems understandable.
+                            </p>
+                            <div class="flex items-start gap-2 text-sm text-blue-900 font-bold">
+                                <i class="fas fa-award mt-1 text-yellow-600"></i>
+                                <span>Funding Support: Central Government Fund for Local Special Projects (Key Technology Research of Ecological Environment System).</span>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Video Section -->
@@ -1478,10 +1470,10 @@
                                 Your browser does not support the video tag.
                             </video>
                         </div>
-                        <p class="text-xs text-center text-slate-400 mt-2 italic">Cinematic visualization of ecological evolution.</p>
+                        <!-- Removed Caption -->
                     </div>
                 `,
-                tags: ["Digital Twin", "Maya", "Scientific Vis"]
+                tags: ["Digital Twin", "Scientific Vis"]
             }
         };
 
@@ -1600,7 +1592,7 @@
         const navDots = document.querySelectorAll('.nav-dot');
 
         const observerOptions = {
-            threshold: 0.2 // 修改：稍微降低触发阈值，让高亮更灵敏
+            threshold: 0.2
         };
 
         const observer = new IntersectionObserver((entries) => {
@@ -1610,7 +1602,7 @@
                     // Remove active class from all
                     navDots.forEach(dot => {
                         dot.classList.remove('bg-blue-700', 'scale-150');
-                        dot.classList.add('bg-slate-400'); // 保持默认深灰色
+                        dot.classList.add('bg-slate-400');
                     });
                     // Add active class to current
                     const activeDot = document.querySelector(`.nav-dot[data-section="${id}"]`);
